@@ -165,7 +165,7 @@ def run(season: dict, n_sims: int = config.N_SIMULATIONS, seed: int = config.RAN
 
     # Per-simulation event vector: which teams got the title / final four /
     # relegation, packed as one big integer with a fixed-width bit field per
-    # (team, event) so that acc[match][outcome] += vec tallies all 36 counts
+    # (team, event) so that acc[match][home EKV] += vec tallies all 36 counts
     # in a single addition (see remaining_matches below).
     EVENTS = ("title", "final4", "relegated")
     field_width = max(20, n_sims.bit_length() + 1)
@@ -174,9 +174,9 @@ def run(season: dict, n_sims: int = config.N_SIMULATIONS, seed: int = config.RAN
              for i, t in enumerate(teams) for j, e in enumerate(EVENTS)}
     vec_cache: dict[tuple, int] = {}
 
-    match_acc = [[0, 0, 0] for _ in remaining]       # [match][outcome] -> packed vec sum
-    outcome_count = [[0, 0, 0] for _ in remaining]   # [match][outcome] -> sim count
-    sim_outcomes = [0] * len(remaining)              # outcome this sim had per match
+    match_acc = [[0] * (games + 1) for _ in remaining]      # [match][home EKV] -> packed vec sum
+    outcome_count = [[0] * (games + 1) for _ in remaining]  # [match][home EKV] -> sim count
+    sim_outcomes = [0] * len(remaining)                     # home EKV this sim per match
 
     for _ in range(n_sims):
         ekv = dict(base_ekv); pts = dict(base_pts)
@@ -189,9 +189,8 @@ def run(season: dict, n_sims: int = config.N_SIMULATIONS, seed: int = config.RAN
             pts[h] += ph; pts[a] += pa
             r = h2h.setdefault((h, a), [0, 0]); r[0] += he; r[1] += ph
             r = h2h.setdefault((a, h), [0, 0]); r[0] += ae; r[1] += pa
-            oc = 0 if he >= 3 else 1 if he == 2 else 2  # home win / draw / away win
-            sim_outcomes[i] = oc
-            outcome_count[i][oc] += 1
+            sim_outcomes[i] = he
+            outcome_count[i][he] += 1
 
         order = rank(teams, ekv, pts, h2h, rng)
         for pos, t in enumerate(order):
@@ -320,51 +319,17 @@ def run(season: dict, n_sims: int = config.N_SIMULATIONS, seed: int = config.RAN
         p = [round(dist[3] + dist[4], 4), round(dist[2], 4), round(dist[0] + dist[1], 4)]
         exp_home_ekv = round(sum(k * x for k, x in enumerate(dist)), 4)
         counts = outcome_count[i]
-        decoded = [unpack(match_acc[i][o]) for o in range(3)]
+        decoded = [unpack(acc) for acc in match_acc[i]]
 
         def cond_of(t):
-            return {e: [round(decoded[o][(t, e)] / counts[o], 4) if counts[o] else None
-                        for o in range(3)] for e in EVENTS}
+            return {e: [round(decoded[k][(t, e)] / counts[k], 4) if counts[k] else None
+                        for k in range(games + 1)] for e in EVENTS}
 
-        # Total variation between the two decisive outcomes (home win, away
-        # win); fall back to whichever two outcomes did occur, or 0.
-        present = [o for o in range(3) if counts[o]]
-        if 0 in present and 2 in present:
-            pair = (0, 2)
-        elif len(present) >= 2:
-            pair = (present[0], present[1])
-        else:
-            pair = None
-        importance_by = {}
-        for e in EVENTS:
-            if pair is None:
-                importance_by[e] = 0.0
-                continue
-            o1, o2 = pair
-            total = sum(abs(decoded[o1][(t, e)] / counts[o1] - decoded[o2][(t, e)] / counts[o2])
-                        for t in teams)
-            importance_by[e] = round(total / 2, 4)
-        # Third-party teams whose chances move most with this result: the
-        # event with the largest swing per team, top 3, at least 1 point.
-        others = []
-        if pair is not None:
-            o1, o2 = pair
-            for t in teams:
-                if t in (h, a):
-                    continue
-                swing, e = max((abs(decoded[o1][(t, e)] / counts[o1] - decoded[o2][(t, e)] / counts[o2]), e)
-                               for e in EVENTS)
-                if swing >= 0.01:
-                    others.append((swing, t, e))
-            others.sort(reverse=True)
         remaining_matches.append(dict(
             home=h, away=a, date=m["date"], lineup=m["lineup"],
             p=p, exp_home_ekv=exp_home_ekv,
             dist=[round(x, 4) for x in dist],
             cond=dict(home=cond_of(h), away=cond_of(a)),
-            others=[dict(team=t, event=e, cond=cond_of(t)[e]) for _, t, e in others[:3]],
-            importance=round(sum(importance_by.values()), 4),
-            importance_by=importance_by,
         ))
     remaining_matches.sort(key=lambda r: (r["date"] is None, r["date"] or "", r["home"]))
 

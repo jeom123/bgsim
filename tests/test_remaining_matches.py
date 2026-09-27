@@ -85,37 +85,33 @@ class RemainingMatchesSchema(unittest.TestCase):
         # Sorted by date: E-F (Dec) before A-C (Jan).
         self.assertEqual([(m["home"], m["away"]) for m in rm], [(E, F), (A, C)])
         for m in rm:
-            for key in ("home", "away", "date", "lineup", "p", "exp_home_ekv",
-                        "cond", "importance", "importance_by"):
+            for key in ("home", "away", "date", "lineup", "p", "exp_home_ekv", "dist", "cond"):
                 self.assertIn(key, m)
             self.assertEqual(len(m["p"]), 3)
             self.assertAlmostEqual(sum(m["p"]), 1.0, places=4)
+            self.assertEqual(len(m["dist"]), 5)
+            self.assertAlmostEqual(sum(m["dist"]), 1.0, places=3)
             for side in ("home", "away"):
                 for ev in ("title", "final4", "relegated"):
                     self.assertIn(ev, m["cond"][side])
-                    self.assertEqual(len(m["cond"][side][ev]), 3)
-            for ev in ("title", "final4", "relegated"):
-                self.assertIn(ev, m["importance_by"])
-            self.assertAlmostEqual(m["importance"], sum(m["importance_by"].values()), places=4)
+                    self.assertEqual(len(m["cond"][side][ev]), 5)
 
-    def test_importance_zero_for_match_that_cannot_matter(self):
+    def test_cond_constant_for_match_that_cannot_matter(self):
         # Use a season where E-F is the only unplayed match and every other
         # outcome is deterministic, so there is no other source of variance
-        # that could leak a spurious nonzero importance from sampling noise.
+        # that could leak a spurious difference between scores.
         results = run(make_deterministic_season(), n_sims=5000, seed=1)
         rm = {(m["home"], m["away"]): m for m in results["remaining_matches"]}
         ef = rm[(E, F)]
-        self.assertEqual(ef["importance"], 0.0)
-        for ev in ("title", "final4", "relegated"):
-            self.assertEqual(ef["importance_by"][ev], 0.0)
         for side in ("home", "away"):
-            self.assertEqual(ef["cond"][side]["title"], [0.0, 0.0, 0.0])
-            self.assertEqual(ef["cond"][side]["final4"], [0.0, 0.0, 0.0])
-            self.assertEqual(ef["cond"][side]["relegated"], [1.0, 1.0, 1.0])
+            for ev, want in (("title", 0.0), ("final4", 0.0), ("relegated", 1.0)):
+                vals = [v for v in ef["cond"][side][ev] if v is not None]
+                self.assertTrue(vals)
+                self.assertEqual(set(vals), {want})
 
     def test_cond_consistent_with_unconditional_totals(self):
         # sum over outcomes of freq(outcome) * cond(event | outcome) should
-        # match the unconditional per-team probability. The exact model "p"
+        # match the unconditional per-team probability. The exact model "dist"
         # is used as a stand-in for the simulated outcome frequency, which
         # should be close for a large enough n_sims.
         p_title = {t["id"]: t["p_title"] for t in self.results["teams"]}
@@ -126,7 +122,7 @@ class RemainingMatchesSchema(unittest.TestCase):
                 for ev, uncond in (("title", p_title), ("final4", p_final4),
                                    ("relegated", p_relegated)):
                     vals = m["cond"][side][ev]
-                    weighted = sum((v or 0.0) * w for v, w in zip(vals, m["p"]))
+                    weighted = sum((v or 0.0) * w for v, w in zip(vals, m["dist"]))
                     self.assertAlmostEqual(weighted, uncond[tid], delta=0.03)
 
 
