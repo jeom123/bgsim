@@ -1,79 +1,79 @@
 [
  {
   "date": "2026-09-27",
-  "n_matches_played": 13,
+  "n_matches_played": 14,
   "teams": {
    "633": {
-    "title": 0.1785,
-    "final4": 0.6114,
-    "relegated": 0.0532,
-    "strength": 1206.98
+    "title": 0.3017,
+    "final4": 0.7898,
+    "relegated": 0.0142,
+    "strength": 1210.33
    },
    "638": {
-    "title": 0.0969,
-    "final4": 0.4633,
-    "relegated": 0.109,
+    "title": 0.0872,
+    "final4": 0.4683,
+    "relegated": 0.1015,
     "strength": 1193.82
    },
    "629": {
-    "title": 0.3647,
-    "final4": 0.7613,
-    "relegated": 0.0244,
+    "title": 0.3371,
+    "final4": 0.7669,
+    "relegated": 0.0216,
     "strength": 1240.13
    },
    "634": {
-    "title": 0.055,
-    "final4": 0.3251,
-    "relegated": 0.1864,
+    "title": 0.0484,
+    "final4": 0.3286,
+    "relegated": 0.1734,
     "strength": 1191.92
    },
    "630": {
-    "title": 0.0691,
-    "final4": 0.3589,
-    "relegated": 0.1631,
+    "title": 0.0638,
+    "final4": 0.3691,
+    "relegated": 0.1497,
     "strength": 1203.64
    },
    "639": {
-    "title": 0.0466,
-    "final4": 0.2861,
-    "relegated": 0.2188,
+    "title": 0.0422,
+    "final4": 0.2941,
+    "relegated": 0.2014,
     "strength": 1196.04
    },
-   "631": {
-    "title": 0.0705,
-    "final4": 0.3669,
-    "relegated": 0.1537,
-    "strength": 1214.47
-   },
    "637": {
-    "title": 0.0066,
-    "final4": 0.0798,
-    "relegated": 0.5471,
+    "title": 0.0055,
+    "final4": 0.0812,
+    "relegated": 0.5233,
     "strength": 1165.98
    },
    "647": {
-    "title": 0.0397,
-    "final4": 0.2596,
-    "relegated": 0.2442,
+    "title": 0.036,
+    "final4": 0.2661,
+    "relegated": 0.2243,
     "strength": 1199.32
    },
    "702": {
-    "title": 0.0208,
-    "final4": 0.1725,
-    "relegated": 0.3612,
+    "title": 0.019,
+    "final4": 0.1763,
+    "relegated": 0.3405,
     "strength": 1185.16
    },
    "628": {
-    "title": 0.0501,
-    "final4": 0.2848,
-    "relegated": 0.23,
+    "title": 0.0456,
+    "final4": 0.2896,
+    "relegated": 0.2136,
     "strength": 1203.42
    },
    "642": {
-    "title": 0.0014,
-    "final4": 0.0305,
-    "relegated": 0.7089,
+    "title": 0.001,
+    "final4": 0.0327,
+    "relegated": 0.6826,
     "strength": 1152.95
+   },
+   "631": {
+    "title": 0.0123,
+    "final4": 0.1374,
+    "relegated": 0.354,
+    "strength": 1199.79
    }
   }
  }

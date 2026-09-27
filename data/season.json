@@ -1,13 +1,5 @@
 {
  "player_ratings": {
-  "2869": 1157.59,
-  "7590": 1237.7,
-  "15822": 1151.84,
-  "9695": 1243.18,
-  "9": 1250.1,
-  "7591": 1187.51,
-  "10945": 1185.11,
-  "7175": 1148.37,
   "3948": 1268.31,
   "4175": 1186.81,
   "5782": 1107.08,
@@ -21,7 +13,7 @@
   "1045": 1148.16,
   "9934": 1146.39
  },
- "scraped_at": "2026-09-27T15:18:52+02:00",
+ "scraped_at": "2026-09-27T20:26:59+02:00",
  "season_id": 37,
  "division_id": 118,
  "source": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?season=37&division=118",
@@ -29,14 +21,14 @@
   {
    "id": 633,
    "name": "Team Casino Munkebjerg",
-   "K": 3,
-   "V": 2,
+   "K": 4,
+   "V": 3,
    "U": 1,
    "T": 0,
-   "EKV": 9,
+   "EKV": 13,
    "EKT": 3,
-   "P": 5,
-   "pm": 3
+   "P": 7,
+   "pm": 5
   },
   {
    "id": 638,
@@ -99,18 +91,6 @@
    "pm": 0
   },
   {
-   "id": 631,
-   "name": "Soirée Dansante",
-   "K": 3,
-   "V": 1,
-   "U": 0,
-   "T": 2,
-   "EKV": 5,
-   "EKT": 7,
-   "P": 2,
-   "pm": -1
-  },
-  {
    "id": 637,
    "name": "Malmö",
    "K": 2,
@@ -169,6 +149,18 @@
    "EKT": 10,
    "P": 3,
    "pm": -2
+  },
+  {
+   "id": 631,
+   "name": "Soirée Dansante",
+   "K": 4,
+   "V": 1,
+   "U": 0,
+   "T": 3,
+   "EKV": 5,
+   "EKT": 11,
+   "P": 2,
+   "pm": -3
   }
  ],
  "teams": [
@@ -176,6 +168,33 @@
    "id": 633,
    "name": "Team Casino Munkebjerg",
    "players": [
+    {
+     "dbgfnr": 9,
+     "initials": "CMC",
+     "title": "SGM",
+     "rating": 1265.36,
+     "K": 4,
+     "V": 3,
+     "T": 1
+    },
+    {
+     "dbgfnr": 2869,
+     "initials": "DS",
+     "title": "GM",
+     "rating": 1177.39,
+     "K": 2,
+     "V": 2,
+     "T": 0
+    },
+    {
+     "dbgfnr": 15822,
+     "initials": "GEJ",
+     "title": null,
+     "rating": 1171.03,
+     "K": 2,
+     "V": 2,
+     "T": 0
+    },
     {
      "dbgfnr": 10223,
      "initials": "HV",
@@ -195,33 +214,6 @@
      "T": 0
     },
     {
-     "dbgfnr": 9,
-     "initials": "CMC",
-     "title": "SGM",
-     "rating": 1250.1,
-     "K": 3,
-     "V": 2,
-     "T": 1
-    },
-    {
-     "dbgfnr": 2869,
-     "initials": "DS",
-     "title": "GM",
-     "rating": 1157.59,
-     "K": 1,
-     "V": 1,
-     "T": 0
-    },
-    {
-     "dbgfnr": 15822,
-     "initials": "GEJ",
-     "title": null,
-     "rating": 1151.84,
-     "K": 1,
-     "V": 1,
-     "T": 0
-    },
-    {
      "dbgfnr": 11468,
      "initials": "MJE",
      "title": null,
@@ -229,6 +221,15 @@
      "K": 1,
      "V": 1,
      "T": 0
+    },
+    {
+     "dbgfnr": 10945,
+     "initials": "BK",
+     "title": "IM",
+     "rating": 1184.0,
+     "K": 2,
+     "V": 1,
+     "T": 1
     },
     {
      "dbgfnr": 2121,
@@ -247,15 +248,6 @@
      "K": 0,
      "V": 0,
      "T": 0
-    },
-    {
-     "dbgfnr": 10945,
-     "initials": "BK",
-     "title": "IM",
-     "rating": 1185.11,
-     "K": 1,
-     "V": 0,
-     "T": 1
     },
     {
      "dbgfnr": 2530,
@@ -665,94 +657,6 @@
    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=639"
   },
   {
-   "id": 631,
-   "name": "Soirée Dansante",
-   "players": [
-    {
-     "dbgfnr": 7175,
-     "initials": "TNF",
-     "title": null,
-     "rating": 1148.37,
-     "K": 2,
-     "V": 2,
-     "T": 0
-    },
-    {
-     "dbgfnr": 7590,
-     "initials": "FN",
-     "title": "GM",
-     "rating": 1237.7,
-     "K": 2,
-     "V": 1,
-     "T": 1
-    },
-    {
-     "dbgfnr": 3987,
-     "initials": "MD",
-     "title": null,
-     "rating": 1118.32,
-     "K": 0,
-     "V": 0,
-     "T": 0
-    },
-    {
-     "dbgfnr": 7712,
-     "initials": "HL",
-     "title": "GM",
-     "rating": 1156.21,
-     "K": 0,
-     "V": 0,
-     "T": 0
-    },
-    {
-     "dbgfnr": 9331,
-     "initials": "KB",
-     "title": null,
-     "rating": 1206.7,
-     "K": 0,
-     "V": 0,
-     "T": 0
-    },
-    {
-     "dbgfnr": 7591,
-     "initials": "MW",
-     "title": "GM",
-     "rating": 1187.51,
-     "K": 3,
-     "V": 1,
-     "T": 2
-    },
-    {
-     "dbgfnr": 9695,
-     "initials": "TM",
-     "title": "SGM",
-     "rating": 1243.18,
-     "K": 3,
-     "V": 1,
-     "T": 2
-    },
-    {
-     "dbgfnr": 8093,
-     "initials": "CE",
-     "title": "GM",
-     "rating": 1221.72,
-     "K": 1,
-     "V": 0,
-     "T": 1
-    },
-    {
-     "dbgfnr": 17606,
-     "initials": "KNN",
-     "title": "IM",
-     "rating": 1287.75,
-     "K": 1,
-     "V": 0,
-     "T": 1
-    }
-   ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=631"
-  },
-  {
    "id": 637,
    "name": "Malmö",
    "players": [
@@ -1155,6 +1059,94 @@
     }
    ],
    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=642"
+  },
+  {
+   "id": 631,
+   "name": "Soirée Dansante",
+   "players": [
+    {
+     "dbgfnr": 7175,
+     "initials": "TNF",
+     "title": null,
+     "rating": 1149.48,
+     "K": 3,
+     "V": 2,
+     "T": 1
+    },
+    {
+     "dbgfnr": 3987,
+     "initials": "MD",
+     "title": null,
+     "rating": 1118.32,
+     "K": 0,
+     "V": 0,
+     "T": 0
+    },
+    {
+     "dbgfnr": 7712,
+     "initials": "HL",
+     "title": "GM",
+     "rating": 1156.21,
+     "K": 0,
+     "V": 0,
+     "T": 0
+    },
+    {
+     "dbgfnr": 9331,
+     "initials": "KB",
+     "title": null,
+     "rating": 1206.7,
+     "K": 0,
+     "V": 0,
+     "T": 0
+    },
+    {
+     "dbgfnr": 7590,
+     "initials": "FN",
+     "title": "GM",
+     "rating": 1217.9,
+     "K": 3,
+     "V": 1,
+     "T": 2
+    },
+    {
+     "dbgfnr": 8093,
+     "initials": "CE",
+     "title": "GM",
+     "rating": 1221.72,
+     "K": 1,
+     "V": 0,
+     "T": 1
+    },
+    {
+     "dbgfnr": 17606,
+     "initials": "KNN",
+     "title": "IM",
+     "rating": 1287.75,
+     "K": 1,
+     "V": 0,
+     "T": 1
+    },
+    {
+     "dbgfnr": 7591,
+     "initials": "MW",
+     "title": "GM",
+     "rating": 1171.39,
+     "K": 4,
+     "V": 1,
+     "T": 3
+    },
+    {
+     "dbgfnr": 9695,
+     "initials": "TM",
+     "title": "SGM",
+     "rating": 1224.85,
+     "K": 4,
+     "V": 1,
+     "T": 3
+    }
+   ],
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=631"
   }
  ],
  "matches": [
@@ -1721,32 +1713,42 @@
    "date": "2026-09-27T12:00",
    "home": 633,
    "away": 631,
-   "played": false,
+   "played": true,
    "venue": "Vejle, 2. kamp",
-   "lineup": [
+   "home_ekv": 4,
+   "away_ekv": 0,
+   "games": [
     {
      "home_player": "DS",
      "home_dbgfnr": 2869,
      "away_player": "FN",
-     "away_dbgfnr": 7590
+     "away_dbgfnr": 7590,
+     "home_score": 17,
+     "away_score": 11
     },
     {
      "home_player": "GEJ",
      "home_dbgfnr": 15822,
      "away_player": "TM",
-     "away_dbgfnr": 9695
+     "away_dbgfnr": 9695,
+     "home_score": 17,
+     "away_score": 9
     },
     {
      "home_player": "CMC",
      "home_dbgfnr": 9,
      "away_player": "MW",
-     "away_dbgfnr": 7591
+     "away_dbgfnr": 7591,
+     "home_score": 17,
+     "away_score": 16
     },
     {
      "home_player": "BK",
      "home_dbgfnr": 10945,
      "away_player": "TNF",
-     "away_dbgfnr": 7175
+     "away_dbgfnr": 7175,
+     "home_score": 17,
+     "away_score": 10
     }
    ]
   },
