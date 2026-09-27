@@ -50,6 +50,18 @@ charts.
   final four is Danish champion.
 - **Relegation**: places 10–12 after the regular season go down directly.
 
+## Additional simulation output
+
+`data/results.json` also carries a field aimed at explaining *why* a result
+is likely, beyond each team's own probabilities:
+
+- `remaining_matches`: one entry per unplayed regular-season match, with its
+  exact score distribution, outcome probabilities and expected home EKV, plus each team's title /
+  final-four / relegation chance conditional on that match's outcome
+  (win/draw/loss), and an `importance` score (how much the two decisive
+  outcomes move the league-wide picture) that picks the match of the round.
+  `others` lists the third-party teams whose chances move most with the result.
+
 ## Sources and assumptions
 
 - Player names are not published. The scraper keeps only initials and the DBgF member

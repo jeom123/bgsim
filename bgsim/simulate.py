@@ -145,7 +145,8 @@ def run(season: dict, n_sims: int = config.N_SIMULATIONS, seed: int = config.RAN
         else:
             bp = board_probs(m, strength, ratings)
             dist = poisson_binomial(bp) if bp else ekv_distribution(game_win_prob(strength[h], strength[a]))
-            remaining.append(dict(home=h, away=a, date=m["date"], cdf=cumulative(dist)))
+            remaining.append(dict(home=h, away=a, date=m["date"], lineup=bool(m.get("lineup")),
+                                   dist=dist, cdf=cumulative(dist)))
 
     cdf_cache: dict[tuple, list[float]] = {}
 
@@ -162,10 +163,25 @@ def run(season: dict, n_sims: int = config.N_SIMULATIONS, seed: int = config.RAN
         reg_pts=[0] * (max_pts + 1),
         title=0, final4=0, relegated=0) for t in teams}
 
+    # Per-simulation event vector: which teams got the title / final four /
+    # relegation, packed as one big integer with a fixed-width bit field per
+    # (team, event) so that acc[match][outcome] += vec tallies all 36 counts
+    # in a single addition (see remaining_matches below).
+    EVENTS = ("title", "final4", "relegated")
+    field_width = max(20, n_sims.bit_length() + 1)
+    field_mask = (1 << field_width) - 1
+    field = {(t, e): (i * len(EVENTS) + j) * field_width
+             for i, t in enumerate(teams) for j, e in enumerate(EVENTS)}
+    vec_cache: dict[tuple, int] = {}
+
+    match_acc = [[0, 0, 0] for _ in remaining]       # [match][outcome] -> packed vec sum
+    outcome_count = [[0, 0, 0] for _ in remaining]   # [match][outcome] -> sim count
+    sim_outcomes = [0] * len(remaining)              # outcome this sim had per match
+
     for _ in range(n_sims):
         ekv = dict(base_ekv); pts = dict(base_pts)
         h2h = {k: list(v) for k, v in base_h2h.items()}
-        for m in remaining:
+        for i, m in enumerate(remaining):
             h, a = m["home"], m["away"]
             he = sample(m["cdf"], rng); ae = games - he
             ekv[h] += he; ekv[a] += ae
@@ -173,6 +189,9 @@ def run(season: dict, n_sims: int = config.N_SIMULATIONS, seed: int = config.RAN
             pts[h] += ph; pts[a] += pa
             r = h2h.setdefault((h, a), [0, 0]); r[0] += he; r[1] += ph
             r = h2h.setdefault((a, h), [0, 0]); r[0] += ae; r[1] += pa
+            oc = 0 if he >= 3 else 1 if he == 2 else 2  # home win / draw / away win
+            sim_outcomes[i] = oc
+            outcome_count[i][oc] += 1
 
         order = rank(teams, ekv, pts, h2h, rng)
         for pos, t in enumerate(order):
@@ -194,10 +213,24 @@ def run(season: dict, n_sims: int = config.N_SIMULATIONS, seed: int = config.RAN
                 r = h2h.setdefault((x, y), [0, 0]); r[0] += xe; r[1] += px
                 r = h2h.setdefault((y, x), [0, 0]); r[0] += ye; r[1] += py
         final_order = rank(f4, ekv, pts, h2h, rng) + order[config.FINAL_FOUR_SIZE:]
-        stats[final_order[0]]["title"] += 1
+        title_team = final_order[0]
+        stats[title_team]["title"] += 1
         for pos, t in enumerate(final_order):
             stats[t]["final_pos"][pos] += 1
             stats[t]["final_ekv"][ekv[t]] += 1
+
+        releg = order[n - config.RELEGATED:]
+        sig = (title_team, frozenset(f4), frozenset(releg))
+        vec = vec_cache.get(sig)
+        if vec is None:
+            vec = 1 << field[(title_team, "title")]
+            for t in f4:
+                vec |= 1 << field[(t, "final4")]
+            for t in releg:
+                vec |= 1 << field[(t, "relegated")]
+            vec_cache[sig] = vec
+        for i in range(len(remaining)):
+            match_acc[i][sim_outcomes[i]] += vec
 
     def norm(xs):
         return [x / n_sims for x in xs]
@@ -276,6 +309,65 @@ def run(season: dict, n_sims: int = config.N_SIMULATIONS, seed: int = config.RAN
             fixtures=fixtures,
         ))
 
+    def unpack(vec: int) -> dict:
+        """Per-(team, event) counts encoded in a packed vec (see match_acc above)."""
+        return {key: (vec >> shift) & field_mask for key, shift in field.items()}
+
+    remaining_matches = []
+    for i, m in enumerate(remaining):
+        h, a = m["home"], m["away"]
+        dist = m["dist"]
+        p = [round(dist[3] + dist[4], 4), round(dist[2], 4), round(dist[0] + dist[1], 4)]
+        exp_home_ekv = round(sum(k * x for k, x in enumerate(dist)), 4)
+        counts = outcome_count[i]
+        decoded = [unpack(match_acc[i][o]) for o in range(3)]
+
+        def cond_of(t):
+            return {e: [round(decoded[o][(t, e)] / counts[o], 4) if counts[o] else None
+                        for o in range(3)] for e in EVENTS}
+
+        # Total variation between the two decisive outcomes (home win, away
+        # win); fall back to whichever two outcomes did occur, or 0.
+        present = [o for o in range(3) if counts[o]]
+        if 0 in present and 2 in present:
+            pair = (0, 2)
+        elif len(present) >= 2:
+            pair = (present[0], present[1])
+        else:
+            pair = None
+        importance_by = {}
+        for e in EVENTS:
+            if pair is None:
+                importance_by[e] = 0.0
+                continue
+            o1, o2 = pair
+            total = sum(abs(decoded[o1][(t, e)] / counts[o1] - decoded[o2][(t, e)] / counts[o2])
+                        for t in teams)
+            importance_by[e] = round(total / 2, 4)
+        # Third-party teams whose chances move most with this result: the
+        # event with the largest swing per team, top 3, at least 1 point.
+        others = []
+        if pair is not None:
+            o1, o2 = pair
+            for t in teams:
+                if t in (h, a):
+                    continue
+                swing, e = max((abs(decoded[o1][(t, e)] / counts[o1] - decoded[o2][(t, e)] / counts[o2]), e)
+                               for e in EVENTS)
+                if swing >= 0.01:
+                    others.append((swing, t, e))
+            others.sort(reverse=True)
+        remaining_matches.append(dict(
+            home=h, away=a, date=m["date"], lineup=m["lineup"],
+            p=p, exp_home_ekv=exp_home_ekv,
+            dist=[round(x, 4) for x in dist],
+            cond=dict(home=cond_of(h), away=cond_of(a)),
+            others=[dict(team=t, event=e, cond=cond_of(t)[e]) for _, t, e in others[:3]],
+            importance=round(sum(importance_by.values()), 4),
+            importance_by=importance_by,
+        ))
+    remaining_matches.sort(key=lambda r: (r["date"] is None, r["date"] or "", r["home"]))
+
     now = datetime.now(timezone.utc).astimezone()
     return dict(
         generated_at=now.isoformat(timespec="seconds"),
@@ -293,6 +385,7 @@ def run(season: dict, n_sims: int = config.N_SIMULATIONS, seed: int = config.RAN
         match_length=config.MATCH_LENGTH,
         games_per_match=games,
         teams=team_out,
+        remaining_matches=remaining_matches,
     )
 
 
