@@ -58,6 +58,8 @@ h1 .season{color:var(--accent)}
 .links{margin:0;font-size:14px;display:flex;flex-wrap:wrap;gap:4px 18px;color:var(--muted)}
 
 .podium h2{margin-bottom:0}
+.podsum{margin:10px 0 0;color:var(--muted);font-size:13px}
+.podsum b{color:var(--ink)}
 .pod{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
 .pod li{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px 16px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 12px;align-items:start}
 .pod .rk{grid-row:1 / span 4;font-family:var(--f-display);font-weight:600;font-size:30px;line-height:24px;color:var(--muted)}
@@ -324,6 +326,7 @@ table.sct{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-nume
       <p class="hint">The four teams most likely to become Danmarksmester</p>
     </div>
     <ol class="pod" id="pod"></ol>
+    <p class="podsum" id="pod-sum"></p>
   </section>
 
   <section aria-labelledby="h-tab">
@@ -490,6 +493,10 @@ const DATA = /*__DATA__*/null;
       <a class="nm" href="#lag-${x.t.id}" title="${esc(x.t.name)}">${esc(x.t.name)}</a>
       <span class="big">${pct(x.t.p_title)}<small>title</small></span>
       <span class="sec">Final four <b>${pct(x.t.p_final4)}</b></span><span class="sec xp">Exp. position ${nf1.format(x.e)}</span></li>`).join("");
+    const share = top.reduce((s, x) => s + x.t.p_title, 0);
+    const word = n => ["no", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"][n] ?? n;
+    $("pod-sum").innerHTML = `One of these ${word(top.length)} becomes champion in <b>${pct(share)}</b> of the simulations. ` +
+      `The other ${word(NT - top.length)} teams share the remaining ${pct(1 - share)}.`;
   })();
 
   /* ---------- Main table ---------- */
