@@ -68,9 +68,14 @@ h1 .season{color:var(--accent)}
 .pod .big small{font-size:13px;font-weight:400;color:var(--muted);margin-left:6px}
 .pod .sec{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
 .pod .sec b{color:var(--ink);font-weight:600}
-.reld{margin-top:18px;max-width:420px}
-.reld h3{font-size:14px;font-weight:600;margin-bottom:2px}
-.reld .cap{margin:0 0 8px;color:var(--muted);font-size:12.5px}
+.reld{margin-top:24px}
+.reld h3{font-family:var(--f-display);font-weight:600;font-size:20px;line-height:1.2;margin-bottom:4px}
+.reld .cap{margin:0 0 12px;color:var(--muted);font-size:13px;max-width:78ch}
+.pod.rel{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+.pod.rel li:first-child .rk{color:var(--red)}
+.pod.rel .big{color:var(--red)}
+.pod.rel .big small{color:var(--muted)}
+@media (min-width:641px) and (max-width:1000px){.pod.rel{grid-template-columns:repeat(3,minmax(0,1fr))}}
 
 /* Section heads */
 .sechead{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 20px;margin-bottom:12px}
@@ -224,31 +229,27 @@ table.heat{border-collapse:separate;border-spacing:2px;width:100%;font-size:12.5
 .heat td.c:hover{outline:2px solid var(--ink);outline-offset:-2px}
 .heat td.x{color:var(--muted);padding-left:8px;text-align:right;font-size:12.5px}
 .ramp{display:inline-block;width:72px;height:10px;border-radius:2px;background:linear-gradient(to right,var(--grid),var(--accent))}
-.mlist{list-style:none;margin:0;padding:0}
-.mlist > li{padding:12px 0 14px;border-bottom:1px solid var(--line);font-size:14px}
-.mlist > li:last-child{border-bottom:0}
-.mhead{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:2px 16px;align-items:baseline;max-width:640px}
-.mhead .when{color:var(--muted);font-variant-numeric:tabular-nums;font-size:13px;min-width:8.5em}
-.mhead .teams{min-width:0;line-height:1.35}
-.mhead .teams .vs{color:var(--muted);margin:0 4px}
-.sctwrap{margin-top:8px}
-table.sct{border-collapse:separate;border-spacing:2px;margin:0 -2px;width:calc(100% + 4px);max-width:644px;font-size:13px;font-variant-numeric:tabular-nums;table-layout:fixed}
-.sct th,.sct td{padding:3px 4px;text-align:right;white-space:nowrap}
-.sct thead th{font-size:12px;font-weight:600;color:var(--ink);border-bottom:1px solid var(--line)}
-.sct thead th:first-child,.sct tbody th{text-align:left;width:34%;padding-left:0}
-.sct td{border-radius:3px}
-.sct .now{color:var(--muted);border-left:1px solid var(--line);padding-left:8px;width:13%}
-.sct thead th.now{font-weight:500}
-.sct tr.chance th,.sct tr.chance td{color:var(--muted);font-weight:500;padding-bottom:6px}
-.sct tr.ev th{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:500;padding-top:8px;border-top:1px solid var(--line)}
-.sct tr.ev .dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:6px;vertical-align:1px}
-.sct th.tn{font-weight:500;padding-left:13px}
-.sct th.tn span{display:block;overflow:hidden;text-overflow:ellipsis}
+.mlist{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,470px),1fr));gap:14px}
+.mc{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px 12px;min-width:0}
+.mteams{font-size:15px;font-weight:600;line-height:1.35}
+.mteams .vs{color:var(--muted);margin:0 5px;font-weight:400}
+.mmeta{margin:2px 0 10px;color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums}
+table.sct{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-numeric:tabular-nums;table-layout:fixed}
+.sct th,.sct td{padding:0 4px;height:28px;text-align:right;white-space:nowrap;border-bottom:1px solid var(--line)}
+.sct th:first-child{text-align:left;padding-left:0;width:30%}
+.sct thead th{font-size:12px;font-weight:500;color:var(--muted);height:24px}
+.sct tr.chance th,.sct tr.chance td{font-size:12px;color:var(--muted);font-weight:400;height:24px}
+.sct tr.tm th{font-weight:600;height:32px;padding-top:6px;vertical-align:bottom;color:var(--ink)}
+.sct tr.tm .ha{margin-right:7px}
+.sct tbody th{font-weight:400;color:var(--muted)}
+.sct tbody tr:last-child th,.sct tbody tr:last-child td{border-bottom:0}
+.sct .now{color:var(--muted);width:15%;padding-left:12px}
+.sct td.up{color:var(--accent)} .sct td.dn{color:var(--red)} .sct td.big{font-weight:600}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .lud{margin-top:8px;font-size:13px}
 .lud summary{cursor:pointer;color:var(--muted);width:max-content;border-radius:3px}
 .lud summary:hover{color:var(--ink)}
-.lud .boards{margin-top:6px;max-width:600px}
+.lud .boards{margin-top:6px}
 .lu{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.03em;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 5px;margin-left:6px;vertical-align:1px;white-space:nowrap}
 .scsec .card{max-width:860px}
 .scat{padding:10px 16px 6px}
@@ -293,13 +294,11 @@ table.sct{border-collapse:separate;border-spacing:2px;margin:0 -2px;width:calc(1
   .heat .tn .tl{max-width:7.6em;font-size:13px}
   .heat td.c{min-width:26px;height:28px;font-size:11.5px}
   .heat th.x,.heat td.x{display:none}
-  .mhead{grid-template-columns:minmax(0,1fr) auto}
-  .mhead .when{grid-column:1 / -1}
-  table.sct{font-size:12px;border-spacing:1px 2px}
-  .sct th,.sct td{padding:3px 2px}
-  .sct thead th:first-child,.sct tbody th{width:37%}
-  .sct th.tn{padding-left:0}
-  .sct .now{padding-left:4px;width:13%}
+  .mc{padding:12px 12px 10px}
+  table.sct{font-size:12.5px}
+  .sct th,.sct td{padding:0 2px}
+  .sct th:first-child{width:27%}
+  .sct .now{padding-left:8px;width:16%}
   .lud .boards li{grid-template-columns:1.2em 1fr 3.4em}
 }
 .plink{white-space:nowrap}
@@ -344,7 +343,7 @@ table.sct{border-collapse:separate;border-spacing:2px;margin:0 -2px;width:calc(1
     <div class="reld" id="reld" hidden>
       <h3>Relegation danger</h3>
       <p class="cap"></p>
-      <ul class="nlist" id="reld-list"></ul>
+      <ol class="pod rel" id="reld-list"></ol>
     </div>
   </section>
 
@@ -366,8 +365,8 @@ table.sct{border-collapse:separate;border-spacing:2px;margin:0 -2px;width:calc(1
         <h2 id="h-next">Next round</h2>
         <p class="hint" id="next-when"></p>
       </div>
-      <p class="cap">For each possible score, <strong>home team first</strong> (4–0 means the home team wins all four games): how likely it is, and each team's chance of the final four and of relegation if the match ends that way. <em>Now</em> is today's chance. A green tint marks a better outcome for that team than today, a red tint a worse one.</p>
-      <div class="card"><ul class="mlist" id="next-list"></ul></div>
+      <p class="cap">For each possible score, <strong>home team first</strong> (4–0 means the home team wins all four games): how likely it is, and each team's chance of the final four and of relegation if the match ends that way. <em>Now</em> is today's chance. <span class="pos">Green</span> means better for that team than today, <span class="neg">red</span> worse; bold marks a change of 10 points or more.</p>
+      <ul class="mlist" id="next-list"></ul>
     </section>
 
 
@@ -573,12 +572,15 @@ const DATA = /*__DATA__*/null;
   /* ---------- Relegation danger ---------- */
   (function () {
     const byRel = teams.slice().sort((a, b) => b.p_relegated - a.p_relegated);
-    const n = 3;
-    const list = byRel.slice(0, n).filter(t => t.p_relegated > 0);
+    const list = byRel.slice(0, 5).filter(t => t.p_relegated > 0);
     if (!list.length) return;
     $("reld").querySelector(".cap").textContent = `Chance of finishing in places ${NT - REL + 1}–${NT} after the regular season, which means direct relegation.`;
-    $("reld-list").innerHTML = list.map(t => `<li><a class="tl" href="#lag-${t.id}" title="${esc(t.name)}">${esc(t.name)}</a>` +
-      `<span class="v${t.p_relegated >= 0.25 ? " risk" : ""}">${pct(t.p_relegated)}</span></li>`).join("");
+    // Same card markup as the expected top 4, with the relegation chance in place of the title chance.
+    $("reld-list").innerHTML = list.map((t, i) => `<li>
+      <span class="rk" aria-hidden="true">${i + 1}</span>
+      <a class="nm" href="#lag-${t.id}" title="${esc(t.name)}">${esc(t.name)}</a>
+      <span class="big">${pct(t.p_relegated)}<small>relegation</small></span>
+      <span class="sec">Final four <b>${pct(t.p_final4)}</b></span><span class="sec xp">Exp. position ${nf1.format(t.exp_reg_pos)}</span></li>`).join("");
     $("reld").hidden = false;
   })();
 
@@ -947,39 +949,39 @@ const DATA = /*__DATA__*/null;
   /* Next round: for each match, final-four and relegation chances by exact score. */
   const SCORES = [4, 3, 2, 1, 0]; // home EKV, shown as 4–0 … 0–4
   const pctT = p => p == null ? "–" : p > 0 && p < 0.005 ? "<1%" : p > 0.995 && p < 1 ? ">99%" : nf0.format(p * 100) + "%";
-  // A light tint shows whether a score is better (green) or worse (red) for the team than today.
-  function tint(v, now, goodUp) {
+  // Numbers are coloured by direction against today: green better for the team, red worse,
+  // ink when the change is under 2 points; bold from 10 points.
+  function dirCls(v, now, goodUp) {
     if (v == null || now == null) return "";
     const d = (v - now) * (goodUp ? 1 : -1);
     if (Math.abs(d) < 0.02) return "";
-    const a = Math.min(30, 6 + Math.abs(d) * 90).toFixed(0);
-    return ` style="background:color-mix(in oklab,var(${d > 0 ? "--accent" : "--red"}) ${a}%,transparent)"`;
+    return (d > 0 ? "up" : "dn") + (Math.abs(d) >= 0.1 ? " big" : "");
   }
   function scoreTable(m) {
     const h = byId.get(String(m.home)), a = byId.get(String(m.away));
     const c = m.cond || {};
     const dist = Array.isArray(m.dist) && m.dist.length === 5 ? m.dist : null;
-    const blocks = [
-      { k: "final4", l: "Final four", c: "acc", now: t => t.p_final4, up: true },
-      { k: "relegated", l: "Relegation", c: "red", now: t => t.p_relegated, up: false },
+    const EV = [
+      { k: "final4", l: "Final four", now: t => t.p_final4, up: true },
+      { k: "relegated", l: "Relegation", now: t => t.p_relegated, up: false },
     ];
     let body = "";
-    if (dist) body += `<tr class="chance"><th scope="row">Chance</th>${SCORES.map(k => `<td>${pctT(dist[k])}</td>`).join("")}<td class="now"></td></tr>`;
-    blocks.forEach(e => {
-      const rows = [[h, "home"], [a, "away"]].map(([t, side]) => {
+    [[h, "home", "Home"], [a, "away", "Away"]].forEach(([t, side, ha]) => {
+      const rows = EV.map(e => {
         const arr = c[side] && Array.isArray(c[side][e.k]) && c[side][e.k].length === 5 ? c[side][e.k] : null;
         if (!arr) return "";
         const now = e.now(t);
         if ([now].concat(arr).every(v => v == null || v < 0.005)) return "";
-        return `<tr><th scope="row" class="tn"><span title="${esc(t.name)}">${esc(t.name)}</span></th>` +
-          SCORES.map(k => `<td${tint(arr[k], now, e.up)}>${pctT(arr[k])}</td>`).join("") + `<td class="now">${pctT(now)}</td></tr>`;
+        return `<tr><th scope="row">${e.l}</th>` +
+          SCORES.map(k => `<td class="${dirCls(arr[k], now, e.up)}">${pctT(arr[k])}</td>`).join("") + `<td class="now">${pctT(now)}</td></tr>`;
       }).join("");
-      if (rows) body += `<tr class="ev"><th scope="rowgroup" colspan="7"><i class="dot c-${e.c}" aria-hidden="true"></i>${e.l}</th></tr>` + rows;
+      if (rows) body += `<tr class="tm"><th scope="rowgroup" colspan="7"><span class="ha">${ha === "Home" ? "H" : "A"}</span>${esc(t.name)}</th></tr>` + rows;
     });
     if (!body) return "";
-    return `<div class="sctwrap"><table class="sct"><caption class="vh">Chances by exact score, ${esc(h.name)} first</caption>` +
-      `<thead><tr><th scope="col"><span class="vh">Score, home first</span></th>${SCORES.map(k => `<th scope="col">${k}–${4 - k}</th>`).join("")}<th scope="col" class="now">Now</th></tr></thead>` +
-      `<tbody>${body}</tbody></table></div>`;
+    const chance = dist ? `<tr class="chance"><th scope="row">Chance</th>${SCORES.map(k => `<td>${pctT(dist[k])}</td>`).join("")}<td class="now"></td></tr>` : "";
+    return `<table class="sct"><caption class="vh">Chances by exact score, ${esc(h.name)} first</caption>` +
+      `<thead><tr><th scope="col"><span class="vh">Score, home first</span></th>${SCORES.map(k => `<th scope="col">${k}–${4 - k}</th>`).join("")}<th scope="col" class="now">Now</th></tr>${chance}</thead>` +
+      `<tbody>${body}</tbody></table>`;
   }
   (function () {
     const dated = RM.filter(m => parseD(m.date));
@@ -1001,9 +1003,10 @@ const DATA = /*__DATA__*/null;
         const bh = f ? boardsHtml(f.lineup, `Chance that ${esc(h.name)} wins each board`) : "";
         if (bh) det = `<details class="lud"><summary>Announced lineup</summary>${bh}</details>`;
       }
-      return `<li><div class="mhead"><div class="when">${m.date ? dShort(m.date) + ", " + hhmm(parseD(m.date)) : "Date TBA"}</div>
-        <div class="teams">${teamLink(h)}<span class="vs">–</span>${teamLink(a)}${lu}</div>
-        <div class="xe">${xh == null ? "–" : nf2.format(xh) + "–" + nf2.format(4 - xh)}<small>exp. EKV</small></div></div>
+      const when = m.date ? dShort(m.date) + ", " + hhmm(parseD(m.date)) : "Date TBA";
+      const xe = xh == null ? "" : ` · expected score ${nf1.format(xh)}–${nf1.format(4 - xh)}`;
+      return `<li class="mc"><h3 class="mteams">${teamLink(h)}<span class="vs">–</span>${teamLink(a)}${lu}</h3>
+        <p class="mmeta">${when}${xe}</p>
         ${scoreTable(m)}${det}</li>`;
     }).join("");
     $("sec-next").hidden = false;
