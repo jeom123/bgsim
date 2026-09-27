@@ -320,8 +320,8 @@ table.sct{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-nume
 
   <section class="podium" aria-labelledby="h-pod" id="sec-pod">
     <div class="sechead">
-      <h2 id="h-pod">Expected top 4</h2>
-      <p class="hint">Lowest expected final position after the final four</p>
+      <h2 id="h-pod">Title favourites</h2>
+      <p class="hint">The four teams most likely to become Danmarksmester</p>
     </div>
     <ol class="pod" id="pod"></ol>
   </section>
@@ -478,11 +478,12 @@ const DATA = /*__DATA__*/null;
 
   /* ---------- Summary ---------- */
   (function () {
-    // Expected top 4: lowest expected final position, 1 + Σ i·final_pos[i].
+    // Title favourites: highest title chance; ties by expected final position,
+    // 1 + Σ i·final_pos[i], which is also shown on the card.
     const expFinal = t => (t.final_pos || []).reduce((s, p, i) => s + i * p, 1);
     const top = teams.filter(t => Array.isArray(t.final_pos) && t.final_pos.length)
       .map(t => ({ t, e: expFinal(t) }))
-      .sort((a, b) => a.e - b.e).slice(0, 4);
+      .sort((a, b) => b.t.p_title - a.t.p_title || a.e - b.e).slice(0, 4);
     if (!top.length) { $("sec-pod").hidden = true; return; }
     $("pod").innerHTML = top.map((x, i) => `<li>
       <span class="rk" aria-hidden="true">${i + 1}</span>
