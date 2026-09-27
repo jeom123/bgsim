@@ -1,0 +1,709 @@
+<title>Elitedivisionen 2026/27</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Zilla+Slab:wght@600&display=swap">
+<style>
+:root{
+  --bg:#F5F7F5; --surface:#FFFFFF; --ink:#17201D; --muted:#5B6763;
+  --accent:#0E6B57; --gold:#B8862B; --red:#B23A2A;
+  --line:#DCE3E0; --grid:#E8EDEB; --track:#E6ECE9; --neutral:#A7B3AF;
+  --hover:#EEF4F1; --accent-soft:#E1EEE9; --red-soft:#F6E4E1; --gold-soft:#F5ECDC;
+  --backdrop:rgba(15,21,19,.42); --shadow:0 10px 40px rgba(15,21,19,.18);
+  --f-display:"Zilla Slab",Rockwell,"Roboto Slab",Georgia,serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0F1513; --surface:#17201D; --ink:#E4EBE8; --muted:#93A29D;
+    --accent:#3FB193; --gold:#D9A845; --red:#E0675A;
+    --line:#2B3632; --grid:#232D2A; --track:#27322E; --neutral:#5F6E69;
+    --hover:#1D2925; --accent-soft:#18332B; --red-soft:#3A2220; --gold-soft:#352C19;
+    --backdrop:rgba(0,0,0,.6); --shadow:0 10px 40px rgba(0,0,0,.5);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0F1513; --surface:#17201D; --ink:#E4EBE8; --muted:#93A29D;
+  --accent:#3FB193; --gold:#D9A845; --red:#E0675A;
+  --line:#2B3632; --grid:#232D2A; --track:#27322E; --neutral:#5F6E69;
+  --hover:#1D2925; --accent-soft:#18332B; --red-soft:#3A2220; --gold-soft:#352C19;
+  --backdrop:rgba(0,0,0,.6); --shadow:0 10px 40px rgba(0,0,0,.5);
+}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5;-webkit-text-size-adjust:100%}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+h1,h2,h3{text-wrap:balance;margin:0}
+.num,td.n,.tab{font-variant-numeric:tabular-nums}
+
+.page{max-width:1180px;margin:0 auto;padding-inline:max(16px,3vw);padding-block:28px 48px;display:flex;flex-direction:column;gap:28px}
+
+/* Header */
+.top{display:grid;gap:14px;border-bottom:1px solid var(--line);padding-bottom:20px}
+.eyebrow{margin:0;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500}
+h1{font-family:var(--f-display);font-weight:600;font-size:clamp(28px,4.4vw,40px);line-height:1.1;letter-spacing:-.005em}
+h1 .season{color:var(--accent)}
+.run{margin:0;font-size:16px}
+.run strong{font-weight:600}
+.facts{display:flex;flex-wrap:wrap;gap:8px 28px;margin:0;font-size:14px}
+.facts div{display:flex;flex-direction:column;gap:2px;min-width:0}
+.facts dt{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.facts dd{margin:0;font-weight:500;font-variant-numeric:tabular-nums}
+.progress{display:block;width:120px;max-width:100%;height:4px;background:var(--track);border-radius:2px;margin-top:5px;overflow:hidden}
+.progress i{display:block;height:100%;background:var(--accent);border-radius:2px}
+.links{margin:0;font-size:14px;display:flex;flex-wrap:wrap;gap:4px 18px;color:var(--muted)}
+
+.summary{margin:0;max-width:72ch;font-size:16px}
+.summary a{font-weight:600}
+
+/* Section heads */
+.sechead{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 20px;margin-bottom:12px}
+h2{font-family:var(--f-display);font-weight:600;font-size:24px;line-height:1.2}
+.hint{margin:0;color:var(--muted);font-size:13px}
+
+/* Main table */
+.tablewrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:8px;-webkit-overflow-scrolling:touch}
+table.main{border-collapse:separate;border-spacing:0;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+.main th,.main td{padding:9px 10px;text-align:right;white-space:nowrap;border-bottom:1px solid var(--line)}
+.main tbody tr:last-child td{border-bottom:0}
+.main thead th{font-weight:500;color:var(--muted);font-size:12px;vertical-align:bottom;background:var(--surface)}
+.main thead tr.grp th{font-size:11px;letter-spacing:.07em;text-transform:uppercase;border-bottom:0;padding-bottom:0;text-align:center}
+.main thead tr.grp th span{display:block;border-bottom:1px solid var(--line);padding-bottom:4px}
+.main th.l,.main td.l{text-align:left}
+.main th button{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:3px;border-radius:3px}
+.main th button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.main th button::after{content:"";width:8px;text-align:center;font-size:10px}
+.main th[aria-sort="descending"] button::after{content:"\25BE"}
+.main th[aria-sort="ascending"] button::after{content:"\25B4"}
+.main th[aria-sort] {color:var(--ink)}
+.main td.team{position:sticky;left:0;background:var(--surface);z-index:1;text-align:left;border-right:1px solid var(--line)}
+.main th.team{position:sticky;left:0;z-index:2;border-right:1px solid var(--line)}
+.main td.team button{all:unset;cursor:pointer;font-weight:600;color:var(--ink);border-radius:3px;max-width:13.5em;overflow:hidden;text-overflow:ellipsis;display:inline-block;vertical-align:bottom}
+.main td.team button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.main tbody tr{cursor:pointer}
+.main tbody tr:hover td{background:var(--hover)}
+.main td.pos{color:var(--muted);width:1%}
+.main .sub{color:var(--muted)}
+.main td.sep,.main th.sep{border-left:1px solid var(--line)}
+.pc{display:inline-flex;align-items:center;justify-content:flex-end;gap:8px}
+.pc .v{min-width:4.6em;text-align:right}
+.pb{display:inline-block;width:56px;height:6px;border-radius:3px;background:var(--track);overflow:hidden;flex:none}
+.pb i{display:block;height:100%;border-radius:3px}
+.c-acc{background:var(--accent)} .c-gold{background:var(--gold)} .c-red{background:var(--red)} .c-neu{background:var(--neutral)}
+.main td.hi-gold .v{font-weight:600}
+.zero{color:var(--muted)}
+
+/* Method */
+.method{max-width:78ch}
+.method ul{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:10px}
+.method li::marker{color:var(--accent)}
+.formula{font-family:var(--f-mono);font-size:14px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:8px 12px;display:inline-block;margin:6px 0 2px;max-width:100%;overflow-x:auto;white-space:nowrap}
+.method p{margin:0 0 12px}
+.foot{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:16px;margin:0}
+
+/* Drawer */
+dialog.drawer{position:fixed;inset:0 0 0 auto;margin:0;height:100%;max-height:100%;width:min(900px,100%);max-width:100%;border:0;padding:0;background:var(--surface);color:var(--ink);box-shadow:var(--shadow);overflow-y:auto;overscroll-behavior:contain}
+dialog.drawer::backdrop{background:var(--backdrop)}
+@media (prefers-reduced-motion:no-preference){
+  dialog.drawer[open]{animation:slidein .22s ease-out}
+  @keyframes slidein{from{transform:translateX(24px);opacity:.3}to{transform:none;opacity:1}}
+}
+.dhead{position:sticky;top:0;z-index:3;background:var(--surface);border-bottom:1px solid var(--line);padding:14px 20px 12px;display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.dhead h2{font-size:26px}
+.dhead h2:focus{outline:none}
+.dhead .meta{margin:2px 0 0;color:var(--muted);font-size:13px}
+.close{flex:none;font:inherit;font-size:14px;font-weight:500;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:6px 12px;cursor:pointer}
+.close:hover{background:var(--hover)}
+.dbody{padding:18px 20px 40px;display:flex;flex-direction:column;gap:28px}
+.kv{display:flex;flex-wrap:wrap;gap:10px 26px;margin:0}
+.kv div{display:flex;flex-direction:column}
+.kv dt{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+.kv dd{margin:0;font-size:17px;font-weight:600;font-variant-numeric:tabular-nums}
+.kv dd.gold{color:var(--ink)} .kv .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px}
+.charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:22px 28px}
+.chart h3,.block h3{font-size:14px;font-weight:600;font-family:var(--f-body);margin-bottom:2px}
+.chart .cap{margin:0 0 8px;color:var(--muted);font-size:12.5px}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.ax{fill:var(--muted);font-size:10.5px;font-family:var(--f-body);font-variant-numeric:tabular-nums}
+.lab{fill:var(--ink);font-size:11px;font-family:var(--f-body);font-weight:500;font-variant-numeric:tabular-nums}
+.gl{stroke:var(--grid);stroke-width:1}
+.base{stroke:var(--line);stroke-width:1}
+.f-acc{fill:var(--accent)} .f-gold{fill:var(--gold)} .f-red{fill:var(--red)} .f-neu{fill:var(--neutral)}
+.s-acc{stroke:var(--accent)} .s-gold{stroke:var(--gold)} .s-red{stroke:var(--red)}
+.band{fill:transparent}
+.hit{cursor:default}
+.hit:hover .band{fill:var(--grid)}
+.xline{stroke:var(--ink);stroke-width:1.25;stroke-dasharray:3 3}
+.dotring{stroke:var(--surface);stroke-width:2}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12px;color:var(--muted);margin-top:6px}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:10px;height:10px;border-radius:2px;display:inline-block}
+.legend i.ln{height:3px;width:14px;border-radius:2px}
+.hbars{display:grid;grid-template-columns:auto 1fr auto;gap:8px 10px;align-items:center;font-size:13px}
+.hbars .t{height:14px;background:var(--track);border-radius:3px;overflow:hidden}
+.hbars .t i{display:block;height:100%;border-radius:0 4px 4px 0}
+.hbars .v{text-align:right;font-variant-numeric:tabular-nums;min-width:4.6em}
+.note{margin:8px 0 0;font-size:13px}
+
+/* Fixtures */
+.fx{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column}
+.fx > li{display:grid;grid-template-columns:7.2em minmax(9em,1.2fr) minmax(170px,1.5fr) 4.6em;gap:4px 14px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);font-size:14px}
+.fx > li:first-child{border-top:1px solid var(--line)}
+.fx .when{color:var(--muted);font-variant-numeric:tabular-nums;font-size:13px;line-height:1.3}
+.fx .opp{min-width:0}
+.ha{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.04em;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 5px;margin-right:6px;vertical-align:1px}
+.wdl{display:flex;gap:2px;height:10px}
+.wdl i{display:block;height:100%}
+.wdl i:first-child{border-radius:3px 0 0 3px} .wdl i:last-child{border-radius:0 3px 3px 0}
+.wdl .w{background:var(--accent)} .wdl .d{background:var(--neutral)} .wdl .l{background:var(--red)}
+.wdl-lab{font-size:12px;color:var(--muted);margin-top:3px;font-variant-numeric:tabular-nums}
+.xe{text-align:right;font-variant-numeric:tabular-nums;font-weight:500}
+.xe small{display:block;font-weight:400;color:var(--muted);font-size:11px}
+.boards{grid-column:2 / -1;list-style:none;margin:4px 0 2px;padding:8px 10px;background:var(--bg);border-radius:6px;display:grid;gap:4px;font-size:13px}
+.boards li{display:grid;grid-template-columns:1.4em 1fr auto 1fr 3.8em;gap:8px;align-items:baseline}
+.boards .bn{color:var(--muted);font-size:11px}
+.boards .vs{color:var(--muted);font-size:12px}
+.boards em{font-style:normal;color:var(--muted);font-size:12px;font-variant-numeric:tabular-nums;margin-left:4px}
+.boards .bp{text-align:right;font-weight:600;font-variant-numeric:tabular-nums}
+.boards .unk{color:var(--muted);font-style:italic}
+.boards .bhead{color:var(--muted);font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;display:block}
+.res{font-weight:600;font-variant-numeric:tabular-nums;font-size:15px}
+.chip{display:inline-block;font-size:11.5px;font-weight:600;border-radius:10px;padding:1px 8px;margin-left:8px;vertical-align:1px}
+.chip.w{background:var(--accent-soft);color:var(--ink)} .chip.w::before{content:"\25CF ";color:var(--accent)}
+.chip.d{background:var(--track);color:var(--ink)} .chip.d::before{content:"\25CF ";color:var(--neutral)}
+.chip.l{background:var(--red-soft);color:var(--ink)} .chip.l::before{content:"\25CF ";color:var(--red)}
+.fx.played > li{grid-template-columns:7.2em minmax(9em,1fr) auto}
+
+/* Players */
+.ptable-wrap{overflow-x:auto;margin-top:6px}
+table.pt{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+.pt th,.pt td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+.pt th{font-size:12px;font-weight:500;color:var(--muted)}
+.pt th:first-child,.pt td:first-child{text-align:left;padding-left:0}
+.pt tr.idle td{color:var(--muted)}
+.ttl{font-size:10.5px;font-weight:600;letter-spacing:.05em;border:1px solid var(--line);border-radius:4px;padding:0 4px;margin-left:6px;color:var(--muted)}
+.wbar{display:inline-block;width:48px;height:6px;background:var(--track);border-radius:3px;overflow:hidden;vertical-align:1px;margin-left:8px}
+.wbar i{display:block;height:100%;background:var(--accent)}
+
+.tip{position:fixed;z-index:10;pointer-events:none;background:var(--ink);color:var(--surface);font-size:12.5px;line-height:1.4;padding:6px 9px;border-radius:5px;white-space:pre-line;font-variant-numeric:tabular-nums;max-width:240px;box-shadow:0 4px 14px rgba(0,0,0,.2)}
+
+@media (max-width:640px){
+  .main th,.main td{padding:8px 6px}
+  .main td.team button{max-width:9.5em}
+  .pb{display:none}
+  .pc .v{min-width:0}
+  .fx > li{grid-template-columns:1fr auto;gap:6px 12px}
+  .fx .when{grid-column:1 / -1}
+  .fx .prob{grid-column:1 / 2}
+  .fx .opp{grid-column:1 / -1}
+  .boards{grid-column:1 / -1}
+  .boards li{grid-template-columns:1.2em 1fr 3.4em;row-gap:0}
+  .boards li .vs{display:none}
+  .boards li .op{grid-column:2}
+  .boards li .bp{grid-column:3;grid-row:1}
+  .fx.played > li{grid-template-columns:1fr auto}
+  .dhead{padding:12px 16px 10px}
+  .dbody{padding:16px 16px 40px}
+  .dhead h2{font-size:22px}
+}
+.plink{white-space:nowrap}
+</style>
+
+<div class="page">
+  <header class="top">
+    <p class="eyebrow">Danish backgammon club league · Monte Carlo forecast</p>
+    <h1>Elitedivisionen <span class="season" id="season">2026/2027</span></h1>
+    <p class="run">Last run <strong id="gen">–</strong></p>
+    <dl class="facts">
+      <div><dt>Team matches played</dt><dd><span id="played">–</span><span class="progress" aria-hidden="true"><i id="progress" style="width:0"></i></span></dd></div>
+      <div><dt>Next match day</dt><dd id="next">–</dd></div>
+      <div><dt>Final four</dt><dd id="f4date">–</dd></div>
+      <div><dt>Simulations</dt><dd id="nsim">–</dd></div>
+    </dl>
+    <p class="links"><span>Source: <a id="src" href="https://www.backgammon.dk/" target="_blank" rel="noopener">backgammon.dk</a> <span id="scraped"></span></span><span>Code: <a id="gh" href="#" target="_blank" rel="noopener">GitHub</a></span></p>
+  </header>
+
+  <p class="summary" id="summary"></p>
+
+  <section aria-labelledby="h-tab">
+    <div class="sechead">
+      <h2 id="h-tab">Standings and forecast</h2>
+      <p class="hint">Select a team for distributions, fixtures and players. Click a column heading to sort.</p>
+    </div>
+    <div class="tablewrap">
+      <table class="main" id="tbl">
+        <thead>
+          <tr class="grp" id="thead-grp"></tr>
+          <tr id="thead-row"></tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="method" aria-labelledby="h-met">
+    <h2 id="h-met" style="margin-bottom:12px">How the simulation works</h2>
+    <p>The rest of the season is played out <strong id="nsim2">100,000</strong> times with random results. Every percentage is the share of simulations in which that outcome happened.</p>
+    <ul>
+      <li><strong>Terms.</strong> A <em>holdkamp</em> is a team match; an <em>enkeltmandskamp</em> is one individual game within it. <strong>EKV</strong> is the number of individual games won, the first ranking criterion. <strong>MP</strong> are match points. <strong>Danmarksmester</strong> is the Danish champion.</li>
+      <li><strong>Team strength</strong> is the average rating of the players who have played for the team so far, weighted by how many individual games (K) each has played. Players who have not played do not count.</li>
+      <li><strong>An individual game</strong> is a 17-point match. The chance that the lower-rated player wins comes from the Danish federation's (DBgF) rating formula, where D is the rating difference:<br>
+        <span class="formula">P<sub>upset</sub> = 1 / (10<sup>D·√17/2000</sup> + 1)</span><br>
+        With a 50-point difference the stronger player wins about 56% of the time.</li>
+      <li><strong>A team match</strong> is four independent individual games. 3–1 or 4–0 gives 2 MP to the winner; 2–2 gives 1 MP each.</li>
+      <li><strong>Announced lineups</strong> are used when they exist: the actual players' ratings meet board by board instead of the team averages. If one side is not yet announced, that team's strength is used.</li>
+      <li><strong>Ranking</strong> follows the regulations, § 3.3: 1) EKV, 2) MP, 3) indbyrdes kampe (head-to-head: EKV, then MP in the matches between the tied teams), 4) omkamp (a play-off), modelled here as a random draw.</li>
+      <li><strong>Final four</strong>: the top four after the regular season each meet the other three once, on <span id="f4date2">3 April 2027</span>. EKV and MP are added to the regular-season totals. The leader after the final four is Danmarksmester.</li>
+      <li><strong>Relegation</strong>: places 10–12 after the regular season go down directly. This is an assumption based on 2025/26, since the structure document for 2026/27 has not been published yet.</li>
+      <li><strong>Not modelled</strong>: ratings stay fixed at today's values, and each team's future lineups are assumed to be as strong as its lineups so far.</li>
+    </ul>
+  </section>
+
+</div>
+
+<dialog class="drawer" id="drawer" aria-labelledby="d-title">
+  <div class="dhead">
+    <div>
+      <h2 id="d-title" tabindex="-1" autofocus>Team</h2>
+      <p class="meta" id="d-meta"></p>
+    </div>
+    <button class="close" id="d-close" type="button" aria-label="Close team view">Close ✕</button>
+  </div>
+  <div class="dbody" id="d-body"></div>
+  <div class="tip" id="tip" hidden></div>
+</dialog>
+
+<script>
+const DATA = /*__DATA__*/null;
+(function () {
+  "use strict";
+  if (!DATA || !DATA.results) return;
+  const R = DATA.results;
+  const H = Array.isArray(DATA.history) ? DATA.history.slice().sort((a, b) => a.date < b.date ? -1 : 1) : [];
+  const teams = R.teams.map((t, i) => Object.assign({ pos: t.position ?? i + 1 }, t));
+  const byId = new Map(teams.map(t => [String(t.id), t]));
+  const NT = teams.length;
+  const F4 = R.final_four_size || 4;
+  const REL = R.relegated || 3;
+  const NB = ""; // English: no space before %
+
+  const nf1 = new Intl.NumberFormat("en-GB", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  const nf2 = new Intl.NumberFormat("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  const nf0 = new Intl.NumberFormat("en-GB", { maximumFractionDigits: 0 });
+  const $ = id => document.getElementById(id);
+  const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const r2 = n => Math.round(n * 100) / 100;
+
+  function pct(p) {
+    if (p == null || isNaN(p)) return "–";
+    if (p <= 0) return "0" + NB + "%";
+    if (p < 0.001) return "<0.1" + NB + "%";
+    if (p >= 1) return "100" + NB + "%";
+    if (p > 0.999) return ">99.9" + NB + "%";
+    return nf1.format(p * 100) + NB + "%";
+  }
+  function pct0(p) {
+    if (p > 0 && p < 0.005) return "<1" + NB + "%";
+    return nf0.format(p * 100) + NB + "%";
+  }
+  const ordinal = n => n + (n % 100 >= 11 && n % 100 <= 13 ? "th" : ["th", "st", "nd", "rd"][n % 10] || "th");
+  const signed = v => v > 0 ? "+" + v : v < 0 ? "−" + Math.abs(v) : "0";
+
+  function parseD(s) {
+    const m = /^(\d{4})-(\d{2})-(\d{2})(?:T(\d{2}):(\d{2}))?/.exec(s || "");
+    return m ? new Date(+m[1], +m[2] - 1, +m[3], +(m[4] || 0), +(m[5] || 0)) : null;
+  }
+  const fmt = (d, o) => d ? new Intl.DateTimeFormat("en-GB", o).format(d) : "–";
+  const hhmm = d => String(d.getHours()).padStart(2, "0") + ":" + String(d.getMinutes()).padStart(2, "0");
+  const dLong = s => fmt(parseD(s), { day: "numeric", month: "long", year: "numeric" });
+  const dShort = s => fmt(parseD(s), { weekday: "short", day: "numeric", month: "short" });
+
+  /* ---------- Header ---------- */
+  const gen = parseD(R.generated_at);
+  $("gen").textContent = gen ? dLong(R.generated_at) + ", " + hhmm(gen) : "–";
+  if (R.season_label) $("season").textContent = R.season_label;
+  $("played").textContent = R.n_matches_played + " of " + R.n_matches_total;
+  $("progress").style.width = (100 * R.n_matches_played / Math.max(1, R.n_matches_total)).toFixed(1) + "%";
+  const nx = parseD(R.next_match_date);
+  $("next").textContent = nx ? fmt(nx, { weekday: "long", day: "numeric", month: "long" }) + ", " + hhmm(nx) : "Regular season finished";
+  $("f4date").textContent = dLong(R.final_four_date);
+  $("f4date2").textContent = dLong(R.final_four_date);
+  $("nsim").textContent = nf0.format(R.n_simulations);
+  $("nsim2").textContent = nf0.format(R.n_simulations);
+  if (R.source) $("src").href = R.source;
+  if (R.github_url) { $("gh").href = R.github_url; $("gh").textContent = R.github_url.replace(/^https?:\/\//, ""); }
+  const sc = parseD(R.scraped_at);
+  if (sc) $("scraped").textContent = "(scraped " + fmt(sc, { day: "numeric", month: "short" }) + ", " + hhmm(sc) + ")";
+
+  /* ---------- Summary ---------- */
+  (function () {
+    const fav = teams.slice().sort((a, b) => b.p_title - a.p_title)[0];
+    const rel = teams.slice().sort((a, b) => b.p_relegated - a.p_relegated)[0];
+    const lnk = t => `<a href="#lag-${t.id}">${esc(t.name)}</a>`;
+    $("summary").innerHTML = `${lnk(fav)} are favourites to become Danmarksmester (Danish champions), at ${pct(fav.p_title)}. ` +
+      `${lnk(rel)} face the highest risk of relegation (${pct(rel.p_relegated)}).`;
+  })();
+
+  /* ---------- Main table ---------- */
+  const probCell = (p, cls) => {
+    const w = p > 0 ? Math.max(p * 100, 1.5) : 0;
+    return `<span class="pc"><span class="v${p === 0 ? " zero" : ""}">${pct(p)}</span><span class="pb" aria-hidden="true"><i class="${cls}" style="width:${w.toFixed(1)}%"></i></span></span>`;
+  };
+  const cols = [
+    { k: "pos", label: "Pos", title: "Current position in the table on backgammon.dk", get: t => t.pos, dir: 1, cls: "pos" },
+    { k: "name", label: "Team", get: t => t.name, dir: 1, str: true, cls: "team l", th: "team l" },
+    { k: "K", label: "K", title: "Team matches (holdkampe) played", get: t => t.current.K, dir: -1, g: "now" },
+    { k: "EKV", label: "EKV", g: "now", title: "Individual games won (EKV) – lost (EKT)", get: t => t.current.EKV, dir: -1,
+      fmt: t => `${t.current.EKV}<span class="sub">–${t.current.EKT}</span>` },
+    { k: "P", label: "MP", title: "Match points: 2 for a win, 1 for 2–2", get: t => t.current.P, dir: -1, g: "now" },
+    { k: "pm", label: "+/−", title: "Plus/minus as shown in the table on backgammon.dk", get: t => t.current.pm, dir: -1, fmt: t => signed(t.current.pm), g: "now" },
+    { k: "str", label: "Rating", title: "Team strength: player ratings weighted by individual games played", get: t => t.strength, dir: -1, fmt: t => nf1.format(t.strength), g: "model" },
+    { k: "xekv", label: "Exp. EKV", title: "Expected EKV after the regular season", get: t => t.exp_reg_ekv, dir: -1, fmt: t => nf1.format(t.exp_reg_ekv), g: "model" },
+    { k: "f4", label: "Final four", short: "Top 4", title: "Chance of finishing top 4 in the regular season", get: t => t.p_final4, dir: -1, fmt: t => probCell(t.p_final4, "c-acc"), g: "chance" },
+    { k: "title", label: "Title", title: "Chance of becoming Danmarksmester (Danish champion)", get: t => t.p_title, dir: -1, fmt: t => probCell(t.p_title, "c-gold"), g: "chance" },
+    { k: "rel", label: "Relegation", short: "Releg.", title: "Chance of finishing 10th–12th in the regular season", get: t => t.p_relegated, dir: -1, fmt: t => probCell(t.p_relegated, "c-red"), g: "chance" },
+  ];
+  // Column groups. On narrow screens the chances come straight after the team
+  // name so they are visible without scrolling sideways.
+  const GROUPS = { now: "Table now", model: "Model", chance: "Chance" };
+  const narrowMq = window.matchMedia("(max-width: 640px)");
+  function layout() {
+    const order = narrowMq.matches ? ["chance", "now", "model"] : ["now", "model", "chance"];
+    const fixed = cols.filter(c => !c.g);
+    const out = fixed.map(c => Object.assign({}, c));
+    order.forEach((g, gi) => cols.filter(c => c.g === g).forEach((c, i) => {
+      const sep = gi > 0 && i === 0 ? "sep" : "";
+      out.push(Object.assign({}, c, { cls: [c.cls, sep].filter(Boolean).join(" "), th: [c.th, sep].filter(Boolean).join(" ") }));
+    }));
+    return { order, cols: out, nFixed: fixed.length };
+  }
+  let view = layout();
+  let sortKey = "title", sortDir = -1;
+
+  function renderHead() {
+    view = layout();
+    $("thead-grp").innerHTML = `<th colspan="${view.nFixed}" class="team"></th>` +
+      view.order.map((g, gi) => `<th colspan="${cols.filter(c => c.g === g).length}"${gi ? ' class="sep"' : ""}><span>${GROUPS[g]}</span></th>`).join("");
+    $("thead-row").innerHTML = view.cols.map(c => {
+      const aria = c.k === sortKey ? ` aria-sort="${sortDir < 0 ? "descending" : "ascending"}"` : "";
+      return `<th scope="col" class="${c.th || ""}"${aria}><button type="button" data-k="${c.k}"${c.title ? ` title="${esc(c.title)}"` : ""}>${narrowMq.matches && c.short ? c.short : c.label}</button></th>`;
+    }).join("");
+  }
+  function renderBody() {
+    const col = cols.find(c => c.k === sortKey);
+    const rows = teams.slice().sort((a, b) => {
+      const va = col.get(a), vb = col.get(b);
+      let d = col.str ? String(va).localeCompare(String(vb), "sv") : (va - vb);
+      if (d === 0) d = (a.pos - b.pos) * sortDir;
+      return d * sortDir;
+    });
+    $("tbody").innerHTML = rows.map(t => `<tr data-id="${t.id}">` + view.cols.map(c => {
+      if (c.k === "name") return `<td class="${c.cls}"><button type="button" aria-haspopup="dialog" title="${esc(t.name)}">${esc(t.name)}</button></td>`;
+      const v = c.fmt ? c.fmt(t) : esc(c.get(t));
+      return `<td class="${c.cls || ""}">${v}</td>`;
+    }).join("") + `</tr>`).join("");
+  }
+  $("thead-row").addEventListener("click", e => {
+    const b = e.target.closest("button[data-k]");
+    if (!b) return;
+    const c = cols.find(x => x.k === b.dataset.k);
+    if (sortKey === c.k) sortDir = -sortDir; else { sortKey = c.k; sortDir = c.dir; }
+    renderHead(); renderBody();
+    const nb = $("thead-row").querySelector(`button[data-k="${c.k}"]`);
+    if (nb) nb.focus();
+  });
+  $("tbody").addEventListener("click", e => {
+    const tr = e.target.closest("tr[data-id]");
+    if (tr) openTeam(tr.dataset.id, true);
+  });
+  renderHead(); renderBody();
+  const relayout = () => { renderHead(); renderBody(); };
+  if (narrowMq.addEventListener) narrowMq.addEventListener("change", relayout);
+  else if (narrowMq.addListener) narrowMq.addListener(relayout);
+
+  /* ---------- Chart helpers ---------- */
+  function niceScale(max) {
+    const steps = [0.01, 0.02, 0.05, 0.1, 0.2, 0.25];
+    let step = 0.25;
+    for (const s of steps) { if (max / s <= 4) { step = s; break; } }
+    const top = Math.min(1, Math.max(step, Math.ceil(max / step - 1e-9) * step));
+    return { top, step };
+  }
+  function barPath(x, y, w, h, cls) {
+    if (h <= 0.2) return "";
+    const r = Math.min(3, w / 2, h);
+    x = r2(x); y = r2(y); w = r2(w); h = r2(h);
+    return `<path class="${cls}" d="M${x},${r2(y + h)}V${r2(y + r)}Q${x},${y} ${r2(x + r)},${y}H${r2(x + w - r)}Q${r2(x + w)},${y} ${r2(x + w)},${r2(y + r)}V${r2(y + h)}Z"/>`;
+  }
+  function yAxis(m, W, ih, top, step) {
+    let s = "";
+    const n = Math.round(top / step);
+    for (let i = 0; i <= n; i++) {
+      const v = i * step, y = r2(m.t + ih - (v / top) * ih);
+      s += `<line class="${i === 0 ? "base" : "gl"}" x1="${m.l}" x2="${W - m.r}" y1="${y}" y2="${y}"/>`;
+      s += `<text class="ax" x="${m.l - 6}" y="${y + 3.5}" text-anchor="end">${nf0.format(v * 100)}${NB}%</text>`;
+    }
+    return s;
+  }
+
+  /* (a) Position after regular season */
+  function posChart(t) {
+    const W = 360, Hh = 196, m = { l: 38, r: 6, t: 16, b: 30 };
+    const iw = W - m.l - m.r, ih = Hh - m.t - m.b, n = t.reg_pos.length;
+    const mx = Math.max(...t.reg_pos);
+    const { top, step } = niceScale(mx);
+    const bw = iw / n;
+    let s = yAxis(m, W, ih, top, step);
+    const imax = t.reg_pos.indexOf(mx);
+    t.reg_pos.forEach((p, i) => {
+      const x = m.l + i * bw, h = (p / top) * ih, y = m.t + ih - h;
+      const cls = i < F4 ? "f-acc" : i >= n - REL ? "f-red" : "f-neu";
+      const zone = i < F4 ? "final four" : i >= n - REL ? "relegation" : "mid-table";
+      s += `<g class="hit" data-tip="Position ${i + 1} (${zone})\n${pct(p)}"><rect class="band" x="${r2(x)}" y="${m.t}" width="${r2(bw)}" height="${ih}"/>` +
+        barPath(x + 1, y, bw - 2, h, cls) + `</g>`;
+      s += `<text class="ax" x="${r2(x + bw / 2)}" y="${Hh - m.b + 14}" text-anchor="middle">${i + 1}</text>`;
+      if (i === imax) s += `<text class="lab" x="${r2(x + bw / 2)}" y="${r2(y - 5)}" text-anchor="middle">${pct0(p)}</text>`;
+    });
+    s += `<text class="ax" x="${m.l + iw / 2}" y="${Hh - 2}" text-anchor="middle">Position after the regular season</text>`;
+    return `<svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="Distribution of position after the regular season for ${esc(t.name)}. Most likely position ${imax + 1} at ${pct(mx)}.">${s}</svg>
+      <div class="legend"><span><i class="c-acc"></i>Final four (1–${F4})</span><span><i class="c-neu"></i>Mid-table</span><span><i class="c-red"></i>Relegation (${n - REL + 1}–${n})</span></div>`;
+  }
+
+  /* (b) EKV histogram */
+  function ekvChart(t) {
+    const W = 360, Hh = 196, m = { l: 38, r: 6, t: 18, b: 30 };
+    const iw = W - m.l - m.r, ih = Hh - m.t - m.b;
+    const ps = t.reg_ekv.p, st = t.reg_ekv.start;
+    let lo = 0, hi = ps.length - 1, acc = 0;
+    for (let i = 0; i < ps.length; i++) { acc += ps[i]; if (acc >= 0.001) { lo = i; break; } }
+    acc = 0;
+    for (let i = ps.length - 1; i >= 0; i--) { acc += ps[i]; if (acc >= 0.001) { hi = i; break; } }
+    const vals = ps.slice(lo, hi + 1), n = vals.length, x0 = st + lo;
+    const mx = Math.max(...vals);
+    const { top, step } = niceScale(mx);
+    const bw = iw / n, gap = bw > 6 ? 2 : 1;
+    let s = yAxis(m, W, ih, top, step);
+    vals.forEach((p, i) => {
+      const x = m.l + i * bw, h = (p / top) * ih, y = m.t + ih - h;
+      s += `<g class="hit" data-tip="${x0 + i} EKV\n${pct(p)}"><rect class="band" x="${r2(x)}" y="${m.t}" width="${r2(bw)}" height="${ih}"/>` +
+        barPath(x + gap / 2, y, bw - gap, h, "f-acc") + `</g>`;
+    });
+    const tickStep = n > 30 ? 10 : 5;
+    for (let v = Math.ceil(x0 / tickStep) * tickStep; v <= x0 + n - 1; v += tickStep) {
+      s += `<text class="ax" x="${r2(m.l + (v - x0 + 0.5) * bw)}" y="${Hh - m.b + 14}" text-anchor="middle">${v}</text>`;
+    }
+    const ex = t.exp_reg_ekv;
+    if (ex != null) {
+      const xx = r2(m.l + (ex - x0 + 0.5) * bw);
+      const anchor = xx > m.l + iw * 0.7 ? "end" : "start";
+      s += `<line class="xline" x1="${xx}" x2="${xx}" y1="${m.t - 6}" y2="${m.t + ih}"/>`;
+      s += `<text class="lab" x="${anchor === "end" ? xx - 5 : xx + 5}" y="${m.t - 1}" text-anchor="${anchor}">Expected ${nf1.format(ex)}</text>`;
+    }
+    s += `<text class="ax" x="${m.l + iw / 2}" y="${Hh - 2}" text-anchor="middle">EKV after the regular season (now ${t.current.EKV})</text>`;
+    return `<svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="Distribution of EKV after the regular season for ${esc(t.name)}, expected ${nf1.format(ex)}.">${s}</svg>`;
+  }
+
+  /* (c) Final four outcome */
+  function f4Chart(t) {
+    const fp = t.final_pos || [];
+    const rows = [
+      { l: "Champion", p: fp[0] || 0, c: "c-gold" },
+      { l: "2nd", p: fp[1] || 0, c: "c-acc" },
+      { l: "3rd", p: fp[2] || 0, c: "c-acc" },
+      { l: "4th", p: fp[3] || 0, c: "c-acc" },
+      { l: "Not in final four", p: Math.max(0, 1 - t.p_final4), c: "c-neu" },
+    ];
+    const bars = rows.map(r => `<span>${r.l}</span><span class="t" aria-hidden="true"><i class="${r.c}" style="width:${(r.p * 100).toFixed(2)}%"></i></span><span class="v">${pct(r.p)}</span>`).join("");
+    const g = t.p_title_given_final4;
+    return `<div class="hbars" role="img" aria-label="Final position after the final four for ${esc(t.name)}">${bars}</div>
+      <p class="note">${g == null ? "The team never reached the final four in the simulations." : `If the team reaches the final four, it wins the title in <strong>${pct(g)}</strong> of those runs.`}</p>`;
+  }
+
+  /* (d) Trend */
+  function trendChart(t) {
+    const pts = H.filter(h => h.teams && h.teams[String(t.id)]).map(h => ({ d: parseD(h.date), date: h.date, n: h.n_matches_played, v: h.teams[String(t.id)] }));
+    if (!pts.length) return `<p class="note">No history yet.</p>`;
+    const series = [
+      { k: "final4", l: "Final four", c: "acc" },
+      { k: "title", l: "Title", c: "gold" },
+      { k: "relegated", l: "Relegation", c: "red" },
+    ];
+    const W = 360, Hh = 196, m = { l: 38, r: 96, t: 14, b: 30 };
+    const iw = W - m.l - m.r, ih = Hh - m.t - m.b;
+    let mx = 0;
+    pts.forEach(p => series.forEach(s => { mx = Math.max(mx, p.v[s.k] || 0); }));
+    const { top, step } = niceScale(Math.max(mx, 0.05));
+    const t0 = pts[0].d.getTime(), t1 = pts[pts.length - 1].d.getTime();
+    const X = d => pts.length === 1 || t1 === t0 ? m.l + iw / 2 : m.l + ((d.getTime() - t0) / (t1 - t0)) * iw;
+    const Y = v => m.t + ih - (v / top) * ih;
+    let s = yAxis(m, W, ih, top, step);
+    // hover columns
+    pts.forEach((p, i) => {
+      const x = X(p.d);
+      const prev = i > 0 ? (X(pts[i - 1].d) + x) / 2 : m.l;
+      const next = i < pts.length - 1 ? (X(pts[i + 1].d) + x) / 2 : W - m.r;
+      const tip = fmt(p.d, { day: "numeric", month: "short", year: "numeric" }) + ` (${p.n} matches played)\n` +
+        series.map(se => `${se.l}: ${pct(p.v[se.k])}`).join("\n");
+      s += `<g class="hit" data-tip="${esc(tip)}"><rect class="band" x="${r2(prev)}" y="${m.t}" width="${r2(Math.max(1, next - prev))}" height="${ih}"/></g>`;
+    });
+    series.forEach(se => {
+      if (pts.length > 1) {
+        const d = pts.map((p, i) => (i ? "L" : "M") + r2(X(p.d)) + "," + r2(Y(p.v[se.k] || 0))).join("");
+        s += `<path d="${d}" fill="none" class="s-${se.c}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" pointer-events="none"/>`;
+      }
+      const showDots = pts.length <= 12;
+      pts.forEach((p, i) => {
+        if (showDots || i === pts.length - 1)
+          s += `<circle cx="${r2(X(p.d))}" cy="${r2(Y(p.v[se.k] || 0))}" r="4" class="f-${se.c} dotring" pointer-events="none"/>`;
+      });
+    });
+    // direct labels at the last point, nudged apart
+    const last = pts[pts.length - 1];
+    const labs = series.map(se => ({ se, y: Y(last.v[se.k] || 0) })).sort((a, b) => a.y - b.y);
+    for (let i = 1; i < labs.length; i++) if (labs[i].y - labs[i - 1].y < 13) labs[i].y = labs[i - 1].y + 13;
+    const over = labs[labs.length - 1].y - (m.t + ih + 4);
+    if (over > 0) labs.forEach(l => { l.y -= over; });
+    const lx = r2(X(last.d) + 10);
+    labs.forEach(l => {
+      s += `<text class="lab" x="${lx}" y="${r2(l.y + 4)}">${l.se.l} ${pct0(last.v[l.se.k] || 0)}</text>`;
+    });
+    const f = d => fmt(d, { day: "numeric", month: "short" });
+    if (pts.length === 1) s += `<text class="ax" x="${r2(X(last.d))}" y="${Hh - m.b + 14}" text-anchor="middle">${f(last.d)}</text>`;
+    else {
+      s += `<text class="ax" x="${m.l}" y="${Hh - m.b + 14}" text-anchor="start">${f(pts[0].d)}</text>`;
+      s += `<text class="ax" x="${W - m.r}" y="${Hh - m.b + 14}" text-anchor="end">${f(last.d)}</text>`;
+    }
+    return `<svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="Trend over time for ${esc(t.name)}">${s}</svg>
+      <div class="legend">${series.map(se => `<span><i class="ln c-${se.c}"></i>${se.l}</span>`).join("")}</div>
+      ${pts.length < 2 ? `<p class="note" style="color:var(--muted)">One point per run day. The lines grow through the season.</p>` : ""}`;
+  }
+
+  /* ---------- Fixtures & players ---------- */
+  // Players are shown as initials + DBgF member number, linked to their
+  // member page on backgammon.dk. Full names are not published.
+  const MEMBER_URL = "https://www.backgammon.dk/Rating/S%C3%B8g+medlem?dbgfnr=";
+  function playerLink(ini, nr) {
+    if (nr == null) return esc(ini || "?");
+    return `<a class="plink" href="${MEMBER_URL}${nr}" target="_blank" rel="noopener">${esc(ini || "?")} ${nr}</a>`;
+  }
+  function fixtureRow(t, f) {
+    const d = parseD(f.date);
+    const when = `${dShort(f.date)}<br>${d ? hhmm(d) : ""}${f.venue ? `<br><span class="unk">${esc(f.venue.split(",")[0])}</span>` : ""}`;
+    const opp = byId.get(String(f.opponent));
+    const oppHtml = `<span class="ha" title="${f.home ? "Home" : "Away"}">${f.home ? "H" : "A"}</span><a href="#lag-${f.opponent}">${esc(f.opponent_name)}</a>`;
+    if (f.played) {
+      const a = f.ekv_for, b = f.ekv_against;
+      const r = a > b ? ["w", "Win"] : a === b ? ["d", "Draw"] : ["l", "Loss"];
+      return `<li><div class="when">${when}</div><div class="opp">${oppHtml}</div><div><span class="res">${a}–${b}</span><span class="chip ${r[0]}">${r[1]}</span></div></li>`;
+    }
+    const pw = f.p_win || 0, pd = f.p_draw || 0, pl = f.p_loss || 0;
+    let boards = "";
+    if (Array.isArray(f.lineup) && f.lineup.length) {
+      boards = `<ol class="boards"><li style="display:block"><span class="bhead">Announced lineup · win chance per board</span></li>` + f.lineup.map((b, i) => {
+        const rm = b.me_rating, ro = b.opp_rating;
+        const me = b.me_dbgfnr != null ? `${playerLink(b.me, b.me_dbgfnr)}${rm != null ? `<em>${nf0.format(rm)}</em>` : ""}` : `<span class="unk">not announced</span>`;
+        const op = b.opp_dbgfnr != null ? `${playerLink(b.opp, b.opp_dbgfnr)}${ro != null ? `<em>${nf0.format(ro)}</em>` : ""}` : `<span class="unk">not announced</span>`;
+        return `<li><span class="bn">${i + 1}</span><span class="me">${me}</span><span class="vs">vs</span><span class="op">${op}</span><span class="bp">${pct0(b.p)}</span></li>`;
+      }).join("") + `</ol>`;
+    }
+    return `<li><div class="when">${when}</div><div class="opp">${oppHtml}</div>
+      <div class="prob"><div class="wdl" role="img" aria-label="Win ${pct(pw)}, draw ${pct(pd)}, loss ${pct(pl)}"><i class="w" style="width:${(pw * 100).toFixed(1)}%"></i><i class="d" style="width:${(pd * 100).toFixed(1)}%"></i><i class="l" style="width:${(pl * 100).toFixed(1)}%"></i></div>
+      <div class="wdl-lab">W ${pct0(pw)} · D ${pct0(pd)} · L ${pct0(pl)}</div></div>
+      <div class="xe">${nf2.format(f.exp_ekv)}<small>exp. EKV</small></div>${boards}</li>`;
+  }
+  function playersTable(t) {
+    const totK = t.players.reduce((a, p) => a + p.K, 0) || 1;
+    const rows = t.players.map(p => {
+      const w = p.K / totK;
+      return `<tr class="${p.K ? "" : "idle"}"><td>${playerLink(p.initials, p.dbgfnr)}${p.title ? `<span class="ttl">${esc(p.title)}</span>` : ""}</td>
+        <td>${nf1.format(p.rating)}</td><td>${p.K}</td><td>${p.V}</td><td>${p.T}</td>
+        <td>${p.K ? nf0.format(w * 100) + NB + "%" : "–"}<span class="wbar" aria-hidden="true"><i style="width:${(w * 100).toFixed(1)}%"></i></span></td></tr>`;
+    }).join("");
+    return `<div class="ptable-wrap"><table class="pt"><thead><tr><th scope="col">Player</th><th scope="col">Rating</th><th scope="col" title="Individual games (enkeltmandskampe) played">K</th><th scope="col" title="Won">W</th><th scope="col" title="Lost">L</th><th scope="col">Weight in strength</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+  }
+
+  /* ---------- Drawer ---------- */
+  const dlg = $("drawer"), tip = $("tip");
+  let current = null;
+
+  function renderDetail(t) {
+    $("d-title").textContent = t.name;
+    $("d-meta").innerHTML = `${ordinal(t.pos)} in the table now · ${t.current.V} W, ${t.current.U} D, ${t.current.T} L · <a href="${esc(t.url)}" target="_blank" rel="noopener">Team page on backgammon.dk</a>`;
+    const fx = t.fixtures.slice().sort((a, b) => a.date < b.date ? -1 : a.date > b.date ? 1 : 0);
+    const rem = fx.filter(f => !f.played), pl = fx.filter(f => f.played);
+    $("d-body").innerHTML = `
+      <dl class="kv">
+        <div><dt>Title</dt><dd><span class="dot c-gold"></span>${pct(t.p_title)}</dd></div>
+        <div><dt>Final four</dt><dd><span class="dot c-acc"></span>${pct(t.p_final4)}</dd></div>
+        <div><dt>Relegation</dt><dd><span class="dot c-red"></span>${pct(t.p_relegated)}</dd></div>
+        <div><dt>Strength</dt><dd>${nf1.format(t.strength)}</dd></div>
+        <div><dt>Exp. position</dt><dd>${nf1.format(t.exp_reg_pos)}</dd></div>
+        <div><dt>Exp. EKV / MP</dt><dd>${nf1.format(t.exp_reg_ekv)} / ${nf1.format(t.exp_reg_pts)}</dd></div>
+      </dl>
+      <div class="charts">
+        <div class="chart"><h3>Position after the regular season</h3><p class="cap">Share of simulations ending in each position 1–${NT}.</p>${posChart(t)}</div>
+        <div class="chart"><h3>EKV after the regular season</h3><p class="cap">Distribution of total individual games won after ${2 * (NT - 1)} matches.</p>${ekvChart(t)}</div>
+        <div class="chart"><h3>After the final four</h3><p class="cap">Where the team finishes once the final four is played.</p>${f4Chart(t)}</div>
+        <div class="chart"><h3>Trend</h3><p class="cap">The chances at each run.</p>${trendChart(t)}</div>
+      </div>
+      <section class="block"><h3>Remaining matches (${rem.length})</h3>
+        ${rem.length ? `<div class="legend"><span><i class="c-acc"></i>Win (3–1, 4–0)</span><span><i class="c-neu"></i>Draw (2–2)</span><span><i class="c-red"></i>Loss</span></div>
+        <ul class="fx">${rem.map(f => fixtureRow(t, f)).join("")}</ul>` : `<p class="note">All regular-season matches are played.</p>`}
+      </section>
+      <section class="block"><h3>Played matches (${pl.length})</h3>
+        ${pl.length ? `<ul class="fx played">${pl.map(f => fixtureRow(t, f)).join("")}</ul>` : `<p class="note">None played yet.</p>`}
+      </section>
+      <section class="block"><h3>Players</h3>
+        <p class="cap" style="margin:0;color:var(--muted);font-size:12.5px">The strength ${nf1.format(t.strength)} is the average rating weighted by K (individual games played). Players with K = 0 do not count.</p>
+        ${playersTable(t)}
+      </section>`;
+  }
+
+  function openTeam(id, setHash) {
+    const t = byId.get(String(id));
+    if (!t) return;
+    if (current !== t.id) { renderDetail(t); current = t.id; dlg.scrollTop = 0; }
+    tip.hidden = true;
+    if (!dlg.open) { try { dlg.showModal(); } catch (e) { dlg.setAttribute("open", ""); } }
+    if (setHash && location.hash !== "#lag-" + t.id) {
+      try { location.hash = "lag-" + t.id; } catch (e) { /* ignore */ }
+    }
+  }
+  function fromHash() {
+    const m = /^#lag-(\d+)$/.exec(location.hash || "");
+    if (m) openTeam(m[1], false);
+  }
+  window.addEventListener("hashchange", fromHash);
+  $("d-close").addEventListener("click", () => dlg.close());
+  dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
+  dlg.addEventListener("close", () => {
+    current = null; tip.hidden = true;
+    if (/^#lag-/.test(location.hash)) {
+      try { history.replaceState(null, "", location.pathname + location.search); } catch (e) { /* ignore */ }
+    }
+  });
+
+  function showTip(e) {
+    const el = e.target.closest && e.target.closest("[data-tip]");
+    if (!el || !dlg.contains(el)) { tip.hidden = true; return; }
+    tip.textContent = el.getAttribute("data-tip");
+    tip.hidden = false;
+    const w = tip.offsetWidth, h = tip.offsetHeight;
+    let x = e.clientX + 14, y = e.clientY - h - 10;
+    if (x + w > window.innerWidth - 8) x = e.clientX - w - 14;
+    if (y < 8) y = e.clientY + 18;
+    tip.style.left = Math.max(8, x) + "px";
+    tip.style.top = y + "px";
+  }
+  dlg.addEventListener("pointermove", showTip);
+  dlg.addEventListener("pointerdown", showTip);
+  dlg.addEventListener("pointerleave", () => { tip.hidden = true; });
+  dlg.addEventListener("scroll", () => { tip.hidden = true; }, { passive: true });
+
+  fromHash();
+})();
+</script>

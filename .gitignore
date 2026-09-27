@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+build/
+# Raw HTML includes team captains' contact details; kept local only.
+data/raw/
+
+# Local notes for Claude; not published.
+CLAUDE.md
+ARTIFACT_URL

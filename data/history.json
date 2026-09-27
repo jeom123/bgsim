@@ -1,0 +1,80 @@
+[
+ {
+  "date": "2026-09-27",
+  "n_matches_played": 12,
+  "teams": {
+   "638": {
+    "title": 0.0918,
+    "final4": 0.4495,
+    "relegated": 0.114,
+    "strength": 1193.82
+   },
+   "633": {
+    "title": 0.1805,
+    "final4": 0.5948,
+    "relegated": 0.0584,
+    "strength": 1217.39
+   },
+   "629": {
+    "title": 0.3403,
+    "final4": 0.745,
+    "relegated": 0.0255,
+    "strength": 1240.13
+   },
+   "634": {
+    "title": 0.0513,
+    "final4": 0.3134,
+    "relegated": 0.1915,
+    "strength": 1191.92
+   },
+   "630": {
+    "title": 0.0633,
+    "final4": 0.3468,
+    "relegated": 0.1664,
+    "strength": 1203.64
+   },
+   "639": {
+    "title": 0.0438,
+    "final4": 0.2742,
+    "relegated": 0.2249,
+    "strength": 1196.04
+   },
+   "631": {
+    "title": 0.1207,
+    "final4": 0.4867,
+    "relegated": 0.0974,
+    "strength": 1219.62
+   },
+   "637": {
+    "title": 0.0051,
+    "final4": 0.072,
+    "relegated": 0.5579,
+    "strength": 1165.98
+   },
+   "647": {
+    "title": 0.0374,
+    "final4": 0.2511,
+    "relegated": 0.2449,
+    "strength": 1199.32
+   },
+   "702": {
+    "title": 0.0194,
+    "final4": 0.1634,
+    "relegated": 0.3713,
+    "strength": 1185.16
+   },
+   "628": {
+    "title": 0.0452,
+    "final4": 0.2733,
+    "relegated": 0.2384,
+    "strength": 1203.42
+   },
+   "642": {
+    "title": 0.0014,
+    "final4": 0.0298,
+    "relegated": 0.7094,
+    "strength": 1152.95
+   }
+  }
+ }
+]
