@@ -4,9 +4,7 @@ The template is an HTML fragment (starts with <title> and <style>, without
 <!doctype>/<html>/<head>/<body>). The placeholder /*__DATA__*/null is replaced
 with JSON {"results": ..., "history": ...}.
 
-Output:
-  docs/index.html      standalone page (GitHub Pages / local viewing)
-  build/artifact.html  the same fragment, for publishing as a claude.ai artifact
+Output: docs/index.html, a standalone page (GitHub Pages / local viewing).
 """
 
 from __future__ import annotations
@@ -17,7 +15,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE = ROOT / "bgsim" / "template.html"
 DOCS = ROOT / "docs" / "index.html"
-ARTIFACT = ROOT / "build" / "artifact.html"
 PLACEHOLDER = "/*__DATA__*/null"
 
 
@@ -31,8 +28,6 @@ def build() -> None:
     payload = json.dumps({"results": results, "history": history}, ensure_ascii=False,
                          separators=(",", ":")).replace("</", "<\\/")
     fragment = tpl.replace(PLACEHOLDER, payload)
-    ARTIFACT.parent.mkdir(parents=True, exist_ok=True)
-    ARTIFACT.write_text(fragment, encoding="utf-8")
     DOCS.parent.mkdir(parents=True, exist_ok=True)
     DOCS.write_text(
         "<!doctype html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n"
@@ -44,4 +39,4 @@ def build() -> None:
 
 if __name__ == "__main__":
     build()
-    print(f"Wrote {DOCS.relative_to(ROOT)} and {ARTIFACT.relative_to(ROOT)}")
+    print(f"Wrote {DOCS.relative_to(ROOT)}")

@@ -60,7 +60,7 @@ def main() -> int:
                   f"{t['p_final4']:7.1%} {t['p_relegated']:7.1%}")
 
     build.build()
-    print("Built docs/index.html and build/artifact.html")
+    print("Built docs/index.html")
     return 0
 
 
