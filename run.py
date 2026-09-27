@@ -47,6 +47,12 @@ def main() -> int:
         lineups = [m for m in season["matches"] if "lineup" in m]
         if lineups:
             print(f"  {len(lineups)} unplayed matches with an announced lineup")
+        name = {t["id"]: t["name"] for t in season["teams"]}
+        for m in season["matches"]:
+            if "in_progress" in m:
+                ip = m["in_progress"]
+                print(f"  In progress, simulated as unplayed: {name[m['home']]} - {name[m['away']]} "
+                      f"{ip['home_ekv']}-{ip['away_ekv']} ({m['date']})")
 
         t0 = time.time()
         results = simulate.run(season, n_sims=args.sims)

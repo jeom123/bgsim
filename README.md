@@ -41,6 +41,8 @@ charts.
   `P_upset = 1 / (10^(D·√N/2000) + 1)` with match length N = 17.
 - **Team match**: four independent individual games. When a lineup has already been
   entered on backgammon.dk, the actual players' ratings are used board by board.
+  A match in progress (fewer than four games decided) is simulated as unplayed with
+  its lineup; the partial score is only used to validate against the site's table.
 - **Scoring** (regulations § 5.10): 1 EKV per individual game won, 2 MP (match points)
   for a team match win, 1 MP for a 2–2 draw.
 - **Ranking** (§ 3.3): 1) EKV, 2) MP, 3) head-to-head (EKV, then MP, in the matches

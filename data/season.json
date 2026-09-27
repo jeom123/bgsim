@@ -17,11 +17,23 @@
   "3639": 1201.69,
   "6472": 1203.24
  },
- "scraped_at": "2026-09-27T12:42:54+02:00",
+ "scraped_at": "2026-09-27T13:05:18+02:00",
  "season_id": 37,
  "division_id": 118,
  "source": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?season=37&division=118",
  "standings": [
+  {
+   "id": 633,
+   "name": "Team Casino Munkebjerg",
+   "K": 3,
+   "V": 2,
+   "U": 1,
+   "T": 0,
+   "EKV": 7,
+   "EKT": 2,
+   "P": 5,
+   "pm": 2.5
+  },
   {
    "id": 638,
    "name": "Familien Nemesis I",
@@ -32,18 +44,6 @@
    "EKV": 6,
    "EKT": 2,
    "P": 4,
-   "pm": 2
-  },
-  {
-   "id": 633,
-   "name": "Team Casino Munkebjerg",
-   "K": 2,
-   "V": 1,
-   "U": 1,
-   "T": 0,
-   "EKV": 6,
-   "EKT": 2,
-   "P": 3,
    "pm": 2
   },
   {
@@ -97,14 +97,14 @@
   {
    "id": 631,
    "name": "Soirée Dansante",
-   "K": 2,
+   "K": 3,
    "V": 1,
    "U": 0,
-   "T": 1,
+   "T": 2,
    "EKV": 4,
-   "EKT": 4,
+   "EKT": 5,
    "P": 2,
-   "pm": 0
+   "pm": -0.5
   },
   {
    "id": 637,
@@ -168,6 +168,103 @@
   }
  ],
  "teams": [
+  {
+   "id": 633,
+   "name": "Team Casino Munkebjerg",
+   "players": [
+    {
+     "dbgfnr": 10223,
+     "initials": "HV",
+     "title": null,
+     "rating": 1210.33,
+     "K": 2,
+     "V": 2,
+     "T": 0
+    },
+    {
+     "dbgfnr": 18879,
+     "initials": "LT",
+     "title": "SGM",
+     "rating": 1298.7,
+     "K": 2,
+     "V": 2,
+     "T": 0
+    },
+    {
+     "dbgfnr": 15822,
+     "initials": "GEJ",
+     "title": null,
+     "rating": 1151.84,
+     "K": 1,
+     "V": 1,
+     "T": 0
+    },
+    {
+     "dbgfnr": 11468,
+     "initials": "MJE",
+     "title": null,
+     "rating": 1110.26,
+     "K": 1,
+     "V": 1,
+     "T": 0
+    },
+    {
+     "dbgfnr": 9,
+     "initials": "CMC",
+     "title": "SGM",
+     "rating": 1250.1,
+     "K": 2,
+     "V": 1,
+     "T": 1
+    },
+    {
+     "dbgfnr": 10945,
+     "initials": "BK",
+     "title": "IM",
+     "rating": 1185.11,
+     "K": 0,
+     "V": 0,
+     "T": 0
+    },
+    {
+     "dbgfnr": 2869,
+     "initials": "DS",
+     "title": "GM",
+     "rating": 1157.59,
+     "K": 0,
+     "V": 0,
+     "T": 0
+    },
+    {
+     "dbgfnr": 2121,
+     "initials": "BS",
+     "title": "IM",
+     "rating": 1197.44,
+     "K": 0,
+     "V": 0,
+     "T": 0
+    },
+    {
+     "dbgfnr": 8860,
+     "initials": "TH",
+     "title": "IM",
+     "rating": 1203.54,
+     "K": 0,
+     "V": 0,
+     "T": 0
+    },
+    {
+     "dbgfnr": 2530,
+     "initials": "FM",
+     "title": "IM",
+     "rating": 1110.6,
+     "K": 1,
+     "V": 0,
+     "T": 1
+    }
+   ],
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=633"
+  },
   {
    "id": 638,
    "name": "Familien Nemesis I",
@@ -246,103 +343,6 @@
     }
    ],
    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=638"
-  },
-  {
-   "id": 633,
-   "name": "Team Casino Munkebjerg",
-   "players": [
-    {
-     "dbgfnr": 10223,
-     "initials": "HV",
-     "title": null,
-     "rating": 1210.33,
-     "K": 2,
-     "V": 2,
-     "T": 0
-    },
-    {
-     "dbgfnr": 18879,
-     "initials": "LT",
-     "title": "SGM",
-     "rating": 1298.7,
-     "K": 2,
-     "V": 2,
-     "T": 0
-    },
-    {
-     "dbgfnr": 11468,
-     "initials": "MJE",
-     "title": null,
-     "rating": 1110.26,
-     "K": 1,
-     "V": 1,
-     "T": 0
-    },
-    {
-     "dbgfnr": 9,
-     "initials": "CMC",
-     "title": "SGM",
-     "rating": 1250.1,
-     "K": 2,
-     "V": 1,
-     "T": 1
-    },
-    {
-     "dbgfnr": 10945,
-     "initials": "BK",
-     "title": "IM",
-     "rating": 1185.11,
-     "K": 0,
-     "V": 0,
-     "T": 0
-    },
-    {
-     "dbgfnr": 2869,
-     "initials": "DS",
-     "title": "GM",
-     "rating": 1157.59,
-     "K": 0,
-     "V": 0,
-     "T": 0
-    },
-    {
-     "dbgfnr": 15822,
-     "initials": "GEJ",
-     "title": null,
-     "rating": 1151.84,
-     "K": 0,
-     "V": 0,
-     "T": 0
-    },
-    {
-     "dbgfnr": 2121,
-     "initials": "BS",
-     "title": "IM",
-     "rating": 1197.44,
-     "K": 0,
-     "V": 0,
-     "T": 0
-    },
-    {
-     "dbgfnr": 8860,
-     "initials": "TH",
-     "title": "IM",
-     "rating": 1203.54,
-     "K": 0,
-     "V": 0,
-     "T": 0
-    },
-    {
-     "dbgfnr": 2530,
-     "initials": "FM",
-     "title": "IM",
-     "rating": 1110.6,
-     "K": 1,
-     "V": 0,
-     "T": 1
-    }
-   ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=633"
   },
   {
    "id": 629,
@@ -683,15 +683,6 @@
      "T": 0
     },
     {
-     "dbgfnr": 7591,
-     "initials": "MW",
-     "title": "GM",
-     "rating": 1187.51,
-     "K": 2,
-     "V": 1,
-     "T": 1
-    },
-    {
      "dbgfnr": 9695,
      "initials": "TM",
      "title": "SGM",
@@ -726,6 +717,15 @@
      "K": 0,
      "V": 0,
      "T": 0
+    },
+    {
+     "dbgfnr": 7591,
+     "initials": "MW",
+     "title": "GM",
+     "rating": 1187.51,
+     "K": 3,
+     "V": 1,
+     "T": 2
     },
     {
      "dbgfnr": 8093,
@@ -1676,6 +1676,10 @@
    "away": 633,
    "played": false,
    "venue": "Vejle, 1. kamp, 12:00",
+   "in_progress": {
+    "home_ekv": 0,
+    "away_ekv": 1
+   },
    "lineup": [
     {
      "home_player": "TM",

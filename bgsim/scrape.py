@@ -91,9 +91,12 @@ def parse_standings(page: str) -> tuple[list[dict], dict[int, str]]:
         hid, name = int(m.group(1)), html.unescape(m.group(2)).strip()
         names[hid] = name
         tds = [clean(x) for x in re.findall(r"(?s)<td[^>]*>(.*?)</td>", tr)]
-        nums = [t for t in tds if re.fullmatch(r"-?\d+", t)]
+        # +/- can be a decimal ("2,5") while a match is in progress.
+        nums = [t for t in tds if re.fullmatch(r"-?\d+(?:,\d+)?", t)]
         # Last 8 numbers: K V U T EKV EKT P +/-
-        k, v, u, t, ekv, ekt, p, pm = map(int, nums[-8:])
+        k, v, u, t, ekv, ekt, p = map(int, nums[-8:-1])
+        pm = float(nums[-1].replace(",", "."))
+        pm = int(pm) if pm.is_integer() else pm
         rows.append(dict(id=hid, name=name, K=k, V=v, U=u, T=t, EKV=ekv,
                          EKT=ekt, P=p, pm=pm))
     return rows, names
@@ -172,12 +175,18 @@ def parse_program(page: str) -> list[dict]:
                     away_dbgfnr=int(an.group(1)) if an else None,
                     home_score=int(clean(hs) or 0), away_score=int(clean(as_) or 0)))
             # A match with an announced lineup but no result shows as "0 – 0".
-            played = sm is not None and int(sm.group(1)) + int(sm.group(2)) > 0
+            # One with fewer than all games decided is in progress: the site
+            # already counts its partial score in the table, but it is
+            # simulated as unplayed with its lineup.
+            he, ae = (int(sm.group(1)), int(sm.group(2))) if sm else (0, 0)
+            played = he + ae == config.GAMES_PER_MATCH
             m = dict(date=date, home=home, away=away, played=played, venue=venue)
             if played:
-                m["home_ekv"], m["away_ekv"] = int(sm.group(1)), int(sm.group(2))
+                m["home_ekv"], m["away_ekv"] = he, ae
                 m["games"] = games
-            elif any(g["home_dbgfnr"] or g["away_dbgfnr"] for g in games):
+            elif he + ae:
+                m["in_progress"] = dict(home_ekv=he, away_ekv=ae)
+            if not played and any(g["home_dbgfnr"] or g["away_dbgfnr"] for g in games):
                 # Lineup entered before the match (unusual). May be partial:
                 # the away team fills in first, then the home team (§ 5.4).
                 m["lineup"] = [dict(home_player=g["home_player"], home_dbgfnr=g["home_dbgfnr"],
@@ -225,10 +234,14 @@ def validate(data: dict) -> None:
     """Check that standings computed from the matches equal the site's table."""
     agg = {t["id"]: dict(K=0, EKV=0, EKT=0, P=0) for t in data["teams"]}
     for m in data["matches"]:
-        if not m["played"]:
+        if m["played"]:
+            he, ae = m["home_ekv"], m["away_ekv"]
+        elif "in_progress" in m:  # the site counts the partial score
+            he, ae = m["in_progress"]["home_ekv"], m["in_progress"]["away_ekv"]
+        else:
             continue
-        for me, op, a, b in ((m["home"], m["away"], m["home_ekv"], m["away_ekv"]),
-                             (m["away"], m["home"], m["away_ekv"], m["home_ekv"])):
+        for me, op, a, b in ((m["home"], m["away"], he, ae),
+                             (m["away"], m["home"], ae, he)):
             r = agg[me]
             r["K"] += 1; r["EKV"] += a; r["EKT"] += b
             r["P"] += 2 if a > b else 1 if a == b else 0
