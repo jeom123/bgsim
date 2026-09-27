@@ -329,7 +329,8 @@ const DATA = /*__DATA__*/null;
   $("played").textContent = R.n_matches_played + " of " + R.n_matches_total;
   $("progress").style.width = (100 * R.n_matches_played / Math.max(1, R.n_matches_total)).toFixed(1) + "%";
   const nx = parseD(R.next_match_date);
-  $("next").textContent = nx ? fmt(nx, { weekday: "long", day: "numeric", month: "long" }) + ", " + hhmm(nx) : "Regular season finished";
+  $("next").textContent = nx ? fmt(nx, { weekday: "long", day: "numeric", month: "long" }) + ", " + hhmm(nx)
+    : R.n_matches_played < R.n_matches_total ? "Date to be announced" : "Regular season finished";
   $("f4date").textContent = dLong(R.final_four_date);
   $("f4date2").textContent = dLong(R.final_four_date);
   $("nsim").textContent = nf0.format(R.n_simulations);
@@ -592,7 +593,7 @@ const DATA = /*__DATA__*/null;
   }
   function fixtureRow(t, f) {
     const d = parseD(f.date);
-    const when = `${dShort(f.date)}<br>${d ? hhmm(d) : ""}${f.venue ? `<br><span class="unk">${esc(f.venue.split(",")[0])}</span>` : ""}`;
+    const when = `${d ? dShort(f.date) : "TBA"}<br>${d ? hhmm(d) : ""}${f.venue ? `<br><span class="unk">${esc(f.venue.split(",")[0])}</span>` : ""}`;
     const opp = byId.get(String(f.opponent));
     const oppHtml = `<span class="ha" title="${f.home ? "Home" : "Away"}">${f.home ? "H" : "A"}</span><a href="#lag-${f.opponent}">${esc(f.opponent_name)}</a>`;
     if (f.played) {
@@ -633,7 +634,8 @@ const DATA = /*__DATA__*/null;
   function renderDetail(t) {
     $("d-title").textContent = t.name;
     $("d-meta").innerHTML = `${ordinal(t.pos)} in the table now · ${t.current.V} W, ${t.current.U} D, ${t.current.T} L · <a href="${esc(t.url)}" target="_blank" rel="noopener">Team page on backgammon.dk</a>`;
-    const fx = t.fixtures.slice().sort((a, b) => a.date < b.date ? -1 : a.date > b.date ? 1 : 0);
+    // Undated (postponed) matches sort last.
+    const fx = t.fixtures.slice().sort((a, b) => (a.date || "~") < (b.date || "~") ? -1 : (a.date || "~") > (b.date || "~") ? 1 : 0);
     const rem = fx.filter(f => !f.played), pl = fx.filter(f => f.played);
     $("d-body").innerHTML = `
       <dl class="kv">

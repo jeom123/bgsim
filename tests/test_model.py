@@ -1,7 +1,7 @@
 import random
 import unittest
 
-from bgsim.simulate import ekv_distribution, game_win_prob, mp, poisson_binomial, rank
+from bgsim.simulate import ekv_distribution, game_win_prob, mp, next_match_date, poisson_binomial, rank
 
 
 class RatingFormula(unittest.TestCase):
@@ -41,6 +41,16 @@ class Ranking(unittest.TestCase):
         order = rank([2, 1], {1: 40, 2: 40}, {1: 22, 2: 22}, h2h, random.Random(0))
         self.assertEqual(order, [1, 2])
 
+
+class Schedule(unittest.TestCase):
+    def test_next_match_skips_undated(self):
+        # A postponed match can lose its date on backgammon.dk.
+        matches = [dict(date="2026-10-04T13:00", played=True),
+                   dict(date=None, played=False),
+                   dict(date="2026-11-08T13:00", played=False),
+                   dict(date="2026-10-25T13:00", played=False)]
+        self.assertEqual(next_match_date(matches), "2026-10-25T13:00")
+        self.assertIsNone(next_match_date([dict(date=None, played=False)]))
 
 
 class Privacy(unittest.TestCase):

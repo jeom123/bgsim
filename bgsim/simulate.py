@@ -286,7 +286,7 @@ def run(season: dict, n_sims: int = config.N_SIMULATIONS, seed: int = config.RAN
         n_simulations=n_sims,
         n_matches_total=len(season["matches"]),
         n_matches_played=sum(m["played"] for m in season["matches"]),
-        next_match_date=min((m["date"] for m in season["matches"] if not m["played"]), default=None),
+        next_match_date=next_match_date(season["matches"]),
         final_four_date=config.FINAL_FOUR_DATE,
         relegated=config.RELEGATED,
         final_four_size=config.FINAL_FOUR_SIZE,
@@ -294,6 +294,11 @@ def run(season: dict, n_sims: int = config.N_SIMULATIONS, seed: int = config.RAN
         games_per_match=games,
         teams=team_out,
     )
+
+
+def next_match_date(matches: list[dict]) -> str | None:
+    """Earliest date among unplayed matches. A postponed match may have no date yet."""
+    return min((m["date"] for m in matches if not m["played"] and m["date"]), default=None)
 
 
 def update_history(results: dict) -> list[dict]:
