@@ -2,8 +2,13 @@
 
 Model
 -----
-* Team strength = average rating of the players who have played for the team
-  so far, weighted by individual games played (K).
+* Team strength = a blend of this season's and last season's weighted rating.
+  Each is the average rating of the players who played for the team that
+  season, weighted by individual games played (K); the ratings are today's.
+  Last season's weight is 1 before the team's first match and falls linearly
+  to 0 when PRIOR_FADE_OUT (66%) of the team's matches are played:
+      w_prev = max(0, 1 - f / 0.66),  f = share of the team's matches played
+      strength = w_prev * S_prev + (1 - w_prev) * S_now
 * Single-game win probability from the DBgF rating formula:
       P_upset = 1 / (10^(D*sqrt(N)/2000) + 1)
   where D is the rating difference and N = 17 (match length). P_upset is the
@@ -42,9 +47,33 @@ def game_win_prob(r_a: float, r_b: float, n: int = config.MATCH_LENGTH) -> float
     return p_upset if r_a < r_b else 1.0 - p_upset
 
 
-def team_strength(team: dict) -> float:
-    k = sum(p["K"] for p in team["players"])
-    return sum(p["K"] * p["rating"] for p in team["players"]) / k
+def weighted_rating(players: list[dict]) -> float | None:
+    """Average rating weighted by games played (K); None if nobody has played."""
+    k = sum(p["K"] for p in players)
+    return sum(p["K"] * p["rating"] for p in players) / k if k else None
+
+
+def prior_weight(played_fraction: float) -> float:
+    """Weight of last season's rating: 1 at the start, 0 from PRIOR_FADE_OUT on."""
+    return max(0.0, 1.0 - played_fraction / config.PRIOR_FADE_OUT)
+
+
+def team_strength(team: dict, played_fraction: float = 1.0) -> dict:
+    """Blend of last season's and this season's weighted rating.
+
+    Returns {strength, strength_now, strength_prev, prior_weight}. A team
+    without last season's data (or that has not played yet) uses whichever
+    season it has.
+    """
+    now = weighted_rating(team["players"])
+    prev = weighted_rating(team["previous"]["players"]) if team.get("previous") else None
+    w = prior_weight(played_fraction)
+    if prev is None:
+        w = 0.0
+    elif now is None:
+        w = 1.0
+    strength = w * (prev or 0.0) + (1 - w) * (now or 0.0)
+    return dict(strength=strength, strength_now=now, strength_prev=prev, prior_weight=w)
 
 
 def ekv_distribution(p: float, n: int = config.GAMES_PER_MATCH) -> list[float]:
@@ -122,8 +151,18 @@ def run(season: dict, n_sims: int = config.N_SIMULATIONS, seed: int = config.RAN
     rng = random.Random(seed)
     teams = [t["id"] for t in season["teams"]]
     name = {t["id"]: t["name"] for t in season["teams"]}
-    strength = {t["id"]: team_strength(t) for t in season["teams"]}
     n = len(teams)
+    # Share of each team's regular-season matches played; a match in progress
+    # counts as unplayed, as in the simulation.
+    matches_total = 2 * (n - 1)
+    matches_played = {t: 0 for t in teams}
+    for m in season["matches"]:
+        if m["played"]:
+            matches_played[m["home"]] += 1
+            matches_played[m["away"]] += 1
+    strength_parts = {t["id"]: team_strength(t, matches_played[t["id"]] / matches_total)
+                      for t in season["teams"]}
+    strength = {tid: s["strength"] for tid, s in strength_parts.items()}
     games = config.GAMES_PER_MATCH
     ratings = season.get("player_ratings", {})
 
@@ -289,8 +328,12 @@ def run(season: dict, n_sims: int = config.N_SIMULATIONS, seed: int = config.RAN
         team_out.append(dict(
             id=tid, name=t["name"], url=t["url"],
             position=position[tid],
-            strength=strength[tid],
+            **strength_parts[tid],
+            matches_played=matches_played[tid], matches_total=matches_total,
             players=sorted(t["players"], key=lambda p: (-p["K"], -p["rating"])),
+            previous=dict(t["previous"], players=sorted(
+                t["previous"]["players"], key=lambda p: (-p["K"], -p["rating"])))
+            if t.get("previous") else None,
             current=dict(K=st["K"], V=st["V"], U=st["U"], T=st["T"], EKV=st["EKV"],
                          EKT=st["EKT"], P=st["P"], pm=st["pm"]),
             p_title=s["title"] / n_sims,
@@ -346,6 +389,8 @@ def run(season: dict, n_sims: int = config.N_SIMULATIONS, seed: int = config.RAN
         next_match_date=next_match_date(season["matches"]),
         final_four_date=config.FINAL_FOUR_DATE,
         relegated=config.RELEGATED,
+        prior_fade_out=config.PRIOR_FADE_OUT,
+        previous_season_label=config.PREVIOUS_SEASON_LABEL,
         final_four_size=config.FINAL_FOUR_SIZE,
         match_length=config.MATCH_LENGTH,
         games_per_match=games,

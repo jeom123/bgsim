@@ -5,6 +5,19 @@ SEASON_ID = 37
 DIVISION_ID = 118
 SEASON_LABEL = "2026/2027"
 
+# Last season, the prior for team strength: season=36 is 2025/2026, division=111
+# Elitedivisionen and 112 1. division (where the promoted teams played).
+# Teams are matched by name; a renamed team is mapped here (this season's team
+# id -> last season's). 702 Ravnsgaard Metal BK was 564 Livingstone (O).
+PREVIOUS_SEASON_ID = 36
+PREVIOUS_DIVISION_IDS = {111: "Elitedivisionen", 112: "1. division"}
+PREVIOUS_SEASON_LABEL = "2025/2026"
+PREVIOUS_TEAM_OVERRIDES = {702: 564}
+
+# Weight of last season's rating in the team strength: 1 before the team's
+# first match, falling linearly to 0 when this share of its matches is played.
+PRIOR_FADE_OUT = 0.66
+
 # Each team match is 4 individual games to 17 points (regulations § 5.1).
 GAMES_PER_MATCH = 4
 MATCH_LENGTH = 17

@@ -13,7 +13,7 @@
   "1045": 1148.16,
   "9934": 1146.39
  },
- "scraped_at": "2026-09-27T20:26:59+02:00",
+ "scraped_at": "2026-09-27T18:26:35+00:00",
  "season_id": 37,
  "division_id": 118,
  "source": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?season=37&division=118",
@@ -259,7 +259,106 @@
      "T": 1
     }
    ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=633"
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=633",
+   "previous": {
+    "id": 558,
+    "name": "Team Casino Munkebjerg",
+    "division": "Elitedivisionen",
+    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=111&hold=558",
+    "season_label": "2025/2026",
+    "players": [
+     {
+      "dbgfnr": 9,
+      "initials": "CMC",
+      "title": "SGM",
+      "rating": 1265.36,
+      "K": 20,
+      "V": 14,
+      "T": 6
+     },
+     {
+      "dbgfnr": 18879,
+      "initials": "LT",
+      "title": "SGM",
+      "rating": 1298.7,
+      "K": 17,
+      "V": 9,
+      "T": 8
+     },
+     {
+      "dbgfnr": 15822,
+      "initials": "GEJ",
+      "title": null,
+      "rating": 1171.03,
+      "K": 7,
+      "V": 4,
+      "T": 3
+     },
+     {
+      "dbgfnr": 2121,
+      "initials": "BS",
+      "title": "IM",
+      "rating": 1197.44,
+      "K": 3,
+      "V": 2,
+      "T": 1
+     },
+     {
+      "dbgfnr": 10945,
+      "initials": "BK",
+      "title": "IM",
+      "rating": 1184.0,
+      "K": 2,
+      "V": 1,
+      "T": 1
+     },
+     {
+      "dbgfnr": 10223,
+      "initials": "HV",
+      "title": null,
+      "rating": 1210.33,
+      "K": 5,
+      "V": 2,
+      "T": 3
+     },
+     {
+      "dbgfnr": 11468,
+      "initials": "MJE",
+      "title": null,
+      "rating": 1110.26,
+      "K": 5,
+      "V": 2,
+      "T": 3
+     },
+     {
+      "dbgfnr": 2530,
+      "initials": "FM",
+      "title": "IM",
+      "rating": 1110.86,
+      "K": 4,
+      "V": 1,
+      "T": 3
+     },
+     {
+      "dbgfnr": 8860,
+      "initials": "TH",
+      "title": "IM",
+      "rating": 1203.54,
+      "K": 9,
+      "V": 3,
+      "T": 6
+     },
+     {
+      "dbgfnr": 2869,
+      "initials": "DS",
+      "title": "GM",
+      "rating": 1177.39,
+      "K": 16,
+      "V": 5,
+      "T": 11
+     }
+    ]
+   }
   },
   {
    "id": 638,
@@ -338,7 +437,88 @@
      "T": 1
     }
    ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=638"
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=638",
+   "previous": {
+    "id": 568,
+    "name": "Familien Nemesis (O)",
+    "division": "Elitedivisionen",
+    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=111&hold=568",
+    "season_label": "2025/2026",
+    "players": [
+     {
+      "dbgfnr": 2709,
+      "initials": "PH",
+      "title": "IM",
+      "rating": 1170.94,
+      "K": 4,
+      "V": 4,
+      "T": 0
+     },
+     {
+      "dbgfnr": 7112,
+      "initials": "TS",
+      "title": null,
+      "rating": 1224.41,
+      "K": 9,
+      "V": 6,
+      "T": 3
+     },
+     {
+      "dbgfnr": 1976,
+      "initials": "MLL",
+      "title": "IM",
+      "rating": 1193.61,
+      "K": 9,
+      "V": 5,
+      "T": 4
+     },
+     {
+      "dbgfnr": 666,
+      "initials": "FB",
+      "title": null,
+      "rating": 1221.64,
+      "K": 18,
+      "V": 9,
+      "T": 9
+     },
+     {
+      "dbgfnr": 6472,
+      "initials": "TB",
+      "title": "IM",
+      "rating": 1203.24,
+      "K": 17,
+      "V": 8,
+      "T": 9
+     },
+     {
+      "dbgfnr": 15699,
+      "initials": "MH",
+      "title": null,
+      "rating": 1147.11,
+      "K": 11,
+      "V": 5,
+      "T": 6
+     },
+     {
+      "dbgfnr": 5555,
+      "initials": "TK",
+      "title": "IM",
+      "rating": 1188.27,
+      "K": 10,
+      "V": 3,
+      "T": 7
+     },
+     {
+      "dbgfnr": 4175,
+      "initials": "AB",
+      "title": "IM",
+      "rating": 1187.91,
+      "K": 10,
+      "V": 2,
+      "T": 8
+     }
+    ]
+   }
   },
   {
    "id": 629,
@@ -417,7 +597,79 @@
      "T": 2
     }
    ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=629"
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=629",
+   "previous": {
+    "id": 554,
+    "name": "Lødigt",
+    "division": "Elitedivisionen",
+    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=111&hold=554",
+    "season_label": "2025/2026",
+    "players": [
+     {
+      "dbgfnr": 8578,
+      "initials": "BF",
+      "title": null,
+      "rating": 1278.54,
+      "K": 23,
+      "V": 15,
+      "T": 8
+     },
+     {
+      "dbgfnr": 4444,
+      "initials": "MJ",
+      "title": "IM",
+      "rating": 1289.78,
+      "K": 18,
+      "V": 12,
+      "T": 6
+     },
+     {
+      "dbgfnr": 10881,
+      "initials": "RJ",
+      "title": "IM",
+      "rating": 1220.74,
+      "K": 11,
+      "V": 8,
+      "T": 3
+     },
+     {
+      "dbgfnr": 2174,
+      "initials": "MPA",
+      "title": "GM",
+      "rating": 1152.51,
+      "K": 5,
+      "V": 4,
+      "T": 1
+     },
+     {
+      "dbgfnr": 20773,
+      "initials": "HKM",
+      "title": "IM",
+      "rating": 1166.0,
+      "K": 18,
+      "V": 9,
+      "T": 9
+     },
+     {
+      "dbgfnr": 14227,
+      "initials": "RH",
+      "title": "GM",
+      "rating": 1233.09,
+      "K": 12,
+      "V": 6,
+      "T": 6
+     },
+     {
+      "dbgfnr": 2111,
+      "initials": "PF",
+      "title": "GM",
+      "rating": 1196.09,
+      "K": 13,
+      "V": 6,
+      "T": 7
+     }
+    ]
+   }
   },
   {
    "id": 634,
@@ -469,7 +721,70 @@
      "T": 1
     }
    ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=634"
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=634",
+   "previous": {
+    "id": 560,
+    "name": "KBgK",
+    "division": "Elitedivisionen",
+    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=111&hold=560",
+    "season_label": "2025/2026",
+    "players": [
+     {
+      "dbgfnr": 5782,
+      "initials": "GH",
+      "title": null,
+      "rating": 1107.08,
+      "K": 12,
+      "V": 10,
+      "T": 2
+     },
+     {
+      "dbgfnr": 5797,
+      "initials": "FM",
+      "title": "GM",
+      "rating": 1214.84,
+      "K": 22,
+      "V": 11,
+      "T": 11
+     },
+     {
+      "dbgfnr": 5347,
+      "initials": "FMD",
+      "title": null,
+      "rating": 1181.24,
+      "K": 20,
+      "V": 10,
+      "T": 10
+     },
+     {
+      "dbgfnr": 11,
+      "initials": "CS",
+      "title": null,
+      "rating": 1108.67,
+      "K": 1,
+      "V": 0,
+      "T": 1
+     },
+     {
+      "dbgfnr": 300,
+      "initials": "TK",
+      "title": null,
+      "rating": 1180.2,
+      "K": 22,
+      "V": 10,
+      "T": 12
+     },
+     {
+      "dbgfnr": 4107,
+      "initials": "SB",
+      "title": null,
+      "rating": 1179.3,
+      "K": 11,
+      "V": 4,
+      "T": 7
+     }
+    ]
+   }
   },
   {
    "id": 630,
@@ -575,7 +890,115 @@
      "T": 1
     }
    ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=630"
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=630",
+   "previous": {
+    "id": 555,
+    "name": "Nemo",
+    "division": "Elitedivisionen",
+    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=111&hold=555",
+    "season_label": "2025/2026",
+    "players": [
+     {
+      "dbgfnr": 7699,
+      "initials": "TH",
+      "title": null,
+      "rating": 1265.95,
+      "K": 8,
+      "V": 6,
+      "T": 2
+     },
+     {
+      "dbgfnr": 5343,
+      "initials": "TR",
+      "title": null,
+      "rating": 1228.13,
+      "K": 11,
+      "V": 7,
+      "T": 4
+     },
+     {
+      "dbgfnr": 2150,
+      "initials": "MA",
+      "title": "GM",
+      "rating": 1222.46,
+      "K": 20,
+      "V": 11,
+      "T": 9
+     },
+     {
+      "dbgfnr": 3032,
+      "initials": "TJ",
+      "title": "GM",
+      "rating": 1217.49,
+      "K": 13,
+      "V": 7,
+      "T": 6
+     },
+     {
+      "dbgfnr": 12,
+      "initials": "HB",
+      "title": "IM",
+      "rating": 1150.1,
+      "K": 1,
+      "V": 1,
+      "T": 0
+     },
+     {
+      "dbgfnr": 1387,
+      "initials": "PR",
+      "title": null,
+      "rating": 1163.61,
+      "K": 6,
+      "V": 3,
+      "T": 3
+     },
+     {
+      "dbgfnr": 6887,
+      "initials": "OMT",
+      "title": null,
+      "rating": 1190.76,
+      "K": 13,
+      "V": 6,
+      "T": 7
+     },
+     {
+      "dbgfnr": 866,
+      "initials": "PJT",
+      "title": "SGM",
+      "rating": 1253.86,
+      "K": 11,
+      "V": 5,
+      "T": 6
+     },
+     {
+      "dbgfnr": 2382,
+      "initials": "ML",
+      "title": "GM",
+      "rating": 1216.73,
+      "K": 7,
+      "V": 3,
+      "T": 4
+     },
+     {
+      "dbgfnr": 9601,
+      "initials": "GH",
+      "title": null,
+      "rating": 1199.71,
+      "K": 2,
+      "V": 0,
+      "T": 2
+     },
+     {
+      "dbgfnr": 66,
+      "initials": "JL",
+      "title": null,
+      "rating": 1098.92,
+      "K": 8,
+      "V": 2,
+      "T": 6
+     }
+    ]
+   }
   },
   {
    "id": 639,
@@ -654,7 +1077,97 @@
      "T": 2
     }
    ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=639"
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=639",
+   "previous": {
+    "id": 559,
+    "name": "Roskilde (N)",
+    "division": "1. division",
+    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=112&hold=559",
+    "season_label": "2025/2026",
+    "players": [
+     {
+      "dbgfnr": 10,
+      "initials": "ES",
+      "title": "GM",
+      "rating": 1253.28,
+      "K": 16,
+      "V": 12,
+      "T": 4
+     },
+     {
+      "dbgfnr": 4880,
+      "initials": "JM",
+      "title": null,
+      "rating": 1232.89,
+      "K": 18,
+      "V": 12,
+      "T": 6
+     },
+     {
+      "dbgfnr": 4840,
+      "initials": "PS",
+      "title": null,
+      "rating": 1104.73,
+      "K": 8,
+      "V": 5,
+      "T": 3
+     },
+     {
+      "dbgfnr": 1599,
+      "initials": "PC",
+      "title": null,
+      "rating": 1151.21,
+      "K": 8,
+      "V": 5,
+      "T": 3
+     },
+     {
+      "dbgfnr": 8649,
+      "initials": "MP",
+      "title": null,
+      "rating": 1054.7,
+      "K": 10,
+      "V": 5,
+      "T": 5
+     },
+     {
+      "dbgfnr": 14275,
+      "initials": "MA",
+      "title": null,
+      "rating": 1173.28,
+      "K": 2,
+      "V": 1,
+      "T": 1
+     },
+     {
+      "dbgfnr": 14,
+      "initials": "TK",
+      "title": null,
+      "rating": 1160.53,
+      "K": 0,
+      "V": 0,
+      "T": 0
+     },
+     {
+      "dbgfnr": 127,
+      "initials": "KP",
+      "title": null,
+      "rating": 1120.01,
+      "K": 7,
+      "V": 3,
+      "T": 4
+     },
+     {
+      "dbgfnr": 4413,
+      "initials": "PLF",
+      "title": "IM",
+      "rating": 1254.24,
+      "K": 19,
+      "V": 8,
+      "T": 11
+     }
+    ]
+   }
   },
   {
    "id": 637,
@@ -751,7 +1264,115 @@
      "T": 1
     }
    ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=637"
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=637",
+   "previous": {
+    "id": 565,
+    "name": "Malmö (O)",
+    "division": "Elitedivisionen",
+    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=111&hold=565",
+    "season_label": "2025/2026",
+    "players": [
+     {
+      "dbgfnr": 5650,
+      "initials": "TS",
+      "title": null,
+      "rating": 1078.37,
+      "K": 9,
+      "V": 7,
+      "T": 2
+     },
+     {
+      "dbgfnr": 3639,
+      "initials": "AT",
+      "title": "IM",
+      "rating": 1201.69,
+      "K": 19,
+      "V": 11,
+      "T": 8
+     },
+     {
+      "dbgfnr": 3948,
+      "initials": "FC",
+      "title": "IM",
+      "rating": 1268.31,
+      "K": 18,
+      "V": 10,
+      "T": 8
+     },
+     {
+      "dbgfnr": 5834,
+      "initials": "TS",
+      "title": null,
+      "rating": 1011.71,
+      "K": 1,
+      "V": 1,
+      "T": 0
+     },
+     {
+      "dbgfnr": 3650,
+      "initials": "RP",
+      "title": null,
+      "rating": 1117.42,
+      "K": 0,
+      "V": 0,
+      "T": 0
+     },
+     {
+      "dbgfnr": 14964,
+      "initials": "JM",
+      "title": "IM",
+      "rating": 1147.47,
+      "K": 15,
+      "V": 7,
+      "T": 8
+     },
+     {
+      "dbgfnr": 4059,
+      "initials": "TT",
+      "title": "SGM",
+      "rating": 1313.29,
+      "K": 1,
+      "V": 0,
+      "T": 1
+     },
+     {
+      "dbgfnr": 3644,
+      "initials": "JL",
+      "title": null,
+      "rating": 1172.95,
+      "K": 12,
+      "V": 5,
+      "T": 7
+     },
+     {
+      "dbgfnr": 5658,
+      "initials": "MF",
+      "title": null,
+      "rating": 1033.66,
+      "K": 6,
+      "V": 2,
+      "T": 4
+     },
+     {
+      "dbgfnr": 1985,
+      "initials": "KH",
+      "title": null,
+      "rating": 1054.93,
+      "K": 4,
+      "V": 1,
+      "T": 3
+     },
+     {
+      "dbgfnr": 4894,
+      "initials": "JFM",
+      "title": null,
+      "rating": 1083.91,
+      "K": 3,
+      "V": 0,
+      "T": 3
+     }
+    ]
+   }
   },
   {
    "id": 647,
@@ -812,7 +1433,79 @@
      "T": 2
     }
    ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=647"
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=647",
+   "previous": {
+    "id": 577,
+    "name": "Ringsted (O)",
+    "division": "1. division",
+    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=112&hold=577",
+    "season_label": "2025/2026",
+    "players": [
+     {
+      "dbgfnr": 11251,
+      "initials": "LN",
+      "title": "GM",
+      "rating": 1292.37,
+      "K": 15,
+      "V": 10,
+      "T": 5
+     },
+     {
+      "dbgfnr": 9934,
+      "initials": "JP",
+      "title": null,
+      "rating": 1150.09,
+      "K": 14,
+      "V": 9,
+      "T": 5
+     },
+     {
+      "dbgfnr": 1045,
+      "initials": "CN",
+      "title": null,
+      "rating": 1148.16,
+      "K": 13,
+      "V": 8,
+      "T": 5
+     },
+     {
+      "dbgfnr": 5393,
+      "initials": "BP",
+      "title": null,
+      "rating": 1161.7,
+      "K": 2,
+      "V": 2,
+      "T": 0
+     },
+     {
+      "dbgfnr": 10789,
+      "initials": "RN",
+      "title": "IM",
+      "rating": 1110.05,
+      "K": 16,
+      "V": 8,
+      "T": 8
+     },
+     {
+      "dbgfnr": 14148,
+      "initials": "SS",
+      "title": "IM",
+      "rating": 1146.05,
+      "K": 15,
+      "V": 7,
+      "T": 8
+     },
+     {
+      "dbgfnr": 6973,
+      "initials": "MK",
+      "title": "IM",
+      "rating": 1211.59,
+      "K": 13,
+      "V": 6,
+      "T": 7
+     }
+    ]
+   }
   },
   {
    "id": 702,
@@ -882,7 +1575,88 @@
      "T": 1
     }
    ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=702"
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=702",
+   "previous": {
+    "id": 564,
+    "name": "Livingstone (O)",
+    "division": "Elitedivisionen",
+    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=111&hold=564",
+    "season_label": "2025/2026",
+    "players": [
+     {
+      "dbgfnr": 8016,
+      "initials": "CL",
+      "title": "IM",
+      "rating": 1216.08,
+      "K": 19,
+      "V": 12,
+      "T": 7
+     },
+     {
+      "dbgfnr": 21030,
+      "initials": "TN",
+      "title": null,
+      "rating": 1220.41,
+      "K": 18,
+      "V": 10,
+      "T": 8
+     },
+     {
+      "dbgfnr": 8243,
+      "initials": "BHL",
+      "title": null,
+      "rating": 1134.93,
+      "K": 13,
+      "V": 7,
+      "T": 6
+     },
+     {
+      "dbgfnr": 3620,
+      "initials": "HC",
+      "title": null,
+      "rating": 1007.1,
+      "K": 8,
+      "V": 4,
+      "T": 4
+     },
+     {
+      "dbgfnr": 5866,
+      "initials": "CR",
+      "title": null,
+      "rating": 1006.91,
+      "K": 2,
+      "V": 1,
+      "T": 1
+     },
+     {
+      "dbgfnr": 1122,
+      "initials": "CN",
+      "title": null,
+      "rating": 1039.64,
+      "K": 0,
+      "V": 0,
+      "T": 0
+     },
+     {
+      "dbgfnr": 416,
+      "initials": "SL",
+      "title": "GM",
+      "rating": 1166.39,
+      "K": 16,
+      "V": 7,
+      "T": 9
+     },
+     {
+      "dbgfnr": 7408,
+      "initials": "MJ",
+      "title": "IM",
+      "rating": 1137.76,
+      "K": 12,
+      "V": 5,
+      "T": 7
+     }
+    ]
+   }
   },
   {
    "id": 628,
@@ -970,7 +1744,88 @@
      "T": 1
     }
    ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=628"
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=628",
+   "previous": {
+    "id": 553,
+    "name": "Røde Stjerne 2.0",
+    "division": "Elitedivisionen",
+    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=111&hold=553",
+    "season_label": "2025/2026",
+    "players": [
+     {
+      "dbgfnr": 2325,
+      "initials": "JD",
+      "title": "GM",
+      "rating": 1259.21,
+      "K": 24,
+      "V": 17,
+      "T": 7
+     },
+     {
+      "dbgfnr": 2791,
+      "initials": "TWH",
+      "title": "GM",
+      "rating": 1305.31,
+      "K": 21,
+      "V": 15,
+      "T": 6
+     },
+     {
+      "dbgfnr": 6791,
+      "initials": "BL",
+      "title": "GM",
+      "rating": 1194.97,
+      "K": 15,
+      "V": 9,
+      "T": 6
+     },
+     {
+      "dbgfnr": 9414,
+      "initials": "JR",
+      "title": "GM",
+      "rating": 1241.32,
+      "K": 12,
+      "V": 6,
+      "T": 6
+     },
+     {
+      "dbgfnr": 19486,
+      "initials": "TK",
+      "title": "GM",
+      "rating": 1278.51,
+      "K": 5,
+      "V": 2,
+      "T": 3
+     },
+     {
+      "dbgfnr": 6744,
+      "initials": "SS",
+      "title": null,
+      "rating": 1020.15,
+      "K": 7,
+      "V": 2,
+      "T": 5
+     },
+     {
+      "dbgfnr": 1339,
+      "initials": "LHM",
+      "title": "IM",
+      "rating": 1125.33,
+      "K": 6,
+      "V": 1,
+      "T": 5
+     },
+     {
+      "dbgfnr": 9743,
+      "initials": "HHL",
+      "title": null,
+      "rating": 1118.18,
+      "K": 10,
+      "V": 2,
+      "T": 8
+     }
+    ]
+   }
   },
   {
    "id": 642,
@@ -1058,7 +1913,97 @@
      "T": 3
     }
    ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=642"
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=642",
+   "previous": {
+    "id": 567,
+    "name": "Langebro I Langebro",
+    "division": "1. division",
+    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=112&hold=567",
+    "season_label": "2025/2026",
+    "players": [
+     {
+      "dbgfnr": 19545,
+      "initials": "PT",
+      "title": "IM",
+      "rating": 1240.23,
+      "K": 18,
+      "V": 13,
+      "T": 5
+     },
+     {
+      "dbgfnr": 3618,
+      "initials": "JHC",
+      "title": null,
+      "rating": 1070.4,
+      "K": 13,
+      "V": 8,
+      "T": 5
+     },
+     {
+      "dbgfnr": 3999,
+      "initials": "JB",
+      "title": null,
+      "rating": 1163.04,
+      "K": 8,
+      "V": 5,
+      "T": 3
+     },
+     {
+      "dbgfnr": 3772,
+      "initials": "SB",
+      "title": null,
+      "rating": 1122.9,
+      "K": 15,
+      "V": 8,
+      "T": 7
+     },
+     {
+      "dbgfnr": 441,
+      "initials": "RF",
+      "title": null,
+      "rating": 1173.49,
+      "K": 11,
+      "V": 6,
+      "T": 5
+     },
+     {
+      "dbgfnr": 20209,
+      "initials": "JP",
+      "title": null,
+      "rating": 1163.85,
+      "K": 16,
+      "V": 8,
+      "T": 8
+     },
+     {
+      "dbgfnr": 13484,
+      "initials": "ABN",
+      "title": null,
+      "rating": 975.54,
+      "K": 4,
+      "V": 2,
+      "T": 2
+     },
+     {
+      "dbgfnr": 9764,
+      "initials": "SH",
+      "title": null,
+      "rating": 1116.4,
+      "K": 0,
+      "V": 0,
+      "T": 0
+     },
+     {
+      "dbgfnr": 9545,
+      "initials": "KLDT",
+      "title": null,
+      "rating": 1048.35,
+      "K": 3,
+      "V": 0,
+      "T": 3
+     }
+    ]
+   }
   },
   {
    "id": 631,
@@ -1146,7 +2091,106 @@
      "T": 3
     }
    ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=631"
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=631",
+   "previous": {
+    "id": 556,
+    "name": "Soirée Dansante",
+    "division": "Elitedivisionen",
+    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=111&hold=556",
+    "season_label": "2025/2026",
+    "players": [
+     {
+      "dbgfnr": 8093,
+      "initials": "CE",
+      "title": "GM",
+      "rating": 1221.72,
+      "K": 11,
+      "V": 8,
+      "T": 3
+     },
+     {
+      "dbgfnr": 7591,
+      "initials": "MW",
+      "title": "GM",
+      "rating": 1171.39,
+      "K": 18,
+      "V": 11,
+      "T": 7
+     },
+     {
+      "dbgfnr": 17606,
+      "initials": "KNN",
+      "title": "IM",
+      "rating": 1287.75,
+      "K": 6,
+      "V": 5,
+      "T": 1
+     },
+     {
+      "dbgfnr": 9331,
+      "initials": "KB",
+      "title": null,
+      "rating": 1206.7,
+      "K": 6,
+      "V": 4,
+      "T": 2
+     },
+     {
+      "dbgfnr": 7590,
+      "initials": "FN",
+      "title": "GM",
+      "rating": 1217.9,
+      "K": 20,
+      "V": 10,
+      "T": 10
+     },
+     {
+      "dbgfnr": 3987,
+      "initials": "MD",
+      "title": null,
+      "rating": 1118.32,
+      "K": 14,
+      "V": 7,
+      "T": 7
+     },
+     {
+      "dbgfnr": 16929,
+      "initials": "PSS",
+      "title": null,
+      "rating": 1143.36,
+      "K": 0,
+      "V": 0,
+      "T": 0
+     },
+     {
+      "dbgfnr": 7175,
+      "initials": "TNF",
+      "title": null,
+      "rating": 1149.48,
+      "K": 15,
+      "V": 7,
+      "T": 8
+     },
+     {
+      "dbgfnr": 9695,
+      "initials": "TM",
+      "title": "SGM",
+      "rating": 1224.85,
+      "K": 8,
+      "V": 3,
+      "T": 5
+     },
+     {
+      "dbgfnr": 7712,
+      "initials": "HL",
+      "title": "GM",
+      "rating": 1156.21,
+      "K": 2,
+      "V": 0,
+      "T": 2
+     }
+    ]
+   }
   }
  ],
  "matches": [

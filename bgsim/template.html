@@ -131,6 +131,10 @@ table.main{border-collapse:separate;border-spacing:0;width:100%;font-size:14px;f
 .formula{font-family:var(--f-mono);font-size:14px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:8px 12px;display:inline-block;margin:6px 0 2px;max-width:100%;overflow-x:auto;white-space:nowrap}
 .method p{margin:0 0 12px}
 .foot{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:16px;margin:0}
+.changelog{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:20px}
+.changelog h2{color:var(--ink)}
+.changelog ul{gap:6px}
+.changelog time{color:var(--ink);font-weight:500;white-space:nowrap;font-variant-numeric:tabular-nums}
 
 /* Drawer */
 dialog.drawer{position:fixed;inset:0 0 0 auto;margin:0;height:100%;max-height:100%;width:min(900px,100%);max-width:100%;border:0;padding:0;background:var(--surface);color:var(--ink);box-shadow:var(--shadow);overflow-y:auto;overscroll-behavior:contain}
@@ -150,6 +154,7 @@ dialog.drawer::backdrop{background:var(--backdrop)}
 .kv div{display:flex;flex-direction:column}
 .kv dt{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
 .kv dd{margin:0;font-size:17px;font-weight:600;font-variant-numeric:tabular-nums}
+.kv dd small{display:block;font-size:12px;font-weight:400;color:var(--muted);line-height:1.35}
 .kv dd.gold{color:var(--ink)} .kv .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px}
 .charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:22px 28px}
 .chart h3,.block h3{font-size:14px;font-weight:600;font-family:var(--f-body);margin-bottom:2px}
@@ -203,6 +208,9 @@ table.pt{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric
 .pt th{font-size:12px;font-weight:500;color:var(--muted)}
 .pt th:first-child,.pt td:first-child{text-align:left;padding-left:0}
 .pt tr.idle td{color:var(--muted)}
+.block h4{font-size:13px;font-weight:600;font-family:var(--f-body);margin:18px 0 0}
+.block h4 a{font-weight:400;font-size:12.5px}
+.block h4 .sub{font-weight:400;color:var(--muted)}
 .ttl{font-size:10.5px;font-weight:600;letter-spacing:.05em;border:1px solid var(--line);border-radius:4px;padding:0 4px;margin-left:6px;color:var(--muted)}
 
 /* Outlook: heatmap, next round, key matches, final fours, rating scatter */
@@ -386,7 +394,10 @@ table.sct{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-nume
     <p>The rest of the season is played out <strong id="nsim2">100,000</strong> times with random results. Every percentage is the share of simulations in which that outcome happened.</p>
     <ul>
       <li><strong>Terms.</strong> A <em>holdkamp</em> is a team match; an <em>enkeltmandskamp</em> is one individual game within it. <strong>EKV</strong> is the number of individual games won, the first ranking criterion. <strong>MP</strong> are match points. <strong>Danmarksmester</strong> is the Danish champion.</li>
-      <li><strong>Team strength</strong> is the average rating of the players who have played for the team so far, weighted by how many individual games (K) each has played. Players who have not played do not count.</li>
+      <li><strong>Team strength</strong> blends two figures. <em>This season's</em> is the average rating of the players who have played for the team so far, weighted by how many individual games (K) each has played; players who have not played do not count. <em>Last season's</em> (<span id="prevlabel">2025/2026</span>) is the same average over the players who played for the team then, weighted by their games that season but using their ratings today. For the promoted teams that is their season in 1. division, and a renamed team is followed under its old name. Last season counts fully before a team's first match and fades out as the team plays, where f is the share of its regular-season matches played:<br>
+        <span class="formula">w<sub>last</sub> = max(0, 1 − f / <span id="fade1">0.66</span>)</span><br>
+        <span class="formula">strength = w<sub>last</sub> · last season + (1 − w<sub>last</sub>) · this season</span><br>
+        So with no matches played the strength is 100% last season, at <span id="fadehalf">33%</span> played it is 50/50, and from <span id="fade2">66%</span> played it is this season only.</li>
       <li><strong>An individual game</strong> is a 17-point match. The chance that the lower-rated player wins comes from the Danish federation's (DBgF) rating formula, where D is the rating difference:<br>
         <span class="formula">P<sub>upset</sub> = 1 / (10<sup>D·√17/2000</sup> + 1)</span><br>
         With a 50-point difference the stronger player wins about 56% of the time.</li>
@@ -396,7 +407,14 @@ table.sct{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-nume
       <li><strong>Final four</strong>: the top four after the regular season each meet the other three once, on <span id="f4date2">3 April 2027</span>. EKV and MP are added to the regular-season totals. The leader after the final four is Danmarksmester.</li>
       <li><strong>Relegation</strong>: places 10–12 after the regular season go down directly. This is an assumption based on 2025/26, since the structure document for 2026/27 has not been published yet.</li>
       <li id="met-imp" hidden><strong>Next round by score.</strong> The chance of a score is the share of simulations in which the match ended that way. A team's final-four chance after, say, 3–1 is the share of the simulations ending 3–1 in which the team reached the final four. The exact score matters, not just the winner, because EKV is the first ranking criterion.</li>
-      <li><strong>Not modelled</strong>: ratings stay fixed at today's values, and each team's future lineups are assumed to be as strong as its lineups so far.</li>
+      <li><strong>Not modelled</strong>: ratings stay fixed at today's values, and each team's future lineups are assumed to be as strong as its lineups so far (blended with last season's while few matches are played).</li>
+    </ul>
+  </section>
+
+  <section class="method changelog" aria-labelledby="h-log">
+    <h2 id="h-log" style="margin-bottom:12px">Changelog</h2>
+    <ul>
+      <li><time datetime="2026-10-01">1 Oct 2026</time> — Team strength now starts from last season's weighted rating and shifts to this season's as matches are played; last season counts for nothing once 66% of a team's matches are played.</li>
     </ul>
   </section>
 
@@ -474,6 +492,12 @@ const DATA = /*__DATA__*/null;
   $("f4date2").textContent = dLong(R.final_four_date);
   $("nsim").textContent = nf0.format(R.n_simulations);
   $("nsim2").textContent = nf0.format(R.n_simulations);
+  // Last season's weight in team strength fades to 0 at this share of matches played.
+  const FADE = typeof R.prior_fade_out === "number" && R.prior_fade_out > 0 ? R.prior_fade_out : 0.66;
+  $("fade1").textContent = String(FADE);
+  $("fade2").textContent = nf0.format(FADE * 100) + NB + "%";
+  $("fadehalf").textContent = nf0.format(FADE * 50) + NB + "%";
+  if (R.previous_season_label) $("prevlabel").textContent = R.previous_season_label;
   if (R.source) $("src").href = R.source;
   if (R.github_url) { $("gh").href = R.github_url; $("gh").textContent = R.github_url.replace(/^https?:\/\//, ""); }
   const sc = parseD(R.scraped_at);
@@ -513,7 +537,7 @@ const DATA = /*__DATA__*/null;
       fmt: t => `${t.current.EKV}<span class="sub">–${t.current.EKT}</span>` },
     { k: "P", label: "MP", title: "Match points: 2 for a win, 1 for 2–2", get: t => t.current.P, dir: -1, g: "now" },
     { k: "pm", label: "+/−", title: "Plus/minus as shown in the table on backgammon.dk", get: t => t.current.pm, dir: -1, fmt: t => signed(t.current.pm), g: "now" },
-    { k: "str", label: "Rating", title: "Team strength: player ratings weighted by individual games played", get: t => t.strength, dir: -1, fmt: t => nf1.format(t.strength), g: "model" },
+    { k: "str", label: "Rating", title: "Team strength: K-weighted player rating, blended with last season's while few matches are played", get: t => t.strength, dir: -1, fmt: t => nf1.format(t.strength), g: "model" },
     { k: "xekv", label: "Exp. EKV", title: "Expected EKV after the regular season", get: t => t.exp_reg_ekv, dir: -1, fmt: t => nf1.format(t.exp_reg_ekv), g: "model" },
     { k: "f4", label: "Final four", short: "Top 4", title: "Chance of finishing top 4 in the regular season", get: t => t.p_final4, dir: -1, fmt: t => probCell(t.p_final4, "f4"), g: "chance" },
     { k: "title", label: "Title", title: "Chance of becoming Danmarksmester (Danish champion)", get: t => t.p_title, dir: -1, fmt: t => probCell(t.p_title, "title"), g: "chance" },
@@ -789,9 +813,10 @@ const DATA = /*__DATA__*/null;
       <div class="prob">${oddsHtml(["Win", "Draw", "Loss"], [pw, pd, pl])}</div>
       <div class="xe">${nf2.format(f.exp_ekv)}<small>exp. EKV</small></div>${boards}</li>`;
   }
-  function playersTable(t) {
-    const totK = t.players.reduce((a, p) => a + p.K, 0) || 1;
-    const rows = t.players.map(p => {
+  function playersTable(players) {
+    players = Array.isArray(players) ? players : [];
+    const totK = players.reduce((a, p) => a + p.K, 0) || 1;
+    const rows = players.map(p => {
       const w = p.K / totK;
       return `<tr class="${p.K ? "" : "idle"}"><td>${playerLink(p.initials, p.dbgfnr)}${p.title ? `<span class="ttl">${esc(p.title)}</span>` : ""}</td>
         <td>${nf1.format(p.rating)}</td><td>${p.K}</td><td>${p.V}</td><td>${p.T}</td>
@@ -804,6 +829,63 @@ const DATA = /*__DATA__*/null;
   const dlg = $("drawer"), tip = $("tip");
   let current = null;
 
+  // Blend of last season's and this season's weighted rating, as a short sub-line.
+  const hasBlend = t => typeof t.prior_weight === "number";
+  function blendLine(t) {
+    if (!hasBlend(t)) return "";
+    const w = t.prior_weight;
+    if (w >= 1 || t.strength_now == null) return t.strength_prev == null ? "" : "last season only";
+    if (w <= 0 || t.strength_prev == null) return "this season only";
+    const a = Math.round(w * 100);
+    return `${a}${NB}% last season · ${100 - a}${NB}% this season`;
+  }
+  // Same normalisation as team_key in scrape.py: suffixes like "(O)" and "I" change between seasons.
+  const teamKey = n => String(n || "").toLowerCase().replace(/\([^)]*\)/g, " ").split(/\s+/).filter(w => w && !/^(i{1,3}|iv)$/.test(w)).join(" ");
+  function sameTeam(a, b) {
+    const x = teamKey(a), y = teamKey(b);
+    return x.startsWith(y) || y.startsWith(x);
+  }
+  function playersHtml(t) {
+    const kNote = "players with K = 0 do not count.";
+    if (!hasBlend(t)) {
+      return `<p class="cap" style="margin:0;color:var(--muted);font-size:12.5px">The strength ${nf1.format(t.strength)} is the average rating weighted by K (individual games played). Players with K = 0 do not count.</p>
+        ${playersTable(t.players)}`;
+    }
+    const w = t.prior_weight, sN = t.strength_now, sP = t.strength_prev;
+    const S = nf1.format(t.strength), fadeP = nf0.format(FADE * 100) + NB + "%";
+    const mp = t.matches_played, mt = t.matches_total;
+    const now = mp != null && mt != null ? ` (now ${mp} of ${mt})` : "";
+    let cap;
+    if (w > 0 && w < 1 && sN != null && sP != null) {
+      const a = Math.round(w * 100);
+      cap = `The strength ${S} is ${a}${NB}% of last season's weighted rating (${nf1.format(sP)}) and ${100 - a}${NB}% of this season's (${nf1.format(sN)}). Each is the average rating weighted by K (individual games played); ${kNote}`;
+    } else if (w >= 1 || sN == null) {
+      cap = sP != null
+        ? `The strength ${S} is last season's weighted rating, since the team has not played this season yet. It is the average rating weighted by K (individual games played) last season; ${kNote}`
+        : `The strength ${S} is an estimate: the team has not played this season yet and there is no data from last season.`;
+    } else {
+      cap = `The strength ${S} is this season's weighted rating: the average rating weighted by K (individual games played); ${kNote}` +
+        (sP == null && w > 0 ? " There is no data from last season for this team." : "");
+    }
+    if (sP != null) cap += w > 0
+      ? ` Last season's weight falls to 0 when ${fadeP} of the team's matches are played${now}.`
+      : ` Last season no longer counts once ${fadeP} of the team's matches are played${now}.`;
+    const pv = t.previous;
+    let prevHtml;
+    if (pv) {
+      const parts = [pv.season_label || R.previous_season_label, pv.division, pv.name && !sameTeam(pv.name, t.name) ? "as " + pv.name : ""].filter(Boolean);
+      const link = pv.url ? ` <a href="${esc(pv.url)}" target="_blank" rel="noopener">Team page</a>` : "";
+      prevHtml = `<h4>Last season${parts.length ? ` <span class="sub">(${esc(parts.join(", "))})</span>` : ""}${link}</h4>
+        ${playersTable(pv.players)}`;
+    } else {
+      prevHtml = `<h4>Last season</h4><p class="note" style="color:var(--muted)">No data from last season for this team.</p>`;
+    }
+    return `<p class="cap" style="margin:0;color:var(--muted);font-size:12.5px">${cap}</p>
+        <h4>This season${R.season_label ? ` <span class="sub">(${esc(R.season_label)})</span>` : ""}</h4>
+        ${playersTable(t.players)}
+        ${prevHtml}`;
+  }
+
   function renderDetail(t) {
     $("d-title").textContent = t.name;
     $("d-meta").innerHTML = `${ordinal(t.pos)} in the table now · ${t.current.V} W, ${t.current.U} D, ${t.current.T} L · <a href="${esc(t.url)}" target="_blank" rel="noopener">Team page on backgammon.dk</a>`;
@@ -815,7 +897,7 @@ const DATA = /*__DATA__*/null;
         <div><dt>Title</dt><dd><span class="dot c-gold"></span>${pct(t.p_title)}</dd></div>
         <div><dt>Final four</dt><dd><span class="dot c-acc"></span>${pct(t.p_final4)}</dd></div>
         <div><dt>Relegation</dt><dd><span class="dot c-red"></span>${pct(t.p_relegated)}</dd></div>
-        <div><dt>Strength</dt><dd>${nf1.format(t.strength)}</dd></div>
+        <div><dt>Strength</dt><dd>${nf1.format(t.strength)}${blendLine(t) ? `<small>${blendLine(t)}</small>` : ""}</dd></div>
         <div><dt>Exp. position</dt><dd>${nf1.format(t.exp_reg_pos)}</dd></div>
         <div><dt>Exp. EKV / MP</dt><dd>${nf1.format(t.exp_reg_ekv)} / ${nf1.format(t.exp_reg_pts)}</dd></div>
       </dl>
@@ -833,8 +915,7 @@ const DATA = /*__DATA__*/null;
         ${pl.length ? `<ul class="fx played">${pl.map(f => fixtureRow(t, f)).join("")}</ul>` : `<p class="note">None played yet.</p>`}
       </section>
       <section class="block"><h3>Players</h3>
-        <p class="cap" style="margin:0;color:var(--muted);font-size:12.5px">The strength ${nf1.format(t.strength)} is the average rating weighted by K (individual games played). Players with K = 0 do not count.</p>
-        ${playersTable(t)}
+        ${playersHtml(t)}
       </section>`;
   }
 

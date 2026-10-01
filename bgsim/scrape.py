@@ -196,6 +196,52 @@ def parse_program(page: str) -> list[dict]:
     return matches
 
 
+def team_url(season: int, division: int, hid: int) -> str:
+    return (f"{BASE}/KT%2bSenesteS%C3%A6son?view=HoldVisning"
+            f"&season={season}&division={division}&hold={hid}")
+
+
+def team_key(name: str) -> str:
+    """Name without the parts that change between seasons.
+
+    "Lødigt I (M)" -> "lødigt", "Langebro I Langebro" -> "langebro langebro".
+    The letter in parentheses and the roman numeral (first team) vary.
+    """
+    name = re.sub(r"\([^)]*\)", " ", name.lower())
+    words = [w for w in re.split(r"\s+", name) if w and not re.fullmatch(r"i{1,3}|iv", w)]
+    return " ".join(words)
+
+
+def previous_teams(offline: bool = False) -> dict[int, dict]:
+    """Last season's teams from the standings of config.PREVIOUS_DIVISION_IDS."""
+    s = config.PREVIOUS_SEASON_ID
+    candidates: dict[int, dict] = {}
+    for d, division in config.PREVIOUS_DIVISION_IDS.items():
+        url = f"{BASE}/KT%2bSenesteS%C3%A6son?season={s}&division={d}"
+        _, names = parse_standings(fetch(url, f"prev_stilling_{d}", offline))
+        for hid, name in names.items():
+            candidates[hid] = dict(id=hid, name=name, division=division, division_id=d)
+    return candidates
+
+
+def match_previous(team: dict, candidates: dict[int, dict]) -> dict:
+    """The team's entry in last season's divisions.
+
+    Matched by name (one key must start with the other), or through
+    config.PREVIOUS_TEAM_OVERRIDES when the team has been renamed.
+    """
+    hid = config.PREVIOUS_TEAM_OVERRIDES.get(team["id"])
+    if hid is not None:
+        return candidates[hid]
+    key = team_key(team["name"])
+    hits = [c for c in candidates.values()
+            if team_key(c["name"]).startswith(key) or key.startswith(team_key(c["name"]))]
+    if len(hits) != 1:
+        raise RuntimeError(f"{team['name']}: {len(hits)} matching teams last season "
+                           f"{[h['name'] for h in hits]}; add it to PREVIOUS_TEAM_OVERRIDES")
+    return hits[0]
+
+
 def scrape(offline: bool = False) -> dict:
     s, d = config.SEASON_ID, config.DIVISION_ID
     stand_url = f"{BASE}/KT%2bSenesteS%C3%A6son?season={s}&division={d}"
@@ -204,9 +250,18 @@ def scrape(offline: bool = False) -> dict:
     matches = parse_program(fetch(prog_url, "kampprogram", offline))
     teams = []
     for hid, name in names.items():
-        url = f"{BASE}/KT%2bSenesteS%C3%A6son?view=HoldVisning&season={s}&division={d}&hold={hid}"
+        url = team_url(s, d, hid)
         players = parse_team(fetch(url, f"hold_{hid}", offline))
         teams.append(dict(id=hid, name=name, players=players, url=url))
+    # Last season's squads, the prior for team strength. Those pages show the
+    # players' current ratings; only the games played (K) are last season's.
+    candidates = previous_teams(offline)
+    for t in teams:
+        prev = dict(match_previous(t, candidates))
+        prev["url"] = team_url(config.PREVIOUS_SEASON_ID, prev.pop("division_id"), prev["id"])
+        prev["season_label"] = config.PREVIOUS_SEASON_LABEL
+        prev["players"] = parse_team(fetch(prev["url"], f"prev_hold_{prev['id']}", offline))
+        t["previous"] = prev
     # Ratings for players in announced lineups: from the team pages, or from
     # the member page for players who have not played for the team yet.
     known = {p["dbgfnr"]: p["rating"] for t in teams for p in t["players"]}
@@ -220,9 +275,12 @@ def scrape(offline: bool = False) -> dict:
                     ratings[str(nr)] = known[nr]
                 else:
                     ratings[str(nr)] = member_rating(nr, offline)
+    # Offline, the data is as old as the saved standings page.
+    scraped = (datetime.fromtimestamp((RAW / "stilling.html").stat().st_mtime, timezone.utc)
+               if offline else datetime.now(timezone.utc))
     data = dict(
         player_ratings=ratings,
-        scraped_at=datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds"),
+        scraped_at=scraped.astimezone().isoformat(timespec="seconds"),
         season_id=s, division_id=d, source=stand_url,
         standings=standings, teams=teams, matches=matches)
     validate(data)
@@ -255,7 +313,9 @@ def validate(data: dict) -> None:
     if len(data["matches"]) != n * (n - 1):
         problems.append(f"{len(data['matches'])} matches in the schedule, expected {n*(n-1)}")
     for t in data["teams"]:
-        if sum(p["K"] for p in t["players"]) == 0:
-            problems.append(f"{t['name']}: no games played")
+        prev = t.get("previous")
+        if sum(p["K"] for p in t["players"]) == 0 and not (
+                prev and sum(p["K"] for p in prev["players"])):
+            problems.append(f"{t['name']}: no games played, this season or last")
     if problems:
         raise RuntimeError("Validation failed:\n  " + "\n  ".join(problems))

@@ -26,7 +26,7 @@ python3 -m unittest discover -s tests -t .
 |---|---|---|
 | Fetch and parse | `bgsim/scrape.py` | `data/raw/*.html`, `data/season.json` |
 | Simulate | `bgsim/simulate.py` | `data/results.json`, `data/history.json` |
-| Build page | `bgsim/build.py` + `bgsim/template.html` | `docs/index.html`, `build/artifact.html` |
+| Build page | `bgsim/build.py` + `bgsim/template.html` | `docs/index.html` |
 
 Settings (season, division, number of relegated teams, number of simulations) live in
 `bgsim/config.py`. `data/history.json` gets one entry per run day and drives the trend
@@ -34,8 +34,14 @@ charts.
 
 ## Model
 
-- **Team strength**: the average rating of the players who have played for the team so
-  far, weighted by the number of individual games each has played.
+- **Team strength**: a blend of this season's and last season's weighted rating. Each is
+  the average rating of the players who played for the team that season, weighted by the
+  number of individual games (K) each played; the ratings are today's values. Last
+  season's weight is 1 before the team's first match and falls linearly to 0 when 66%
+  of the team's matches are played: `w_prev = max(0, 1 − f/0.66)` where f is the share
+  of the team's matches played, and `strength = w_prev·S_prev + (1 − w_prev)·S_now`.
+  Promoted teams use their 1. division season; a renamed team is followed under its
+  old name (`PREVIOUS_TEAM_OVERRIDES` in `bgsim/config.py`).
 - **Single-game win probability** from the DBgF rating formula
   ([Beregning af rating](https://www.backgammon.dk/Rangliste/Beregning+af+rating)):
   `P_upset = 1 / (10^(D·√N/2000) + 1)` with match length N = 17.
