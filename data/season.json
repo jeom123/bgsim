@@ -1,5 +1,9 @@
 {
  "player_ratings": {
+  "127": 1120.01,
+  "8649": 1064.86,
+  "1599": 1151.21,
+  "4413": 1254.24,
   "9": 1265.36,
   "1162": 1243.71,
   "3948": 1268.31,
@@ -11,7 +15,7 @@
   "3639": 1201.69,
   "6472": 1203.24
  },
- "scraped_at": "2026-10-04T04:15:46+00:00",
+ "scraped_at": "2026-10-05T04:14:47+00:00",
  "season_id": 37,
  "division_id": 118,
  "source": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?season=37&division=118",
@@ -465,7 +469,7 @@
       "dbgfnr": 11,
       "initials": "CS",
       "title": null,
-      "rating": 1098.36,
+      "rating": 1114.18,
       "K": 1,
       "V": 0,
       "T": 1
@@ -1033,7 +1037,7 @@
      "dbgfnr": 6973,
      "initials": "MK",
      "title": "IM",
-     "rating": 1218.98,
+     "rating": 1204.04,
      "K": 3,
      "V": 2,
      "T": 1
@@ -1114,7 +1118,7 @@
       "dbgfnr": 5393,
       "initials": "BP",
       "title": null,
-      "rating": 1152.14,
+      "rating": 1151.93,
       "K": 2,
       "V": 2,
       "T": 0
@@ -1141,7 +1145,7 @@
       "dbgfnr": 6973,
       "initials": "MK",
       "title": "IM",
-      "rating": 1218.98,
+      "rating": 1204.04,
       "K": 13,
       "V": 6,
       "T": 7
@@ -2989,7 +2993,33 @@
    "home": 638,
    "away": 639,
    "played": false,
-   "venue": null
+   "venue": null,
+   "lineup": [
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "KP",
+     "away_dbgfnr": 127
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "MP",
+     "away_dbgfnr": 8649
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "PC",
+     "away_dbgfnr": 1599
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "PLF",
+     "away_dbgfnr": 4413
+    }
+   ]
   },
   {
    "date": "2026-10-08T19:00",
