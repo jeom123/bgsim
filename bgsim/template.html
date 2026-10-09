@@ -414,6 +414,7 @@ table.sct{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-nume
   <section class="method changelog" aria-labelledby="h-log">
     <h2 id="h-log" style="margin-bottom:12px">Changelog</h2>
     <ul>
+      <li><time datetime="2026-10-09">9 Oct 2026</time> — In the team view, played matches are listed with the latest match first.</li>
       <li><time datetime="2026-10-01">1 Oct 2026</time> — Team strength now starts from last season's weighted rating and shifts to this season's as matches are played; last season counts for nothing once 66% of a team's matches are played.</li>
     </ul>
   </section>
@@ -891,7 +892,8 @@ const DATA = /*__DATA__*/null;
     $("d-meta").innerHTML = `${ordinal(t.pos)} in the table now · ${t.current.V} W, ${t.current.U} D, ${t.current.T} L · <a href="${esc(t.url)}" target="_blank" rel="noopener">Team page on backgammon.dk</a>`;
     // Undated (postponed) matches sort last.
     const fx = t.fixtures.slice().sort((a, b) => (a.date || "~") < (b.date || "~") ? -1 : (a.date || "~") > (b.date || "~") ? 1 : 0);
-    const rem = fx.filter(f => !f.played), pl = fx.filter(f => f.played);
+    // Played matches: latest first, so the most recent result is at the top.
+    const rem = fx.filter(f => !f.played), pl = fx.filter(f => f.played).reverse();
     $("d-body").innerHTML = `
       <dl class="kv">
         <div><dt>Title</dt><dd><span class="dot c-gold"></span>${pct(t.p_title)}</dd></div>
