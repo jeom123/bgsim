@@ -1,17 +1,19 @@
 {
  "player_ratings": {
+  "4175": 1171.45,
+  "6472": 1193.7,
+  "5555": 1181.09,
+  "7112": 1235.87,
   "9": 1265.36,
   "1162": 1234.76,
   "3948": 1260.35,
-  "4175": 1182.26,
   "5782": 1116.61,
-  "666": 1221.64,
+  "666": 1228.13,
   "5650": 1078.37,
   "15699": 1147.11,
-  "3639": 1192.07,
-  "6472": 1203.24
+  "3639": 1192.07
  },
- "scraped_at": "2026-10-09T05:02:49+00:00",
+ "scraped_at": "2026-10-12T04:14:55+00:00",
  "season_id": 37,
  "division_id": 118,
  "source": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?season=37&division=118",
@@ -375,7 +377,7 @@
      "dbgfnr": 300,
      "initials": "TK",
      "title": null,
-     "rating": 1189.07,
+     "rating": 1194.21,
      "K": 3,
      "V": 3,
      "T": 0
@@ -384,7 +386,7 @@
      "dbgfnr": 5797,
      "initials": "FM",
      "title": "GM",
-     "rating": 1230.12,
+     "rating": 1238.07,
      "K": 4,
      "V": 3,
      "T": 1
@@ -402,7 +404,7 @@
      "dbgfnr": 4107,
      "initials": "SB",
      "title": null,
-     "rating": 1179.3,
+     "rating": 1186.58,
      "K": 3,
      "V": 2,
      "T": 1
@@ -411,7 +413,7 @@
      "dbgfnr": 5347,
      "initials": "FMD",
      "title": null,
-     "rating": 1203.51,
+     "rating": 1196.29,
      "K": 2,
      "V": 1,
      "T": 1
@@ -447,7 +449,7 @@
       "dbgfnr": 5797,
       "initials": "FM",
       "title": "GM",
-      "rating": 1230.12,
+      "rating": 1238.07,
       "K": 22,
       "V": 11,
       "T": 11
@@ -456,7 +458,7 @@
       "dbgfnr": 5347,
       "initials": "FMD",
       "title": null,
-      "rating": 1203.51,
+      "rating": 1196.29,
       "K": 20,
       "V": 10,
       "T": 10
@@ -465,7 +467,7 @@
       "dbgfnr": 11,
       "initials": "CS",
       "title": null,
-      "rating": 1114.18,
+      "rating": 1121.33,
       "K": 1,
       "V": 0,
       "T": 1
@@ -474,7 +476,7 @@
       "dbgfnr": 300,
       "initials": "TK",
       "title": null,
-      "rating": 1189.07,
+      "rating": 1194.21,
       "K": 22,
       "V": 10,
       "T": 12
@@ -483,7 +485,7 @@
       "dbgfnr": 4107,
       "initials": "SB",
       "title": null,
-      "rating": 1179.3,
+      "rating": 1186.58,
       "K": 11,
       "V": 4,
       "T": 7
@@ -632,7 +634,7 @@
      "dbgfnr": 666,
      "initials": "FB",
      "title": null,
-     "rating": 1221.64,
+     "rating": 1228.13,
      "K": 3,
      "V": 3,
      "T": 0
@@ -659,19 +661,10 @@
      "dbgfnr": 6472,
      "initials": "TB",
      "title": "IM",
-     "rating": 1203.24,
+     "rating": 1193.7,
      "K": 2,
      "V": 1,
      "T": 1
-    },
-    {
-     "dbgfnr": 2709,
-     "initials": "PH",
-     "title": "IM",
-     "rating": 1170.94,
-     "K": 0,
-     "V": 0,
-     "T": 0
     },
     {
      "dbgfnr": 7112,
@@ -683,10 +676,19 @@
      "T": 0
     },
     {
+     "dbgfnr": 2709,
+     "initials": "PH",
+     "title": "IM",
+     "rating": 1170.94,
+     "K": 0,
+     "V": 0,
+     "T": 0
+    },
+    {
      "dbgfnr": 5555,
      "initials": "TK",
      "title": "IM",
-     "rating": 1188.27,
+     "rating": 1181.09,
      "K": 3,
      "V": 1,
      "T": 2
@@ -695,7 +697,7 @@
      "dbgfnr": 4175,
      "initials": "AB",
      "title": "IM",
-     "rating": 1182.26,
+     "rating": 1171.45,
      "K": 2,
      "V": 0,
      "T": 2
@@ -740,7 +742,7 @@
       "dbgfnr": 666,
       "initials": "FB",
       "title": null,
-      "rating": 1221.64,
+      "rating": 1228.13,
       "K": 18,
       "V": 9,
       "T": 9
@@ -749,7 +751,7 @@
       "dbgfnr": 6472,
       "initials": "TB",
       "title": "IM",
-      "rating": 1203.24,
+      "rating": 1193.7,
       "K": 17,
       "V": 8,
       "T": 9
@@ -767,7 +769,7 @@
       "dbgfnr": 5555,
       "initials": "TK",
       "title": "IM",
-      "rating": 1188.27,
+      "rating": 1181.09,
       "K": 10,
       "V": 3,
       "T": 7
@@ -776,7 +778,7 @@
       "dbgfnr": 4175,
       "initials": "AB",
       "title": "IM",
-      "rating": 1182.26,
+      "rating": 1171.45,
       "K": 10,
       "V": 2,
       "T": 8
@@ -1157,7 +1159,7 @@
      "dbgfnr": 8649,
      "initials": "MP",
      "title": null,
-     "rating": 1064.86,
+     "rating": 1075.67,
      "K": 2,
      "V": 2,
      "T": 0
@@ -1166,7 +1168,7 @@
      "dbgfnr": 4413,
      "initials": "PLF",
      "title": "IM",
-     "rating": 1254.24,
+     "rating": 1261.42,
      "K": 2,
      "V": 2,
      "T": 0
@@ -1202,7 +1204,7 @@
      "dbgfnr": 1599,
      "initials": "PC",
      "title": null,
-     "rating": 1151.21,
+     "rating": 1160.75,
      "K": 2,
      "V": 1,
      "T": 1
@@ -1211,7 +1213,7 @@
      "dbgfnr": 127,
      "initials": "KP",
      "title": null,
-     "rating": 1120.01,
+     "rating": 1113.52,
      "K": 2,
      "V": 0,
      "T": 2
@@ -1265,7 +1267,7 @@
       "dbgfnr": 1599,
       "initials": "PC",
       "title": null,
-      "rating": 1151.21,
+      "rating": 1160.75,
       "K": 8,
       "V": 5,
       "T": 3
@@ -1274,7 +1276,7 @@
       "dbgfnr": 8649,
       "initials": "MP",
       "title": null,
-      "rating": 1064.86,
+      "rating": 1075.67,
       "K": 10,
       "V": 5,
       "T": 5
@@ -1301,7 +1303,7 @@
       "dbgfnr": 127,
       "initials": "KP",
       "title": null,
-      "rating": 1120.01,
+      "rating": 1113.52,
       "K": 7,
       "V": 3,
       "T": 4
@@ -1310,7 +1312,7 @@
       "dbgfnr": 4413,
       "initials": "PLF",
       "title": "IM",
-      "rating": 1254.24,
+      "rating": 1261.42,
       "K": 19,
       "V": 8,
       "T": 11
@@ -1326,7 +1328,7 @@
      "dbgfnr": 8243,
      "initials": "BHL",
      "title": null,
-     "rating": 1151.18,
+     "rating": 1154.57,
      "K": 2,
      "V": 2,
      "T": 0
@@ -1344,7 +1346,7 @@
      "dbgfnr": 7408,
      "initials": "MJ",
      "title": "IM",
-     "rating": 1147.1,
+     "rating": 1139.85,
      "K": 2,
      "V": 1,
      "T": 1
@@ -1353,7 +1355,7 @@
      "dbgfnr": 21030,
      "initials": "TN",
      "title": null,
-     "rating": 1213.26,
+     "rating": 1214.29,
      "K": 2,
      "V": 1,
      "T": 1
@@ -1362,7 +1364,7 @@
      "dbgfnr": 5866,
      "initials": "CR",
      "title": null,
-     "rating": 1006.91,
+     "rating": 1010.29,
      "K": 0,
      "V": 0,
      "T": 0
@@ -1380,7 +1382,7 @@
      "dbgfnr": 416,
      "initials": "SL",
      "title": "GM",
-     "rating": 1151.83,
+     "rating": 1151.28,
      "K": 3,
      "V": 0,
      "T": 3
@@ -1407,7 +1409,7 @@
       "dbgfnr": 21030,
       "initials": "TN",
       "title": null,
-      "rating": 1213.26,
+      "rating": 1214.29,
       "K": 18,
       "V": 10,
       "T": 8
@@ -1416,7 +1418,7 @@
       "dbgfnr": 8243,
       "initials": "BHL",
       "title": null,
-      "rating": 1151.18,
+      "rating": 1154.57,
       "K": 13,
       "V": 7,
       "T": 6
@@ -1434,7 +1436,7 @@
       "dbgfnr": 5866,
       "initials": "CR",
       "title": null,
-      "rating": 1006.91,
+      "rating": 1010.29,
       "K": 2,
       "V": 1,
       "T": 1
@@ -1452,7 +1454,7 @@
       "dbgfnr": 416,
       "initials": "SL",
       "title": "GM",
-      "rating": 1151.83,
+      "rating": 1151.28,
       "K": 16,
       "V": 7,
       "T": 9
@@ -1461,7 +1463,7 @@
       "dbgfnr": 7408,
       "initials": "MJ",
       "title": "IM",
-      "rating": 1147.1,
+      "rating": 1139.85,
       "K": 12,
       "V": 5,
       "T": 7
@@ -1699,7 +1701,7 @@
     {
      "dbgfnr": 3948,
      "initials": "FC",
-     "title": "IM",
+     "title": "GM",
      "rating": 1260.35,
      "K": 3,
      "V": 1,
@@ -1771,7 +1773,7 @@
      {
       "dbgfnr": 3948,
       "initials": "FC",
-      "title": "IM",
+      "title": "GM",
       "rating": 1260.35,
       "K": 18,
       "V": 10,
@@ -1860,7 +1862,7 @@
      "dbgfnr": 2325,
      "initials": "JD",
      "title": "GM",
-     "rating": 1267.33,
+     "rating": 1274.55,
      "K": 3,
      "V": 2,
      "T": 1
@@ -1914,7 +1916,7 @@
      "dbgfnr": 6791,
      "initials": "BL",
      "title": "GM",
-     "rating": 1202.83,
+     "rating": 1194.88,
      "K": 3,
      "V": 1,
      "T": 2
@@ -1923,7 +1925,7 @@
      "dbgfnr": 9743,
      "initials": "HHL",
      "title": null,
-     "rating": 1118.18,
+     "rating": 1110.9,
      "K": 2,
      "V": 0,
      "T": 2
@@ -1932,7 +1934,7 @@
      "dbgfnr": 6744,
      "initials": "SS",
      "title": null,
-     "rating": 1012.66,
+     "rating": 1007.52,
      "K": 2,
      "V": 0,
      "T": 2
@@ -1950,7 +1952,7 @@
       "dbgfnr": 2325,
       "initials": "JD",
       "title": "GM",
-      "rating": 1267.33,
+      "rating": 1274.55,
       "K": 24,
       "V": 17,
       "T": 7
@@ -1968,7 +1970,7 @@
       "dbgfnr": 6791,
       "initials": "BL",
       "title": "GM",
-      "rating": 1202.83,
+      "rating": 1194.88,
       "K": 15,
       "V": 9,
       "T": 6
@@ -1995,7 +1997,7 @@
       "dbgfnr": 6744,
       "initials": "SS",
       "title": null,
-      "rating": 1012.66,
+      "rating": 1007.52,
       "K": 7,
       "V": 2,
       "T": 5
@@ -2013,7 +2015,7 @@
       "dbgfnr": 9743,
       "initials": "HHL",
       "title": null,
-      "rating": 1118.18,
+      "rating": 1110.9,
       "K": 10,
       "V": 2,
       "T": 8
@@ -3225,7 +3227,33 @@
    "home": 628,
    "away": 638,
    "played": false,
-   "venue": null
+   "venue": null,
+   "lineup": [
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "AB",
+     "away_dbgfnr": 4175
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "TB",
+     "away_dbgfnr": 6472
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "TK",
+     "away_dbgfnr": 5555
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "TS",
+     "away_dbgfnr": 7112
+    }
+   ]
   },
   {
    "date": "2026-10-22T19:00",
