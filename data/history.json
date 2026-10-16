@@ -544,5 +544,83 @@
     "strength": 1188.5
    }
   }
+ },
+ {
+  "date": "2026-10-16",
+  "n_matches_played": 23,
+  "teams": {
+   "633": {
+    "title": 0.3946,
+    "final4": 0.8452,
+    "relegated": 0.0065,
+    "strength": 1219.15
+   },
+   "634": {
+    "title": 0.1144,
+    "final4": 0.5686,
+    "relegated": 0.0479,
+    "strength": 1194.64
+   },
+   "647": {
+    "title": 0.0351,
+    "final4": 0.3082,
+    "relegated": 0.1525,
+    "strength": 1181.29
+   },
+   "638": {
+    "title": 0.0625,
+    "final4": 0.4055,
+    "relegated": 0.1082,
+    "strength": 1194.03
+   },
+   "629": {
+    "title": 0.2511,
+    "final4": 0.7209,
+    "relegated": 0.0239,
+    "strength": 1232.67
+   },
+   "630": {
+    "title": 0.0697,
+    "final4": 0.4201,
+    "relegated": 0.0953,
+    "strength": 1208.52
+   },
+   "639": {
+    "title": 0.0267,
+    "final4": 0.2462,
+    "relegated": 0.1987,
+    "strength": 1187.76
+   },
+   "702": {
+    "title": 0.0045,
+    "final4": 0.0785,
+    "relegated": 0.4882,
+    "strength": 1159.63
+   },
+   "642": {
+    "title": 0.0011,
+    "final4": 0.0341,
+    "relegated": 0.6324,
+    "strength": 1149.04
+   },
+   "637": {
+    "title": 0.0036,
+    "final4": 0.0598,
+    "relegated": 0.5407,
+    "strength": 1166.75
+   },
+   "628": {
+    "title": 0.034,
+    "final4": 0.2562,
+    "relegated": 0.201,
+    "strength": 1210.93
+   },
+   "631": {
+    "title": 0.0026,
+    "final4": 0.0566,
+    "relegated": 0.5045,
+    "strength": 1188.5
+   }
+  }
  }
 ]

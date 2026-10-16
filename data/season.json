@@ -1,19 +1,32 @@
 {
  "player_ratings": {
-  "4175": 1171.45,
-  "6472": 1193.7,
-  "5555": 1181.09,
-  "7112": 1235.87,
+  "5797": 1237.0,
+  "6005": 1189.93,
+  "4107": 1186.58,
+  "300": 1194.21,
+  "4413": 1261.42,
+  "11251": 1303.32,
+  "127": 1113.52,
+  "6973": 1204.04,
+  "10": 1243.57,
+  "14148": 1155.67,
+  "4880": 1232.89,
+  "1045": 1131.74,
+  "4175": 1170.88,
+  "6472": 1195.37,
+  "666": 1226.4,
+  "7112": 1241.81,
   "9": 1265.36,
   "1162": 1234.76,
+  "6872": 1233.22,
+  "9934": 1149.05,
   "3948": 1260.35,
   "5782": 1116.61,
-  "666": 1228.13,
   "5650": 1078.37,
   "15699": 1147.11,
   "3639": 1192.07
  },
- "scraped_at": "2026-10-12T04:14:55+00:00",
+ "scraped_at": "2026-10-16T04:15:19+00:00",
  "season_id": 37,
  "division_id": 118,
  "source": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?season=37&division=118",
@@ -262,7 +275,7 @@
      "dbgfnr": 2530,
      "initials": "FM",
      "title": "IM",
-     "rating": 1118.29,
+     "rating": 1121.62,
      "K": 1,
      "V": 0,
      "T": 1
@@ -343,7 +356,7 @@
       "dbgfnr": 2530,
       "initials": "FM",
       "title": "IM",
-      "rating": 1118.29,
+      "rating": 1121.62,
       "K": 4,
       "V": 1,
       "T": 3
@@ -386,7 +399,7 @@
      "dbgfnr": 5797,
      "initials": "FM",
      "title": "GM",
-     "rating": 1238.07,
+     "rating": 1237.0,
      "K": 4,
      "V": 3,
      "T": 1
@@ -395,7 +408,7 @@
      "dbgfnr": 6005,
      "initials": "JCP",
      "title": "IM",
-     "rating": 1210.61,
+     "rating": 1189.93,
      "K": 3,
      "V": 2,
      "T": 1
@@ -449,7 +462,7 @@
       "dbgfnr": 5797,
       "initials": "FM",
       "title": "GM",
-      "rating": 1238.07,
+      "rating": 1237.0,
       "K": 22,
       "V": 11,
       "T": 11
@@ -467,7 +480,7 @@
       "dbgfnr": 11,
       "initials": "CS",
       "title": null,
-      "rating": 1121.33,
+      "rating": 1126.3,
       "K": 1,
       "V": 0,
       "T": 1
@@ -510,7 +523,7 @@
      "dbgfnr": 6872,
      "initials": "TB",
      "title": null,
-     "rating": 1239.26,
+     "rating": 1233.22,
      "K": 2,
      "V": 2,
      "T": 0
@@ -546,7 +559,7 @@
      "dbgfnr": 1045,
      "initials": "CN",
      "title": null,
-     "rating": 1142.31,
+     "rating": 1131.74,
      "K": 2,
      "V": 0,
      "T": 2
@@ -582,7 +595,7 @@
       "dbgfnr": 1045,
       "initials": "CN",
       "title": null,
-      "rating": 1142.31,
+      "rating": 1131.74,
       "K": 13,
       "V": 8,
       "T": 5
@@ -591,7 +604,7 @@
       "dbgfnr": 5393,
       "initials": "BP",
       "title": null,
-      "rating": 1142.6,
+      "rating": 1150.67,
       "K": 2,
       "V": 2,
       "T": 0
@@ -634,7 +647,7 @@
      "dbgfnr": 666,
      "initials": "FB",
      "title": null,
-     "rating": 1228.13,
+     "rating": 1226.4,
      "K": 3,
      "V": 3,
      "T": 0
@@ -661,7 +674,7 @@
      "dbgfnr": 6472,
      "initials": "TB",
      "title": "IM",
-     "rating": 1193.7,
+     "rating": 1195.37,
      "K": 2,
      "V": 1,
      "T": 1
@@ -670,7 +683,7 @@
      "dbgfnr": 7112,
      "initials": "TS",
      "title": null,
-     "rating": 1235.87,
+     "rating": 1241.81,
      "K": 0,
      "V": 0,
      "T": 0
@@ -697,7 +710,7 @@
      "dbgfnr": 4175,
      "initials": "AB",
      "title": "IM",
-     "rating": 1171.45,
+     "rating": 1170.88,
      "K": 2,
      "V": 0,
      "T": 2
@@ -724,7 +737,7 @@
       "dbgfnr": 7112,
       "initials": "TS",
       "title": null,
-      "rating": 1235.87,
+      "rating": 1241.81,
       "K": 9,
       "V": 6,
       "T": 3
@@ -742,7 +755,7 @@
       "dbgfnr": 666,
       "initials": "FB",
       "title": null,
-      "rating": 1228.13,
+      "rating": 1226.4,
       "K": 18,
       "V": 9,
       "T": 9
@@ -751,7 +764,7 @@
       "dbgfnr": 6472,
       "initials": "TB",
       "title": "IM",
-      "rating": 1193.7,
+      "rating": 1195.37,
       "K": 17,
       "V": 8,
       "T": 9
@@ -778,7 +791,7 @@
       "dbgfnr": 4175,
       "initials": "AB",
       "title": "IM",
-      "rating": 1171.45,
+      "rating": 1170.88,
       "K": 10,
       "V": 2,
       "T": 8
@@ -1711,7 +1724,7 @@
      "dbgfnr": 14964,
      "initials": "JM",
      "title": "IM",
-     "rating": 1147.47,
+     "rating": 1149.02,
      "K": 1,
      "V": 0,
      "T": 1
@@ -1801,7 +1814,7 @@
       "dbgfnr": 14964,
       "initials": "JM",
       "title": "IM",
-      "rating": 1147.47,
+      "rating": 1149.02,
       "K": 15,
       "V": 7,
       "T": 8
@@ -1916,7 +1929,7 @@
      "dbgfnr": 6791,
      "initials": "BL",
      "title": "GM",
-     "rating": 1194.88,
+     "rating": 1195.04,
      "K": 3,
      "V": 1,
      "T": 2
@@ -1970,7 +1983,7 @@
       "dbgfnr": 6791,
       "initials": "BL",
       "title": "GM",
-      "rating": 1194.88,
+      "rating": 1195.04,
       "K": 15,
       "V": 9,
       "T": 6
@@ -3206,7 +3219,33 @@
    "home": 642,
    "away": 634,
    "played": false,
-   "venue": null
+   "venue": null,
+   "lineup": [
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "FM",
+     "away_dbgfnr": 5797
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "JCP",
+     "away_dbgfnr": 6005
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "SB",
+     "away_dbgfnr": 4107
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "TK",
+     "away_dbgfnr": 300
+    }
+   ]
   },
   {
    "date": "2026-10-22T19:00",
@@ -3220,7 +3259,33 @@
    "home": 639,
    "away": 647,
    "played": false,
-   "venue": null
+   "venue": null,
+   "lineup": [
+    {
+     "home_player": "PLF",
+     "home_dbgfnr": 4413,
+     "away_player": "LN",
+     "away_dbgfnr": 11251
+    },
+    {
+     "home_player": "KP",
+     "home_dbgfnr": 127,
+     "away_player": "MK",
+     "away_dbgfnr": 6973
+    },
+    {
+     "home_player": "ES",
+     "home_dbgfnr": 10,
+     "away_player": "SS",
+     "away_dbgfnr": 14148
+    },
+    {
+     "home_player": "JM",
+     "home_dbgfnr": 4880,
+     "away_player": "CN",
+     "away_dbgfnr": 1045
+    }
+   ]
   },
   {
    "date": "2026-10-22T19:00",
@@ -3244,8 +3309,8 @@
     {
      "home_player": null,
      "home_dbgfnr": null,
-     "away_player": "TK",
-     "away_dbgfnr": 5555
+     "away_player": "FB",
+     "away_dbgfnr": 666
     },
     {
      "home_player": null,
@@ -3300,7 +3365,33 @@
    "home": 633,
    "away": 647,
    "played": false,
-   "venue": "Ringsted, 2. kamp"
+   "venue": "Ringsted, 2. kamp",
+   "lineup": [
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "LN",
+     "away_dbgfnr": 11251
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "TB",
+     "away_dbgfnr": 6872
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "SS",
+     "away_dbgfnr": 14148
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "JP",
+     "away_dbgfnr": 9934
+    }
+   ]
   },
   {
    "date": "2026-10-25T12:00",
