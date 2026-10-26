@@ -6,14 +6,14 @@
   "4413": 1268.48,
   "3948": 1256.44,
   "4175": 1173.24,
-  "5782": 1116.61,
+  "5782": 1128.24,
   "666": 1241.89,
-  "5650": 1088.33,
+  "5650": 1080.11,
   "15699": 1147.11,
-  "3639": 1191.71,
+  "3639": 1183.08,
   "6472": 1186.53
  },
- "scraped_at": "2026-10-25T04:11:30+00:00",
+ "scraped_at": "2026-10-26T04:15:11+00:00",
  "season_id": 37,
  "division_id": 118,
  "source": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?season=37&division=118",
@@ -21,14 +21,14 @@
   {
    "id": 633,
    "name": "Team Casino Munkebjerg",
-   "K": 6,
-   "V": 3,
-   "U": 3,
+   "K": 8,
+   "V": 4,
+   "U": 4,
    "T": 0,
-   "EKV": 17,
-   "EKT": 7,
-   "P": 9,
-   "pm": 5
+   "EKV": 23,
+   "EKT": 9,
+   "P": 12,
+   "pm": 7
   },
   {
    "id": 634,
@@ -139,18 +139,6 @@
    "pm": -2
   },
   {
-   "id": 637,
-   "name": "Malmö",
-   "K": 4,
-   "V": 1,
-   "U": 0,
-   "T": 3,
-   "EKV": 5,
-   "EKT": 11,
-   "P": 2,
-   "pm": -3
-  },
-  {
    "id": 631,
    "name": "Soirée Dansante",
    "K": 7,
@@ -161,6 +149,18 @@
    "EKT": 18,
    "P": 4,
    "pm": -4
+  },
+  {
+   "id": 637,
+   "name": "Malmö",
+   "K": 6,
+   "V": 1,
+   "U": 1,
+   "T": 4,
+   "EKV": 7,
+   "EKT": 17,
+   "P": 3,
+   "pm": -5
   }
  ],
  "teams": [
@@ -172,9 +172,27 @@
      "dbgfnr": 9,
      "initials": "CMC",
      "title": "SGM",
-     "rating": 1279.24,
+     "rating": 1267.61,
+     "K": 8,
+     "V": 6,
+     "T": 2
+    },
+    {
+     "dbgfnr": 10945,
+     "initials": "BK",
+     "title": "IM",
+     "rating": 1193.95,
      "K": 6,
-     "V": 5,
+     "V": 4,
+     "T": 2
+    },
+    {
+     "dbgfnr": 11468,
+     "initials": "MJE",
+     "title": null,
+     "rating": 1110.63,
+     "K": 4,
+     "V": 3,
      "T": 1
     },
     {
@@ -214,15 +232,6 @@
      "T": 0
     },
     {
-     "dbgfnr": 10945,
-     "initials": "BK",
-     "title": "IM",
-     "rating": 1185.32,
-     "K": 4,
-     "V": 2,
-     "T": 2
-    },
-    {
      "dbgfnr": 1162,
      "initials": "KJ",
      "title": "GM",
@@ -232,10 +241,10 @@
      "T": 1
     },
     {
-     "dbgfnr": 11468,
-     "initials": "MJE",
-     "title": null,
-     "rating": 1102.41,
+     "dbgfnr": 8860,
+     "initials": "TH",
+     "title": "IM",
+     "rating": 1193.88,
      "K": 2,
      "V": 1,
      "T": 1
@@ -245,15 +254,6 @@
      "initials": "BS",
      "title": "IM",
      "rating": 1197.44,
-     "K": 0,
-     "V": 0,
-     "T": 0
-    },
-    {
-     "dbgfnr": 8860,
-     "initials": "TH",
-     "title": "IM",
-     "rating": 1203.68,
      "K": 0,
      "V": 0,
      "T": 0
@@ -280,7 +280,7 @@
       "dbgfnr": 9,
       "initials": "CMC",
       "title": "SGM",
-      "rating": 1279.24,
+      "rating": 1267.61,
       "K": 20,
       "V": 14,
       "T": 6
@@ -316,7 +316,7 @@
       "dbgfnr": 10945,
       "initials": "BK",
       "title": "IM",
-      "rating": 1185.32,
+      "rating": 1193.95,
       "K": 2,
       "V": 1,
       "T": 1
@@ -334,7 +334,7 @@
       "dbgfnr": 11468,
       "initials": "MJE",
       "title": null,
-      "rating": 1102.41,
+      "rating": 1110.63,
       "K": 5,
       "V": 2,
       "T": 3
@@ -352,7 +352,7 @@
       "dbgfnr": 8860,
       "initials": "TH",
       "title": "IM",
-      "rating": 1203.68,
+      "rating": 1193.88,
       "K": 9,
       "V": 3,
       "T": 6
@@ -440,7 +440,7 @@
       "dbgfnr": 5782,
       "initials": "GH",
       "title": null,
-      "rating": 1116.61,
+      "rating": 1128.24,
       "K": 12,
       "V": 10,
       "T": 2
@@ -467,7 +467,7 @@
       "dbgfnr": 11,
       "initials": "CS",
       "title": null,
-      "rating": 1122.85,
+      "rating": 1116.55,
       "K": 1,
       "V": 0,
       "T": 1
@@ -1479,7 +1479,7 @@
      "dbgfnr": 2325,
      "initials": "JD",
      "title": "GM",
-     "rating": 1274.89,
+     "rating": 1274.95,
      "K": 4,
      "V": 3,
      "T": 1
@@ -1569,7 +1569,7 @@
       "dbgfnr": 2325,
       "initials": "JD",
       "title": "GM",
-      "rating": 1274.89,
+      "rating": 1274.95,
       "K": 24,
       "V": 17,
       "T": 7
@@ -1819,211 +1819,6 @@
    }
   },
   {
-   "id": 637,
-   "name": "Malmö",
-   "players": [
-    {
-     "dbgfnr": 5782,
-     "initials": "GH",
-     "title": null,
-     "rating": 1116.61,
-     "K": 2,
-     "V": 2,
-     "T": 0
-    },
-    {
-     "dbgfnr": 5650,
-     "initials": "TS",
-     "title": null,
-     "rating": 1088.33,
-     "K": 2,
-     "V": 1,
-     "T": 1
-    },
-    {
-     "dbgfnr": 3644,
-     "initials": "JL",
-     "title": null,
-     "rating": 1172.95,
-     "K": 0,
-     "V": 0,
-     "T": 0
-    },
-    {
-     "dbgfnr": 3650,
-     "initials": "RP",
-     "title": null,
-     "rating": 1117.42,
-     "K": 0,
-     "V": 0,
-     "T": 0
-    },
-    {
-     "dbgfnr": 4894,
-     "initials": "JFM",
-     "title": null,
-     "rating": 1083.91,
-     "K": 0,
-     "V": 0,
-     "T": 0
-    },
-    {
-     "dbgfnr": 14964,
-     "initials": "JM",
-     "title": "IM",
-     "rating": 1138.96,
-     "K": 1,
-     "V": 0,
-     "T": 1
-    },
-    {
-     "dbgfnr": 1985,
-     "initials": "KH",
-     "title": null,
-     "rating": 1054.93,
-     "K": 1,
-     "V": 0,
-     "T": 1
-    },
-    {
-     "dbgfnr": 3639,
-     "initials": "AT",
-     "title": "IM",
-     "rating": 1191.71,
-     "K": 4,
-     "V": 1,
-     "T": 3
-    },
-    {
-     "dbgfnr": 3948,
-     "initials": "FC",
-     "title": "GM",
-     "rating": 1256.44,
-     "K": 4,
-     "V": 1,
-     "T": 3
-    },
-    {
-     "dbgfnr": 4059,
-     "initials": "TT",
-     "title": "SGM",
-     "rating": 1292.84,
-     "K": 2,
-     "V": 0,
-     "T": 2
-    }
-   ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=637",
-   "previous": {
-    "id": 565,
-    "name": "Malmö (O)",
-    "division": "Elitedivisionen",
-    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=111&hold=565",
-    "season_label": "2025/2026",
-    "players": [
-     {
-      "dbgfnr": 5650,
-      "initials": "TS",
-      "title": null,
-      "rating": 1088.33,
-      "K": 9,
-      "V": 7,
-      "T": 2
-     },
-     {
-      "dbgfnr": 3639,
-      "initials": "AT",
-      "title": "IM",
-      "rating": 1191.71,
-      "K": 19,
-      "V": 11,
-      "T": 8
-     },
-     {
-      "dbgfnr": 3948,
-      "initials": "FC",
-      "title": "GM",
-      "rating": 1256.44,
-      "K": 18,
-      "V": 10,
-      "T": 8
-     },
-     {
-      "dbgfnr": 5834,
-      "initials": "TS",
-      "title": null,
-      "rating": 1011.71,
-      "K": 1,
-      "V": 1,
-      "T": 0
-     },
-     {
-      "dbgfnr": 3650,
-      "initials": "RP",
-      "title": null,
-      "rating": 1117.42,
-      "K": 0,
-      "V": 0,
-      "T": 0
-     },
-     {
-      "dbgfnr": 14964,
-      "initials": "JM",
-      "title": "IM",
-      "rating": 1138.96,
-      "K": 15,
-      "V": 7,
-      "T": 8
-     },
-     {
-      "dbgfnr": 4059,
-      "initials": "TT",
-      "title": "SGM",
-      "rating": 1292.84,
-      "K": 1,
-      "V": 0,
-      "T": 1
-     },
-     {
-      "dbgfnr": 3644,
-      "initials": "JL",
-      "title": null,
-      "rating": 1172.95,
-      "K": 12,
-      "V": 5,
-      "T": 7
-     },
-     {
-      "dbgfnr": 5658,
-      "initials": "MF",
-      "title": null,
-      "rating": 1033.66,
-      "K": 6,
-      "V": 2,
-      "T": 4
-     },
-     {
-      "dbgfnr": 1985,
-      "initials": "KH",
-      "title": null,
-      "rating": 1054.93,
-      "K": 4,
-      "V": 1,
-      "T": 3
-     },
-     {
-      "dbgfnr": 4894,
-      "initials": "JFM",
-      "title": null,
-      "rating": 1083.91,
-      "K": 3,
-      "V": 0,
-      "T": 3
-     }
-    ]
-   }
-  },
-  {
    "id": 631,
    "name": "Soirée Dansante",
    "players": [
@@ -2206,6 +2001,211 @@
       "K": 2,
       "V": 0,
       "T": 2
+     }
+    ]
+   }
+  },
+  {
+   "id": 637,
+   "name": "Malmö",
+   "players": [
+    {
+     "dbgfnr": 5782,
+     "initials": "GH",
+     "title": null,
+     "rating": 1128.24,
+     "K": 4,
+     "V": 3,
+     "T": 1
+    },
+    {
+     "dbgfnr": 3644,
+     "initials": "JL",
+     "title": null,
+     "rating": 1172.95,
+     "K": 0,
+     "V": 0,
+     "T": 0
+    },
+    {
+     "dbgfnr": 3650,
+     "initials": "RP",
+     "title": null,
+     "rating": 1117.42,
+     "K": 0,
+     "V": 0,
+     "T": 0
+    },
+    {
+     "dbgfnr": 4894,
+     "initials": "JFM",
+     "title": null,
+     "rating": 1083.91,
+     "K": 0,
+     "V": 0,
+     "T": 0
+    },
+    {
+     "dbgfnr": 14964,
+     "initials": "JM",
+     "title": "IM",
+     "rating": 1148.76,
+     "K": 3,
+     "V": 1,
+     "T": 2
+    },
+    {
+     "dbgfnr": 1985,
+     "initials": "KH",
+     "title": null,
+     "rating": 1054.93,
+     "K": 1,
+     "V": 0,
+     "T": 1
+    },
+    {
+     "dbgfnr": 3948,
+     "initials": "FC",
+     "title": "GM",
+     "rating": 1256.44,
+     "K": 4,
+     "V": 1,
+     "T": 3
+    },
+    {
+     "dbgfnr": 5650,
+     "initials": "TS",
+     "title": null,
+     "rating": 1080.11,
+     "K": 4,
+     "V": 1,
+     "T": 3
+    },
+    {
+     "dbgfnr": 4059,
+     "initials": "TT",
+     "title": "SGM",
+     "rating": 1292.84,
+     "K": 2,
+     "V": 0,
+     "T": 2
+    },
+    {
+     "dbgfnr": 3639,
+     "initials": "AT",
+     "title": "IM",
+     "rating": 1183.08,
+     "K": 6,
+     "V": 1,
+     "T": 5
+    }
+   ],
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=637",
+   "previous": {
+    "id": 565,
+    "name": "Malmö (O)",
+    "division": "Elitedivisionen",
+    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=111&hold=565",
+    "season_label": "2025/2026",
+    "players": [
+     {
+      "dbgfnr": 5650,
+      "initials": "TS",
+      "title": null,
+      "rating": 1080.11,
+      "K": 9,
+      "V": 7,
+      "T": 2
+     },
+     {
+      "dbgfnr": 3639,
+      "initials": "AT",
+      "title": "IM",
+      "rating": 1183.08,
+      "K": 19,
+      "V": 11,
+      "T": 8
+     },
+     {
+      "dbgfnr": 3948,
+      "initials": "FC",
+      "title": "GM",
+      "rating": 1256.44,
+      "K": 18,
+      "V": 10,
+      "T": 8
+     },
+     {
+      "dbgfnr": 5834,
+      "initials": "TS",
+      "title": null,
+      "rating": 1011.71,
+      "K": 1,
+      "V": 1,
+      "T": 0
+     },
+     {
+      "dbgfnr": 3650,
+      "initials": "RP",
+      "title": null,
+      "rating": 1117.42,
+      "K": 0,
+      "V": 0,
+      "T": 0
+     },
+     {
+      "dbgfnr": 14964,
+      "initials": "JM",
+      "title": "IM",
+      "rating": 1148.76,
+      "K": 15,
+      "V": 7,
+      "T": 8
+     },
+     {
+      "dbgfnr": 4059,
+      "initials": "TT",
+      "title": "SGM",
+      "rating": 1292.84,
+      "K": 1,
+      "V": 0,
+      "T": 1
+     },
+     {
+      "dbgfnr": 3644,
+      "initials": "JL",
+      "title": null,
+      "rating": 1172.95,
+      "K": 12,
+      "V": 5,
+      "T": 7
+     },
+     {
+      "dbgfnr": 5658,
+      "initials": "MF",
+      "title": null,
+      "rating": 1033.66,
+      "K": 6,
+      "V": 2,
+      "T": 4
+     },
+     {
+      "dbgfnr": 1985,
+      "initials": "KH",
+      "title": null,
+      "rating": 1054.93,
+      "K": 4,
+      "V": 1,
+      "T": 3
+     },
+     {
+      "dbgfnr": 4894,
+      "initials": "JFM",
+      "title": null,
+      "rating": 1083.91,
+      "K": 3,
+      "V": 0,
+      "T": 3
      }
     ]
    }
@@ -3506,15 +3506,87 @@
    "date": "2026-10-25T12:00",
    "home": 633,
    "away": 637,
-   "played": false,
-   "venue": "Vejle, 1. kamp, 12:00"
+   "played": true,
+   "venue": "Vejle, 1. kamp, 12:00",
+   "home_ekv": 2,
+   "away_ekv": 2,
+   "games": [
+    {
+     "home_player": "BK",
+     "home_dbgfnr": 10945,
+     "away_player": "AT",
+     "away_dbgfnr": 3639,
+     "home_score": 17,
+     "away_score": 10
+    },
+    {
+     "home_player": "CMC",
+     "home_dbgfnr": 9,
+     "away_player": "GH",
+     "away_dbgfnr": 5782,
+     "home_score": 13,
+     "away_score": 17
+    },
+    {
+     "home_player": "TH",
+     "home_dbgfnr": 8860,
+     "away_player": "JM",
+     "away_dbgfnr": 14964,
+     "home_score": 13,
+     "away_score": 17
+    },
+    {
+     "home_player": "MJE",
+     "home_dbgfnr": 11468,
+     "away_player": "TS",
+     "away_dbgfnr": 5650,
+     "home_score": 17,
+     "away_score": 7
+    }
+   ]
   },
   {
    "date": "2026-10-25T12:00",
    "home": 637,
    "away": 633,
-   "played": false,
-   "venue": "Vejle, 2. kamp"
+   "played": true,
+   "venue": "Vejle, 2. kamp",
+   "home_ekv": 0,
+   "away_ekv": 4,
+   "games": [
+    {
+     "home_player": "GH",
+     "home_dbgfnr": 5782,
+     "away_player": "CMC",
+     "away_dbgfnr": 9,
+     "home_score": 10,
+     "away_score": 17
+    },
+    {
+     "home_player": "TS",
+     "home_dbgfnr": 5650,
+     "away_player": "TH",
+     "away_dbgfnr": 8860,
+     "home_score": 12,
+     "away_score": 17
+    },
+    {
+     "home_player": "JM",
+     "home_dbgfnr": 14964,
+     "away_player": "BK",
+     "away_dbgfnr": 10945,
+     "home_score": 15,
+     "away_score": 17
+    },
+    {
+     "home_player": "AT",
+     "home_dbgfnr": 3639,
+     "away_player": "MJE",
+     "away_dbgfnr": 11468,
+     "home_score": 16,
+     "away_score": 17
+    }
+   ]
   },
   {
    "date": "2026-10-29T19:00",
