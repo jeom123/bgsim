@@ -1,5 +1,13 @@
 {
  "player_ratings": {
+  "6472": 1194.13,
+  "666": 1232.16,
+  "1976": 1193.61,
+  "5555": 1185.94,
+  "6872": 1258.93,
+  "11251": 1284.82,
+  "14148": 1159.93,
+  "1045": 1117.54,
   "9": 1273.4,
   "8578": 1282.68,
   "10223": 1210.33,
@@ -11,13 +19,11 @@
   "3948": 1265.68,
   "4175": 1173.21,
   "5782": 1132.42,
-  "666": 1232.16,
   "5650": 1073.66,
   "15699": 1154.44,
-  "3639": 1173.13,
-  "6472": 1194.13
+  "3639": 1173.13
  },
- "scraped_at": "2026-11-01T04:11:58+00:00",
+ "scraped_at": "2026-11-02T04:11:50+00:00",
  "season_id": 37,
  "division_id": 118,
  "source": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?season=37&division=118",
@@ -674,7 +680,7 @@
      "dbgfnr": 6872,
      "initials": "TB",
      "title": null,
-     "rating": 1250.09,
+     "rating": 1258.93,
      "K": 4,
      "V": 4,
      "T": 0
@@ -3769,14 +3775,66 @@
    "home": 634,
    "away": 638,
    "played": false,
-   "venue": null
+   "venue": null,
+   "lineup": [
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "TB",
+     "away_dbgfnr": 6472
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "FB",
+     "away_dbgfnr": 666
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "MLL",
+     "away_dbgfnr": 1976
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "TK",
+     "away_dbgfnr": 5555
+    }
+   ]
   },
   {
    "date": "2026-11-05T19:00",
    "home": 642,
    "away": 647,
    "played": false,
-   "venue": null
+   "venue": null,
+   "lineup": [
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "TB",
+     "away_dbgfnr": 6872
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "LN",
+     "away_dbgfnr": 11251
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "SS",
+     "away_dbgfnr": 14148
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "CN",
+     "away_dbgfnr": 1045
+    }
+   ]
   },
   {
    "date": "2026-11-05T19:00",
@@ -3793,7 +3851,7 @@
    "venue": null
   },
   {
-   "date": "2026-11-07T11:00",
+   "date": "2026-11-07T12:00",
    "home": 633,
    "away": 629,
    "played": false,
@@ -3826,7 +3884,7 @@
    ]
   },
   {
-   "date": "2026-11-07T11:00",
+   "date": "2026-11-07T12:00",
    "home": 629,
    "away": 633,
    "played": false,
