@@ -1,29 +1,23 @@
 {
  "player_ratings": {
-  "6472": 1194.13,
-  "666": 1232.16,
-  "1976": 1193.61,
-  "5555": 1185.94,
-  "6872": 1258.93,
-  "11251": 1284.82,
-  "14148": 1159.93,
-  "1045": 1117.54,
-  "9": 1273.4,
-  "8578": 1282.68,
-  "10223": 1210.33,
-  "20773": 1156.51,
-  "15822": 1171.03,
-  "4444": 1283.08,
-  "18879": 1306.56,
-  "14227": 1233.09,
-  "3948": 1265.68,
-  "4175": 1173.21,
+  "9": 1273.37,
+  "8578": 1288.76,
+  "10223": 1210.3,
+  "20773": 1146.98,
+  "15822": 1171.02,
+  "4444": 1283.06,
+  "18879": 1306.54,
+  "14227": 1242.4,
+  "3948": 1265.66,
+  "4175": 1176.56,
   "5782": 1132.42,
-  "5650": 1073.66,
-  "15699": 1154.44,
-  "3639": 1173.13
+  "666": 1239.83,
+  "5650": 1073.65,
+  "15699": 1154.4,
+  "3639": 1173.11,
+  "6472": 1185.92
  },
- "scraped_at": "2026-11-02T04:11:50+00:00",
+ "scraped_at": "2026-11-06T04:12:28+00:00",
  "season_id": 37,
  "division_id": 118,
  "source": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?season=37&division=118",
@@ -41,63 +35,63 @@
    "pm": 7
   },
   {
-   "id": 634,
-   "name": "KBgK I",
-   "K": 5,
-   "V": 3,
-   "U": 1,
-   "T": 1,
-   "EKV": 13,
-   "EKT": 7,
-   "P": 7,
-   "pm": 3
-  },
-  {
    "id": 639,
    "name": "Roskilde I (O)",
-   "K": 7,
+   "K": 8,
    "V": 3,
-   "U": 2,
+   "U": 3,
    "T": 2,
-   "EKV": 16,
-   "EKT": 12,
-   "P": 8,
+   "EKV": 18,
+   "EKT": 14,
+   "P": 9,
+   "pm": 2
+  },
+  {
+   "id": 634,
+   "name": "KBgK I",
+   "K": 6,
+   "V": 3,
+   "U": 1,
+   "T": 2,
+   "EKV": 14,
+   "EKT": 10,
+   "P": 7,
    "pm": 2
   },
   {
    "id": 647,
    "name": "Ringsted I (O)",
-   "K": 7,
+   "K": 8,
    "V": 2,
-   "U": 4,
+   "U": 5,
    "T": 1,
-   "EKV": 15,
-   "EKT": 13,
-   "P": 8,
+   "EKV": 17,
+   "EKT": 15,
+   "P": 9,
    "pm": 1
   },
   {
    "id": 638,
    "name": "Familien Nemesis I",
-   "K": 5,
-   "V": 2,
+   "K": 6,
+   "V": 3,
    "U": 1,
    "T": 2,
-   "EKV": 10,
-   "EKT": 10,
-   "P": 5,
-   "pm": 0
+   "EKV": 13,
+   "EKT": 11,
+   "P": 7,
+   "pm": 1
   },
   {
    "id": 629,
    "name": "Lødigt I (M)",
-   "K": 5,
+   "K": 6,
    "V": 1,
-   "U": 3,
+   "U": 4,
    "T": 1,
-   "EKV": 10,
-   "EKT": 10,
-   "P": 5,
+   "EKV": 12,
+   "EKT": 12,
+   "P": 6,
    "pm": 0
   },
   {
@@ -113,38 +107,38 @@
    "pm": 0
   },
   {
-   "id": 628,
-   "name": "Røde Stjerne 2.0",
-   "K": 5,
-   "V": 1,
+   "id": 702,
+   "name": "Ravnsgaard Metal BK",
+   "K": 6,
+   "V": 2,
    "U": 2,
    "T": 2,
-   "EKV": 9,
-   "EKT": 11,
-   "P": 4,
+   "EKV": 11,
+   "EKT": 13,
+   "P": 6,
    "pm": -1
   },
   {
    "id": 642,
    "name": "Langebro (O)",
-   "K": 7,
+   "K": 8,
    "V": 1,
-   "U": 4,
+   "U": 5,
    "T": 2,
-   "EKV": 12,
-   "EKT": 16,
-   "P": 6,
+   "EKV": 14,
+   "EKT": 18,
+   "P": 7,
    "pm": -2
   },
   {
-   "id": 702,
-   "name": "Ravnsgaard Metal BK",
-   "K": 5,
+   "id": 628,
+   "name": "Røde Stjerne 2.0",
+   "K": 6,
    "V": 1,
    "U": 2,
-   "T": 2,
-   "EKV": 8,
-   "EKT": 12,
+   "T": 3,
+   "EKV": 10,
+   "EKT": 14,
    "P": 4,
    "pm": -2
   },
@@ -182,7 +176,7 @@
      "dbgfnr": 9,
      "initials": "CMC",
      "title": "SGM",
-     "rating": 1273.4,
+     "rating": 1273.37,
      "K": 8,
      "V": 6,
      "T": 2
@@ -191,7 +185,7 @@
      "dbgfnr": 10945,
      "initials": "BK",
      "title": "IM",
-     "rating": 1201.54,
+     "rating": 1201.52,
      "K": 6,
      "V": 4,
      "T": 2
@@ -200,7 +194,7 @@
      "dbgfnr": 11468,
      "initials": "MJE",
      "title": null,
-     "rating": 1120.57,
+     "rating": 1120.54,
      "K": 4,
      "V": 3,
      "T": 1
@@ -209,7 +203,7 @@
      "dbgfnr": 2869,
      "initials": "DS",
      "title": "GM",
-     "rating": 1181.71,
+     "rating": 1181.68,
      "K": 2,
      "V": 2,
      "T": 0
@@ -218,7 +212,7 @@
      "dbgfnr": 15822,
      "initials": "GEJ",
      "title": null,
-     "rating": 1171.03,
+     "rating": 1171.02,
      "K": 2,
      "V": 2,
      "T": 0
@@ -227,7 +221,7 @@
      "dbgfnr": 10223,
      "initials": "HV",
      "title": null,
-     "rating": 1210.33,
+     "rating": 1210.3,
      "K": 2,
      "V": 2,
      "T": 0
@@ -236,7 +230,7 @@
      "dbgfnr": 18879,
      "initials": "LT",
      "title": "SGM",
-     "rating": 1306.56,
+     "rating": 1306.54,
      "K": 2,
      "V": 2,
      "T": 0
@@ -245,7 +239,7 @@
      "dbgfnr": 1162,
      "initials": "KJ",
      "title": "GM",
-     "rating": 1212.2,
+     "rating": 1212.18,
      "K": 2,
      "V": 1,
      "T": 1
@@ -254,7 +248,7 @@
      "dbgfnr": 8860,
      "initials": "TH",
      "title": "IM",
-     "rating": 1200.15,
+     "rating": 1200.12,
      "K": 2,
      "V": 1,
      "T": 1
@@ -263,7 +257,7 @@
      "dbgfnr": 2121,
      "initials": "BS",
      "title": "IM",
-     "rating": 1197.44,
+     "rating": 1197.41,
      "K": 0,
      "V": 0,
      "T": 0
@@ -272,7 +266,7 @@
      "dbgfnr": 2530,
      "initials": "FM",
      "title": "IM",
-     "rating": 1126.53,
+     "rating": 1126.51,
      "K": 2,
      "V": 0,
      "T": 2
@@ -290,7 +284,7 @@
       "dbgfnr": 9,
       "initials": "CMC",
       "title": "SGM",
-      "rating": 1273.4,
+      "rating": 1273.37,
       "K": 20,
       "V": 14,
       "T": 6
@@ -299,7 +293,7 @@
       "dbgfnr": 18879,
       "initials": "LT",
       "title": "SGM",
-      "rating": 1306.56,
+      "rating": 1306.54,
       "K": 17,
       "V": 9,
       "T": 8
@@ -308,7 +302,7 @@
       "dbgfnr": 15822,
       "initials": "GEJ",
       "title": null,
-      "rating": 1171.03,
+      "rating": 1171.02,
       "K": 7,
       "V": 4,
       "T": 3
@@ -317,7 +311,7 @@
       "dbgfnr": 2121,
       "initials": "BS",
       "title": "IM",
-      "rating": 1197.44,
+      "rating": 1197.41,
       "K": 3,
       "V": 2,
       "T": 1
@@ -326,7 +320,7 @@
       "dbgfnr": 10945,
       "initials": "BK",
       "title": "IM",
-      "rating": 1201.54,
+      "rating": 1201.52,
       "K": 2,
       "V": 1,
       "T": 1
@@ -335,7 +329,7 @@
       "dbgfnr": 10223,
       "initials": "HV",
       "title": null,
-      "rating": 1210.33,
+      "rating": 1210.3,
       "K": 5,
       "V": 2,
       "T": 3
@@ -344,7 +338,7 @@
       "dbgfnr": 11468,
       "initials": "MJE",
       "title": null,
-      "rating": 1120.57,
+      "rating": 1120.54,
       "K": 5,
       "V": 2,
       "T": 3
@@ -353,7 +347,7 @@
       "dbgfnr": 2530,
       "initials": "FM",
       "title": "IM",
-      "rating": 1126.53,
+      "rating": 1126.51,
       "K": 4,
       "V": 1,
       "T": 3
@@ -362,7 +356,7 @@
       "dbgfnr": 8860,
       "initials": "TH",
       "title": "IM",
-      "rating": 1200.15,
+      "rating": 1200.12,
       "K": 9,
       "V": 3,
       "T": 6
@@ -371,9 +365,178 @@
       "dbgfnr": 2869,
       "initials": "DS",
       "title": "GM",
-      "rating": 1181.71,
+      "rating": 1181.68,
       "K": 16,
       "V": 5,
+      "T": 11
+     }
+    ]
+   }
+  },
+  {
+   "id": 639,
+   "name": "Roskilde I (O)",
+   "players": [
+    {
+     "dbgfnr": 4413,
+     "initials": "PLF",
+     "title": "IM",
+     "rating": 1264.95,
+     "K": 6,
+     "V": 5,
+     "T": 1
+    },
+    {
+     "dbgfnr": 8649,
+     "initials": "MP",
+     "title": null,
+     "rating": 1078.19,
+     "K": 4,
+     "V": 3,
+     "T": 1
+    },
+    {
+     "dbgfnr": 38,
+     "initials": "AM",
+     "title": null,
+     "rating": 1197.1,
+     "K": 3,
+     "V": 2,
+     "T": 1
+    },
+    {
+     "dbgfnr": 4880,
+     "initials": "JM",
+     "title": null,
+     "rating": 1230.98,
+     "K": 3,
+     "V": 2,
+     "T": 1
+    },
+    {
+     "dbgfnr": 4840,
+     "initials": "PS",
+     "title": null,
+     "rating": 1102.71,
+     "K": 4,
+     "V": 2,
+     "T": 2
+    },
+    {
+     "dbgfnr": 127,
+     "initials": "KP",
+     "title": null,
+     "rating": 1116.56,
+     "K": 3,
+     "V": 1,
+     "T": 2
+    },
+    {
+     "dbgfnr": 1599,
+     "initials": "PC",
+     "title": null,
+     "rating": 1154.61,
+     "K": 3,
+     "V": 1,
+     "T": 2
+    },
+    {
+     "dbgfnr": 10,
+     "initials": "ES",
+     "title": "GM",
+     "rating": 1248.01,
+     "K": 6,
+     "V": 2,
+     "T": 4
+    }
+   ],
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=639",
+   "previous": {
+    "id": 559,
+    "name": "Roskilde (N)",
+    "division": "1. division",
+    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=112&hold=559",
+    "season_label": "2025/2026",
+    "players": [
+     {
+      "dbgfnr": 10,
+      "initials": "ES",
+      "title": "GM",
+      "rating": 1248.01,
+      "K": 16,
+      "V": 12,
+      "T": 4
+     },
+     {
+      "dbgfnr": 4880,
+      "initials": "JM",
+      "title": null,
+      "rating": 1230.98,
+      "K": 18,
+      "V": 12,
+      "T": 6
+     },
+     {
+      "dbgfnr": 4840,
+      "initials": "PS",
+      "title": null,
+      "rating": 1102.71,
+      "K": 8,
+      "V": 5,
+      "T": 3
+     },
+     {
+      "dbgfnr": 1599,
+      "initials": "PC",
+      "title": null,
+      "rating": 1154.61,
+      "K": 8,
+      "V": 5,
+      "T": 3
+     },
+     {
+      "dbgfnr": 8649,
+      "initials": "MP",
+      "title": null,
+      "rating": 1078.19,
+      "K": 10,
+      "V": 5,
+      "T": 5
+     },
+     {
+      "dbgfnr": 14275,
+      "initials": "MA",
+      "title": null,
+      "rating": 1173.23,
+      "K": 2,
+      "V": 1,
+      "T": 1
+     },
+     {
+      "dbgfnr": 14,
+      "initials": "TK",
+      "title": null,
+      "rating": 1161.35,
+      "K": 0,
+      "V": 0,
+      "T": 0
+     },
+     {
+      "dbgfnr": 127,
+      "initials": "KP",
+      "title": null,
+      "rating": 1116.56,
+      "K": 7,
+      "V": 3,
+      "T": 4
+     },
+     {
+      "dbgfnr": 4413,
+      "initials": "PLF",
+      "title": "IM",
+      "rating": 1264.95,
+      "K": 19,
+      "V": 8,
       "T": 11
      }
     ]
@@ -387,52 +550,61 @@
      "dbgfnr": 300,
      "initials": "TK",
      "title": null,
-     "rating": 1210.59,
-     "K": 4,
-     "V": 4,
+     "rating": 1218.73,
+     "K": 5,
+     "V": 5,
      "T": 0
     },
     {
      "dbgfnr": 5797,
      "initials": "FM",
      "title": "GM",
-     "rating": 1234.38,
+     "rating": 1234.35,
      "K": 5,
      "V": 4,
+     "T": 1
+    },
+    {
+     "dbgfnr": 5347,
+     "initials": "FMD",
+     "title": null,
+     "rating": 1196.27,
+     "K": 2,
+     "V": 1,
      "T": 1
     },
     {
      "dbgfnr": 6005,
      "initials": "JCP",
      "title": "IM",
-     "rating": 1193.02,
-     "K": 4,
+     "rating": 1185.28,
+     "K": 5,
      "V": 2,
-     "T": 2
+     "T": 3
     },
     {
      "dbgfnr": 4107,
      "initials": "SB",
      "title": null,
-     "rating": 1176.99,
-     "K": 4,
+     "rating": 1168.64,
+     "K": 5,
      "V": 2,
-     "T": 2
-    },
-    {
-     "dbgfnr": 5347,
-     "initials": "FMD",
-     "title": null,
-     "rating": 1196.29,
-     "K": 2,
-     "V": 1,
-     "T": 1
+     "T": 3
     },
     {
      "dbgfnr": 9039,
      "initials": "AW",
      "title": "IM",
-     "rating": 1139.59,
+     "rating": 1139.56,
+     "K": 1,
+     "V": 0,
+     "T": 1
+    },
+    {
+     "dbgfnr": 1312,
+     "initials": "SKO",
+     "title": null,
+     "rating": 1182.76,
      "K": 1,
      "V": 0,
      "T": 1
@@ -459,7 +631,7 @@
       "dbgfnr": 5797,
       "initials": "FM",
       "title": "GM",
-      "rating": 1234.38,
+      "rating": 1234.35,
       "K": 22,
       "V": 11,
       "T": 11
@@ -468,7 +640,7 @@
       "dbgfnr": 5347,
       "initials": "FMD",
       "title": null,
-      "rating": 1196.29,
+      "rating": 1196.27,
       "K": 20,
       "V": 10,
       "T": 10
@@ -477,7 +649,7 @@
       "dbgfnr": 11,
       "initials": "CS",
       "title": null,
-      "rating": 1129.55,
+      "rating": 1121.28,
       "K": 1,
       "V": 0,
       "T": 1
@@ -486,7 +658,7 @@
       "dbgfnr": 300,
       "initials": "TK",
       "title": null,
-      "rating": 1210.59,
+      "rating": 1218.73,
       "K": 22,
       "V": 10,
       "T": 12
@@ -495,179 +667,10 @@
       "dbgfnr": 4107,
       "initials": "SB",
       "title": null,
-      "rating": 1176.99,
+      "rating": 1168.64,
       "K": 11,
       "V": 4,
       "T": 7
-     }
-    ]
-   }
-  },
-  {
-   "id": 639,
-   "name": "Roskilde I (O)",
-   "players": [
-    {
-     "dbgfnr": 4413,
-     "initials": "PLF",
-     "title": "IM",
-     "rating": 1274.31,
-     "K": 5,
-     "V": 5,
-     "T": 0
-    },
-    {
-     "dbgfnr": 8649,
-     "initials": "MP",
-     "title": null,
-     "rating": 1078.21,
-     "K": 4,
-     "V": 3,
-     "T": 1
-    },
-    {
-     "dbgfnr": 38,
-     "initials": "AM",
-     "title": null,
-     "rating": 1197.14,
-     "K": 3,
-     "V": 2,
-     "T": 1
-    },
-    {
-     "dbgfnr": 4880,
-     "initials": "JM",
-     "title": null,
-     "rating": 1231.0,
-     "K": 3,
-     "V": 2,
-     "T": 1
-    },
-    {
-     "dbgfnr": 4840,
-     "initials": "PS",
-     "title": null,
-     "rating": 1102.74,
-     "K": 4,
-     "V": 2,
-     "T": 2
-    },
-    {
-     "dbgfnr": 1599,
-     "initials": "PC",
-     "title": null,
-     "rating": 1160.75,
-     "K": 2,
-     "V": 1,
-     "T": 1
-    },
-    {
-     "dbgfnr": 127,
-     "initials": "KP",
-     "title": null,
-     "rating": 1107.11,
-     "K": 2,
-     "V": 0,
-     "T": 2
-    },
-    {
-     "dbgfnr": 10,
-     "initials": "ES",
-     "title": "GM",
-     "rating": 1239.61,
-     "K": 5,
-     "V": 1,
-     "T": 4
-    }
-   ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=639",
-   "previous": {
-    "id": 559,
-    "name": "Roskilde (N)",
-    "division": "1. division",
-    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=112&hold=559",
-    "season_label": "2025/2026",
-    "players": [
-     {
-      "dbgfnr": 10,
-      "initials": "ES",
-      "title": "GM",
-      "rating": 1239.61,
-      "K": 16,
-      "V": 12,
-      "T": 4
-     },
-     {
-      "dbgfnr": 4880,
-      "initials": "JM",
-      "title": null,
-      "rating": 1231.0,
-      "K": 18,
-      "V": 12,
-      "T": 6
-     },
-     {
-      "dbgfnr": 4840,
-      "initials": "PS",
-      "title": null,
-      "rating": 1102.74,
-      "K": 8,
-      "V": 5,
-      "T": 3
-     },
-     {
-      "dbgfnr": 1599,
-      "initials": "PC",
-      "title": null,
-      "rating": 1160.75,
-      "K": 8,
-      "V": 5,
-      "T": 3
-     },
-     {
-      "dbgfnr": 8649,
-      "initials": "MP",
-      "title": null,
-      "rating": 1078.21,
-      "K": 10,
-      "V": 5,
-      "T": 5
-     },
-     {
-      "dbgfnr": 14275,
-      "initials": "MA",
-      "title": null,
-      "rating": 1173.28,
-      "K": 2,
-      "V": 1,
-      "T": 1
-     },
-     {
-      "dbgfnr": 14,
-      "initials": "TK",
-      "title": null,
-      "rating": 1161.37,
-      "K": 0,
-      "V": 0,
-      "T": 0
-     },
-     {
-      "dbgfnr": 127,
-      "initials": "KP",
-      "title": null,
-      "rating": 1107.11,
-      "K": 7,
-      "V": 3,
-      "T": 4
-     },
-     {
-      "dbgfnr": 4413,
-      "initials": "PLF",
-      "title": "IM",
-      "rating": 1274.31,
-      "K": 19,
-      "V": 8,
-      "T": 11
      }
     ]
    }
@@ -680,25 +683,25 @@
      "dbgfnr": 6872,
      "initials": "TB",
      "title": null,
-     "rating": 1258.93,
-     "K": 4,
-     "V": 4,
-     "T": 0
-    },
-    {
-     "dbgfnr": 9934,
-     "initials": "JP",
-     "title": null,
-     "rating": 1160.74,
+     "rating": 1230.19,
      "K": 5,
-     "V": 3,
-     "T": 2
+     "V": 4,
+     "T": 1
     },
     {
      "dbgfnr": 11251,
      "initials": "LN",
      "title": "GM",
-     "rating": 1284.82,
+     "rating": 1292.59,
+     "K": 6,
+     "V": 4,
+     "T": 2
+    },
+    {
+     "dbgfnr": 9934,
+     "initials": "JP",
+     "title": null,
+     "rating": 1155.89,
      "K": 5,
      "V": 3,
      "T": 2
@@ -707,7 +710,7 @@
      "dbgfnr": 6973,
      "initials": "MK",
      "title": "IM",
-     "rating": 1200.41,
+     "rating": 1200.38,
      "K": 5,
      "V": 3,
      "T": 2
@@ -716,19 +719,19 @@
      "dbgfnr": 14148,
      "initials": "SS",
      "title": "IM",
-     "rating": 1159.93,
-     "K": 5,
-     "V": 2,
+     "rating": 1163.09,
+     "K": 6,
+     "V": 3,
      "T": 3
     },
     {
      "dbgfnr": 1045,
      "initials": "CN",
      "title": null,
-     "rating": 1117.54,
-     "K": 4,
+     "rating": 1099.13,
+     "K": 5,
      "V": 0,
-     "T": 4
+     "T": 5
     }
    ],
    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=647",
@@ -743,7 +746,7 @@
       "dbgfnr": 11251,
       "initials": "LN",
       "title": "GM",
-      "rating": 1284.82,
+      "rating": 1292.59,
       "K": 15,
       "V": 10,
       "T": 5
@@ -752,7 +755,7 @@
       "dbgfnr": 9934,
       "initials": "JP",
       "title": null,
-      "rating": 1160.74,
+      "rating": 1155.89,
       "K": 14,
       "V": 9,
       "T": 5
@@ -761,7 +764,7 @@
       "dbgfnr": 1045,
       "initials": "CN",
       "title": null,
-      "rating": 1117.54,
+      "rating": 1099.13,
       "K": 13,
       "V": 8,
       "T": 5
@@ -770,7 +773,7 @@
       "dbgfnr": 5393,
       "initials": "BP",
       "title": null,
-      "rating": 1156.66,
+      "rating": 1158.12,
       "K": 2,
       "V": 2,
       "T": 0
@@ -779,7 +782,7 @@
       "dbgfnr": 10789,
       "initials": "RN",
       "title": "IM",
-      "rating": 1096.29,
+      "rating": 1105.0,
       "K": 16,
       "V": 8,
       "T": 8
@@ -788,7 +791,7 @@
       "dbgfnr": 14148,
       "initials": "SS",
       "title": "IM",
-      "rating": 1159.93,
+      "rating": 1163.09,
       "K": 15,
       "V": 7,
       "T": 8
@@ -797,7 +800,7 @@
       "dbgfnr": 6973,
       "initials": "MK",
       "title": "IM",
-      "rating": 1200.41,
+      "rating": 1200.38,
       "K": 13,
       "V": 6,
       "T": 7
@@ -813,16 +816,16 @@
      "dbgfnr": 666,
      "initials": "FB",
      "title": null,
-     "rating": 1232.16,
-     "K": 5,
-     "V": 4,
+     "rating": 1239.83,
+     "K": 6,
+     "V": 5,
      "T": 1
     },
     {
      "dbgfnr": 15699,
      "initials": "MH",
      "title": null,
-     "rating": 1154.44,
+     "rating": 1154.4,
      "K": 2,
      "V": 2,
      "T": 0
@@ -831,16 +834,16 @@
      "dbgfnr": 1976,
      "initials": "MLL",
      "title": "IM",
-     "rating": 1193.61,
+     "rating": 1193.55,
      "K": 1,
      "V": 1,
      "T": 0
     },
     {
-     "dbgfnr": 6472,
-     "initials": "TB",
+     "dbgfnr": 5555,
+     "initials": "TK",
      "title": "IM",
-     "rating": 1194.13,
+     "rating": 1194.24,
      "K": 4,
      "V": 2,
      "T": 2
@@ -849,34 +852,34 @@
      "dbgfnr": 2709,
      "initials": "PH",
      "title": "IM",
-     "rating": 1170.94,
+     "rating": 1170.92,
      "K": 0,
      "V": 0,
      "T": 0
     },
     {
-     "dbgfnr": 5555,
-     "initials": "TK",
+     "dbgfnr": 6472,
+     "initials": "TB",
      "title": "IM",
-     "rating": 1185.94,
-     "K": 3,
-     "V": 1,
-     "T": 2
+     "rating": 1185.92,
+     "K": 5,
+     "V": 2,
+     "T": 3
     },
     {
      "dbgfnr": 7112,
      "initials": "TS",
      "title": null,
-     "rating": 1226.19,
-     "K": 2,
-     "V": 0,
+     "rating": 1226.18,
+     "K": 3,
+     "V": 1,
      "T": 2
     },
     {
      "dbgfnr": 4175,
      "initials": "AB",
      "title": "IM",
-     "rating": 1173.21,
+     "rating": 1176.56,
      "K": 3,
      "V": 0,
      "T": 3
@@ -894,7 +897,7 @@
       "dbgfnr": 2709,
       "initials": "PH",
       "title": "IM",
-      "rating": 1170.94,
+      "rating": 1170.92,
       "K": 4,
       "V": 4,
       "T": 0
@@ -903,7 +906,7 @@
       "dbgfnr": 7112,
       "initials": "TS",
       "title": null,
-      "rating": 1226.19,
+      "rating": 1226.18,
       "K": 9,
       "V": 6,
       "T": 3
@@ -912,7 +915,7 @@
       "dbgfnr": 1976,
       "initials": "MLL",
       "title": "IM",
-      "rating": 1193.61,
+      "rating": 1193.55,
       "K": 9,
       "V": 5,
       "T": 4
@@ -921,7 +924,7 @@
       "dbgfnr": 666,
       "initials": "FB",
       "title": null,
-      "rating": 1232.16,
+      "rating": 1239.83,
       "K": 18,
       "V": 9,
       "T": 9
@@ -930,7 +933,7 @@
       "dbgfnr": 6472,
       "initials": "TB",
       "title": "IM",
-      "rating": 1194.13,
+      "rating": 1185.92,
       "K": 17,
       "V": 8,
       "T": 9
@@ -939,7 +942,7 @@
       "dbgfnr": 15699,
       "initials": "MH",
       "title": null,
-      "rating": 1154.44,
+      "rating": 1154.4,
       "K": 11,
       "V": 5,
       "T": 6
@@ -948,7 +951,7 @@
       "dbgfnr": 5555,
       "initials": "TK",
       "title": "IM",
-      "rating": 1185.94,
+      "rating": 1194.24,
       "K": 10,
       "V": 3,
       "T": 7
@@ -957,7 +960,7 @@
       "dbgfnr": 4175,
       "initials": "AB",
       "title": "IM",
-      "rating": 1173.21,
+      "rating": 1176.56,
       "K": 10,
       "V": 2,
       "T": 8
@@ -973,34 +976,34 @@
      "dbgfnr": 8578,
      "initials": "BF",
      "title": null,
-     "rating": 1282.68,
-     "K": 4,
-     "V": 3,
-     "T": 1
-    },
-    {
-     "dbgfnr": 10881,
-     "initials": "RJ",
-     "title": "IM",
-     "rating": 1235.58,
-     "K": 3,
-     "V": 2,
+     "rating": 1288.76,
+     "K": 5,
+     "V": 4,
      "T": 1
     },
     {
      "dbgfnr": 14227,
      "initials": "RH",
      "title": "GM",
-     "rating": 1233.09,
-     "K": 1,
-     "V": 1,
+     "rating": 1242.4,
+     "K": 2,
+     "V": 2,
      "T": 0
+    },
+    {
+     "dbgfnr": 10881,
+     "initials": "RJ",
+     "title": "IM",
+     "rating": 1227.13,
+     "K": 4,
+     "V": 2,
+     "T": 2
     },
     {
      "dbgfnr": 8300,
      "initials": "CB",
      "title": null,
-     "rating": 1237.17,
+     "rating": 1237.14,
      "K": 2,
      "V": 1,
      "T": 1
@@ -1009,7 +1012,7 @@
      "dbgfnr": 2111,
      "initials": "PF",
      "title": "GM",
-     "rating": 1186.12,
+     "rating": 1186.09,
      "K": 2,
      "V": 1,
      "T": 1
@@ -1018,7 +1021,7 @@
      "dbgfnr": 2174,
      "initials": "MPA",
      "title": "GM",
-     "rating": 1152.51,
+     "rating": 1152.47,
      "K": 0,
      "V": 0,
      "T": 0
@@ -1027,16 +1030,16 @@
      "dbgfnr": 20773,
      "initials": "HKM",
      "title": "IM",
-     "rating": 1156.51,
-     "K": 3,
+     "rating": 1146.98,
+     "K": 4,
      "V": 1,
-     "T": 2
+     "T": 3
     },
     {
      "dbgfnr": 4444,
      "initials": "MJ",
      "title": "IM",
-     "rating": 1283.08,
+     "rating": 1283.06,
      "K": 5,
      "V": 1,
      "T": 4
@@ -1054,7 +1057,7 @@
       "dbgfnr": 8578,
       "initials": "BF",
       "title": null,
-      "rating": 1282.68,
+      "rating": 1288.76,
       "K": 23,
       "V": 15,
       "T": 8
@@ -1063,7 +1066,7 @@
       "dbgfnr": 4444,
       "initials": "MJ",
       "title": "IM",
-      "rating": 1283.08,
+      "rating": 1283.06,
       "K": 18,
       "V": 12,
       "T": 6
@@ -1072,7 +1075,7 @@
       "dbgfnr": 10881,
       "initials": "RJ",
       "title": "IM",
-      "rating": 1235.58,
+      "rating": 1227.13,
       "K": 11,
       "V": 8,
       "T": 3
@@ -1081,7 +1084,7 @@
       "dbgfnr": 2174,
       "initials": "MPA",
       "title": "GM",
-      "rating": 1152.51,
+      "rating": 1152.47,
       "K": 5,
       "V": 4,
       "T": 1
@@ -1090,7 +1093,7 @@
       "dbgfnr": 20773,
       "initials": "HKM",
       "title": "IM",
-      "rating": 1156.51,
+      "rating": 1146.98,
       "K": 18,
       "V": 9,
       "T": 9
@@ -1099,7 +1102,7 @@
       "dbgfnr": 14227,
       "initials": "RH",
       "title": "GM",
-      "rating": 1233.09,
+      "rating": 1242.4,
       "K": 12,
       "V": 6,
       "T": 6
@@ -1108,7 +1111,7 @@
       "dbgfnr": 2111,
       "initials": "PF",
       "title": "GM",
-      "rating": 1186.12,
+      "rating": 1186.09,
       "K": 13,
       "V": 6,
       "T": 7
@@ -1124,7 +1127,7 @@
      "dbgfnr": 2150,
      "initials": "MA",
      "title": "GM",
-     "rating": 1239.34,
+     "rating": 1239.31,
      "K": 3,
      "V": 2,
      "T": 1
@@ -1133,7 +1136,7 @@
      "dbgfnr": 6887,
      "initials": "OMT",
      "title": null,
-     "rating": 1190.39,
+     "rating": 1190.37,
      "K": 3,
      "V": 2,
      "T": 1
@@ -1151,7 +1154,7 @@
      "dbgfnr": 66,
      "initials": "JL",
      "title": null,
-     "rating": 1091.14,
+     "rating": 1091.11,
      "K": 2,
      "V": 1,
      "T": 1
@@ -1160,7 +1163,7 @@
      "dbgfnr": 1387,
      "initials": "PR",
      "title": null,
-     "rating": 1144.94,
+     "rating": 1144.91,
      "K": 2,
      "V": 1,
      "T": 1
@@ -1169,7 +1172,7 @@
      "dbgfnr": 866,
      "initials": "PJT",
      "title": "SGM",
-     "rating": 1252.68,
+     "rating": 1252.64,
      "K": 2,
      "V": 1,
      "T": 1
@@ -1178,7 +1181,7 @@
      "dbgfnr": 12,
      "initials": "HB",
      "title": "IM",
-     "rating": 1150.1,
+     "rating": 1150.07,
      "K": 0,
      "V": 0,
      "T": 0
@@ -1187,7 +1190,7 @@
      "dbgfnr": 2382,
      "initials": "ML",
      "title": "GM",
-     "rating": 1216.73,
+     "rating": 1216.69,
      "K": 0,
      "V": 0,
      "T": 0
@@ -1196,7 +1199,7 @@
      "dbgfnr": 5343,
      "initials": "TR",
      "title": null,
-     "rating": 1234.1,
+     "rating": 1234.07,
      "K": 1,
      "V": 0,
      "T": 1
@@ -1205,7 +1208,7 @@
      "dbgfnr": 7699,
      "initials": "TH",
      "title": null,
-     "rating": 1257.7,
+     "rating": 1257.67,
      "K": 1,
      "V": 0,
      "T": 1
@@ -1214,7 +1217,7 @@
      "dbgfnr": 3032,
      "initials": "TJ",
      "title": "GM",
-     "rating": 1217.49,
+     "rating": 1217.44,
      "K": 1,
      "V": 0,
      "T": 1
@@ -1232,7 +1235,7 @@
       "dbgfnr": 7699,
       "initials": "TH",
       "title": null,
-      "rating": 1257.7,
+      "rating": 1257.67,
       "K": 8,
       "V": 6,
       "T": 2
@@ -1241,7 +1244,7 @@
       "dbgfnr": 5343,
       "initials": "TR",
       "title": null,
-      "rating": 1234.1,
+      "rating": 1234.07,
       "K": 11,
       "V": 7,
       "T": 4
@@ -1250,7 +1253,7 @@
       "dbgfnr": 2150,
       "initials": "MA",
       "title": "GM",
-      "rating": 1239.34,
+      "rating": 1239.31,
       "K": 20,
       "V": 11,
       "T": 9
@@ -1259,7 +1262,7 @@
       "dbgfnr": 3032,
       "initials": "TJ",
       "title": "GM",
-      "rating": 1217.49,
+      "rating": 1217.44,
       "K": 13,
       "V": 7,
       "T": 6
@@ -1268,7 +1271,7 @@
       "dbgfnr": 12,
       "initials": "HB",
       "title": "IM",
-      "rating": 1150.1,
+      "rating": 1150.07,
       "K": 1,
       "V": 1,
       "T": 0
@@ -1277,7 +1280,7 @@
       "dbgfnr": 1387,
       "initials": "PR",
       "title": null,
-      "rating": 1144.94,
+      "rating": 1144.91,
       "K": 6,
       "V": 3,
       "T": 3
@@ -1286,7 +1289,7 @@
       "dbgfnr": 6887,
       "initials": "OMT",
       "title": null,
-      "rating": 1190.39,
+      "rating": 1190.37,
       "K": 13,
       "V": 6,
       "T": 7
@@ -1295,7 +1298,7 @@
       "dbgfnr": 866,
       "initials": "PJT",
       "title": "SGM",
-      "rating": 1252.68,
+      "rating": 1252.64,
       "K": 11,
       "V": 5,
       "T": 6
@@ -1304,7 +1307,7 @@
       "dbgfnr": 2382,
       "initials": "ML",
       "title": "GM",
-      "rating": 1216.73,
+      "rating": 1216.69,
       "K": 7,
       "V": 3,
       "T": 4
@@ -1322,7 +1325,7 @@
       "dbgfnr": 66,
       "initials": "JL",
       "title": null,
-      "rating": 1091.14,
+      "rating": 1091.11,
       "K": 8,
       "V": 2,
       "T": 6
@@ -1331,170 +1334,152 @@
    }
   },
   {
-   "id": 628,
-   "name": "Røde Stjerne 2.0",
+   "id": 702,
+   "name": "Ravnsgaard Metal BK",
    "players": [
     {
-     "dbgfnr": 2325,
-     "initials": "JD",
-     "title": "GM",
-     "rating": 1265.75,
-     "K": 5,
+     "dbgfnr": 8243,
+     "initials": "BHL",
+     "title": null,
+     "rating": 1163.93,
+     "K": 3,
      "V": 3,
-     "T": 2
+     "T": 0
     },
     {
-     "dbgfnr": 6791,
-     "initials": "BL",
-     "title": "GM",
-     "rating": 1203.84,
+     "dbgfnr": 3620,
+     "initials": "HC",
+     "title": null,
+     "rating": 1019.81,
+     "K": 3,
+     "V": 2,
+     "T": 1
+    },
+    {
+     "dbgfnr": 7408,
+     "initials": "MJ",
+     "title": "IM",
+     "rating": 1143.75,
      "K": 4,
      "V": 2,
      "T": 2
     },
     {
-     "dbgfnr": 9414,
-     "initials": "JR",
-     "title": "GM",
-     "rating": 1231.46,
-     "K": 2,
-     "V": 1,
-     "T": 1
+     "dbgfnr": 21030,
+     "initials": "TN",
+     "title": null,
+     "rating": 1217.4,
+     "K": 4,
+     "V": 2,
+     "T": 2
     },
     {
-     "dbgfnr": 1339,
-     "initials": "LHM",
+     "dbgfnr": 5866,
+     "initials": "CR",
+     "title": null,
+     "rating": 1010.24,
+     "K": 0,
+     "V": 0,
+     "T": 0
+    },
+    {
+     "dbgfnr": 8016,
+     "initials": "CL",
      "title": "IM",
-     "rating": 1127.1,
-     "K": 2,
+     "rating": 1205.47,
+     "K": 4,
      "V": 1,
-     "T": 1
+     "T": 3
     },
     {
-     "dbgfnr": 7,
-     "initials": "SPM",
-     "title": "SGM",
-     "rating": 1211.25,
-     "K": 0,
-     "V": 0,
-     "T": 0
-    },
-    {
-     "dbgfnr": 19486,
-     "initials": "TK",
+     "dbgfnr": 416,
+     "initials": "SL",
      "title": "GM",
-     "rating": 1278.51,
-     "K": 0,
-     "V": 0,
-     "T": 0
-    },
-    {
-     "dbgfnr": 9743,
-     "initials": "HHL",
-     "title": null,
-     "rating": 1119.71,
-     "K": 3,
+     "rating": 1136.95,
+     "K": 6,
      "V": 1,
-     "T": 2
-    },
-    {
-     "dbgfnr": 6744,
-     "initials": "SS",
-     "title": null,
-     "rating": 1019.4,
-     "K": 3,
-     "V": 1,
-     "T": 2
-    },
-    {
-     "dbgfnr": 2791,
-     "initials": "TWH",
-     "title": "GM",
-     "rating": 1295.34,
-     "K": 1,
-     "V": 0,
-     "T": 1
+     "T": 5
     }
    ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=628",
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=702",
    "previous": {
-    "id": 553,
-    "name": "Røde Stjerne 2.0",
+    "id": 564,
+    "name": "Livingstone (O)",
     "division": "Elitedivisionen",
-    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=111&hold=553",
+    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=111&hold=564",
     "season_label": "2025/2026",
     "players": [
      {
-      "dbgfnr": 2325,
-      "initials": "JD",
-      "title": "GM",
-      "rating": 1265.75,
-      "K": 24,
-      "V": 17,
+      "dbgfnr": 8016,
+      "initials": "CL",
+      "title": "IM",
+      "rating": 1205.47,
+      "K": 19,
+      "V": 12,
       "T": 7
      },
      {
-      "dbgfnr": 2791,
-      "initials": "TWH",
-      "title": "GM",
-      "rating": 1295.34,
-      "K": 21,
-      "V": 15,
-      "T": 6
-     },
-     {
-      "dbgfnr": 6791,
-      "initials": "BL",
-      "title": "GM",
-      "rating": 1203.84,
-      "K": 15,
-      "V": 9,
-      "T": 6
-     },
-     {
-      "dbgfnr": 9414,
-      "initials": "JR",
-      "title": "GM",
-      "rating": 1231.46,
-      "K": 12,
-      "V": 6,
-      "T": 6
-     },
-     {
-      "dbgfnr": 19486,
-      "initials": "TK",
-      "title": "GM",
-      "rating": 1278.51,
-      "K": 5,
-      "V": 2,
-      "T": 3
-     },
-     {
-      "dbgfnr": 6744,
-      "initials": "SS",
+      "dbgfnr": 21030,
+      "initials": "TN",
       "title": null,
-      "rating": 1019.4,
-      "K": 7,
-      "V": 2,
-      "T": 5
-     },
-     {
-      "dbgfnr": 1339,
-      "initials": "LHM",
-      "title": "IM",
-      "rating": 1127.1,
-      "K": 6,
-      "V": 1,
-      "T": 5
-     },
-     {
-      "dbgfnr": 9743,
-      "initials": "HHL",
-      "title": null,
-      "rating": 1119.71,
-      "K": 10,
-      "V": 2,
+      "rating": 1217.4,
+      "K": 18,
+      "V": 10,
       "T": 8
+     },
+     {
+      "dbgfnr": 8243,
+      "initials": "BHL",
+      "title": null,
+      "rating": 1163.93,
+      "K": 13,
+      "V": 7,
+      "T": 6
+     },
+     {
+      "dbgfnr": 3620,
+      "initials": "HC",
+      "title": null,
+      "rating": 1019.81,
+      "K": 8,
+      "V": 4,
+      "T": 4
+     },
+     {
+      "dbgfnr": 5866,
+      "initials": "CR",
+      "title": null,
+      "rating": 1010.24,
+      "K": 2,
+      "V": 1,
+      "T": 1
+     },
+     {
+      "dbgfnr": 1122,
+      "initials": "CN",
+      "title": null,
+      "rating": 1039.61,
+      "K": 0,
+      "V": 0,
+      "T": 0
+     },
+     {
+      "dbgfnr": 416,
+      "initials": "SL",
+      "title": "GM",
+      "rating": 1136.95,
+      "K": 16,
+      "V": 7,
+      "T": 9
+     },
+     {
+      "dbgfnr": 7408,
+      "initials": "MJ",
+      "title": "IM",
+      "rating": 1143.75,
+      "K": 12,
+      "V": 5,
+      "T": 7
      }
     ]
    }
@@ -1507,34 +1492,34 @@
      "dbgfnr": 441,
      "initials": "RF",
      "title": null,
-     "rating": 1189.68,
+     "rating": 1189.65,
      "K": 2,
      "V": 2,
      "T": 0
     },
     {
-     "dbgfnr": 20209,
-     "initials": "JP",
-     "title": null,
-     "rating": 1150.11,
-     "K": 5,
-     "V": 3,
-     "T": 2
-    },
-    {
      "dbgfnr": 3999,
      "initials": "JB",
      "title": null,
-     "rating": 1158.09,
-     "K": 2,
-     "V": 1,
+     "rating": 1168.19,
+     "K": 3,
+     "V": 2,
      "T": 1
+    },
+    {
+     "dbgfnr": 20209,
+     "initials": "JP",
+     "title": null,
+     "rating": 1141.68,
+     "K": 6,
+     "V": 3,
+     "T": 3
     },
     {
      "dbgfnr": 9545,
      "initials": "KLDT",
      "title": null,
-     "rating": 1059.01,
+     "rating": 1058.98,
      "K": 2,
      "V": 1,
      "T": 1
@@ -1543,7 +1528,7 @@
      "dbgfnr": 13484,
      "initials": "ABN",
      "title": null,
-     "rating": 975.54,
+     "rating": 975.53,
      "K": 0,
      "V": 0,
      "T": 0
@@ -1552,16 +1537,7 @@
      "dbgfnr": 3618,
      "initials": "JHC",
      "title": null,
-     "rating": 1081.36,
-     "K": 5,
-     "V": 2,
-     "T": 3
-    },
-    {
-     "dbgfnr": 19545,
-     "initials": "PT",
-     "title": "IM",
-     "rating": 1249.4,
+     "rating": 1081.3,
      "K": 5,
      "V": 2,
      "T": 3
@@ -1570,16 +1546,25 @@
      "dbgfnr": 10789,
      "initials": "RN",
      "title": "IM",
-     "rating": 1096.29,
-     "K": 2,
-     "V": 0,
+     "rating": 1105.0,
+     "K": 3,
+     "V": 1,
      "T": 2
+    },
+    {
+     "dbgfnr": 19545,
+     "initials": "PT",
+     "title": "IM",
+     "rating": 1241.57,
+     "K": 6,
+     "V": 2,
+     "T": 4
     },
     {
      "dbgfnr": 3772,
      "initials": "SB",
      "title": null,
-     "rating": 1134.24,
+     "rating": 1134.21,
      "K": 5,
      "V": 1,
      "T": 4
@@ -1597,7 +1582,7 @@
       "dbgfnr": 19545,
       "initials": "PT",
       "title": "IM",
-      "rating": 1249.4,
+      "rating": 1241.57,
       "K": 18,
       "V": 13,
       "T": 5
@@ -1606,7 +1591,7 @@
       "dbgfnr": 3618,
       "initials": "JHC",
       "title": null,
-      "rating": 1081.36,
+      "rating": 1081.3,
       "K": 13,
       "V": 8,
       "T": 5
@@ -1615,7 +1600,7 @@
       "dbgfnr": 3999,
       "initials": "JB",
       "title": null,
-      "rating": 1158.09,
+      "rating": 1168.19,
       "K": 8,
       "V": 5,
       "T": 3
@@ -1624,7 +1609,7 @@
       "dbgfnr": 3772,
       "initials": "SB",
       "title": null,
-      "rating": 1134.24,
+      "rating": 1134.21,
       "K": 15,
       "V": 8,
       "T": 7
@@ -1633,7 +1618,7 @@
       "dbgfnr": 441,
       "initials": "RF",
       "title": null,
-      "rating": 1189.68,
+      "rating": 1189.65,
       "K": 11,
       "V": 6,
       "T": 5
@@ -1642,7 +1627,7 @@
       "dbgfnr": 20209,
       "initials": "JP",
       "title": null,
-      "rating": 1150.11,
+      "rating": 1141.68,
       "K": 16,
       "V": 8,
       "T": 8
@@ -1651,7 +1636,7 @@
       "dbgfnr": 13484,
       "initials": "ABN",
       "title": null,
-      "rating": 975.54,
+      "rating": 975.53,
       "K": 4,
       "V": 2,
       "T": 2
@@ -1660,7 +1645,7 @@
       "dbgfnr": 9764,
       "initials": "SH",
       "title": null,
-      "rating": 1116.4,
+      "rating": 1116.36,
       "K": 0,
       "V": 0,
       "T": 0
@@ -1669,7 +1654,7 @@
       "dbgfnr": 9545,
       "initials": "KLDT",
       "title": null,
-      "rating": 1059.01,
+      "rating": 1058.98,
       "K": 3,
       "V": 0,
       "T": 3
@@ -1678,152 +1663,170 @@
    }
   },
   {
-   "id": 702,
-   "name": "Ravnsgaard Metal BK",
+   "id": 628,
+   "name": "Røde Stjerne 2.0",
    "players": [
     {
-     "dbgfnr": 8243,
-     "initials": "BHL",
-     "title": null,
-     "rating": 1163.96,
-     "K": 3,
+     "dbgfnr": 2325,
+     "initials": "JD",
+     "title": "GM",
+     "rating": 1254.5,
+     "K": 6,
      "V": 3,
-     "T": 0
+     "T": 3
     },
     {
-     "dbgfnr": 21030,
-     "initials": "TN",
-     "title": null,
-     "rating": 1224.5,
-     "K": 3,
-     "V": 2,
-     "T": 1
-    },
-    {
-     "dbgfnr": 7408,
-     "initials": "MJ",
-     "title": "IM",
-     "rating": 1143.76,
+     "dbgfnr": 6791,
+     "initials": "BL",
+     "title": "GM",
+     "rating": 1203.81,
      "K": 4,
      "V": 2,
      "T": 2
     },
     {
-     "dbgfnr": 3620,
-     "initials": "HC",
-     "title": null,
-     "rating": 1011.17,
+     "dbgfnr": 1339,
+     "initials": "LHM",
+     "title": "IM",
+     "rating": 1127.06,
      "K": 2,
      "V": 1,
      "T": 1
     },
     {
-     "dbgfnr": 5866,
-     "initials": "CR",
-     "title": null,
-     "rating": 1010.25,
+     "dbgfnr": 2791,
+     "initials": "TWH",
+     "title": "GM",
+     "rating": 1302.39,
+     "K": 2,
+     "V": 1,
+     "T": 1
+    },
+    {
+     "dbgfnr": 7,
+     "initials": "SPM",
+     "title": "SGM",
+     "rating": 1211.22,
      "K": 0,
      "V": 0,
      "T": 0
     },
     {
-     "dbgfnr": 8016,
-     "initials": "CL",
-     "title": "IM",
-     "rating": 1196.3,
-     "K": 3,
+     "dbgfnr": 19486,
+     "initials": "TK",
+     "title": "GM",
+     "rating": 1278.48,
+     "K": 0,
      "V": 0,
-     "T": 3
+     "T": 0
     },
     {
-     "dbgfnr": 416,
-     "initials": "SL",
+     "dbgfnr": 9743,
+     "initials": "HHL",
+     "title": null,
+     "rating": 1119.68,
+     "K": 3,
+     "V": 1,
+     "T": 2
+    },
+    {
+     "dbgfnr": 9414,
+     "initials": "JR",
      "title": "GM",
-     "rating": 1125.75,
-     "K": 5,
-     "V": 0,
-     "T": 5
+     "rating": 1222.22,
+     "K": 3,
+     "V": 1,
+     "T": 2
+    },
+    {
+     "dbgfnr": 6744,
+     "initials": "SS",
+     "title": null,
+     "rating": 1010.7,
+     "K": 4,
+     "V": 1,
+     "T": 3
     }
    ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=702",
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=628",
    "previous": {
-    "id": 564,
-    "name": "Livingstone (O)",
+    "id": 553,
+    "name": "Røde Stjerne 2.0",
     "division": "Elitedivisionen",
-    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=111&hold=564",
+    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=111&hold=553",
     "season_label": "2025/2026",
     "players": [
      {
-      "dbgfnr": 8016,
-      "initials": "CL",
-      "title": "IM",
-      "rating": 1196.3,
-      "K": 19,
-      "V": 12,
+      "dbgfnr": 2325,
+      "initials": "JD",
+      "title": "GM",
+      "rating": 1254.5,
+      "K": 24,
+      "V": 17,
       "T": 7
      },
      {
-      "dbgfnr": 21030,
-      "initials": "TN",
-      "title": null,
-      "rating": 1224.5,
-      "K": 18,
-      "V": 10,
-      "T": 8
-     },
-     {
-      "dbgfnr": 8243,
-      "initials": "BHL",
-      "title": null,
-      "rating": 1163.96,
-      "K": 13,
-      "V": 7,
+      "dbgfnr": 2791,
+      "initials": "TWH",
+      "title": "GM",
+      "rating": 1302.39,
+      "K": 21,
+      "V": 15,
       "T": 6
      },
      {
-      "dbgfnr": 3620,
-      "initials": "HC",
-      "title": null,
-      "rating": 1011.17,
-      "K": 8,
-      "V": 4,
-      "T": 4
-     },
-     {
-      "dbgfnr": 5866,
-      "initials": "CR",
-      "title": null,
-      "rating": 1010.25,
-      "K": 2,
-      "V": 1,
-      "T": 1
-     },
-     {
-      "dbgfnr": 1122,
-      "initials": "CN",
-      "title": null,
-      "rating": 1039.64,
-      "K": 0,
-      "V": 0,
-      "T": 0
-     },
-     {
-      "dbgfnr": 416,
-      "initials": "SL",
+      "dbgfnr": 6791,
+      "initials": "BL",
       "title": "GM",
-      "rating": 1125.75,
-      "K": 16,
-      "V": 7,
-      "T": 9
+      "rating": 1203.81,
+      "K": 15,
+      "V": 9,
+      "T": 6
      },
      {
-      "dbgfnr": 7408,
-      "initials": "MJ",
-      "title": "IM",
-      "rating": 1143.76,
+      "dbgfnr": 9414,
+      "initials": "JR",
+      "title": "GM",
+      "rating": 1222.22,
       "K": 12,
-      "V": 5,
-      "T": 7
+      "V": 6,
+      "T": 6
+     },
+     {
+      "dbgfnr": 19486,
+      "initials": "TK",
+      "title": "GM",
+      "rating": 1278.48,
+      "K": 5,
+      "V": 2,
+      "T": 3
+     },
+     {
+      "dbgfnr": 6744,
+      "initials": "SS",
+      "title": null,
+      "rating": 1010.7,
+      "K": 7,
+      "V": 2,
+      "T": 5
+     },
+     {
+      "dbgfnr": 1339,
+      "initials": "LHM",
+      "title": "IM",
+      "rating": 1127.06,
+      "K": 6,
+      "V": 1,
+      "T": 5
+     },
+     {
+      "dbgfnr": 9743,
+      "initials": "HHL",
+      "title": null,
+      "rating": 1119.68,
+      "K": 10,
+      "V": 2,
+      "T": 8
      }
     ]
    }
@@ -1845,7 +1848,7 @@
      "dbgfnr": 3644,
      "initials": "JL",
      "title": null,
-     "rating": 1183.82,
+     "rating": 1183.79,
      "K": 1,
      "V": 1,
      "T": 0
@@ -1854,7 +1857,7 @@
      "dbgfnr": 3650,
      "initials": "RP",
      "title": null,
-     "rating": 1117.42,
+     "rating": 1117.38,
      "K": 0,
      "V": 0,
      "T": 0
@@ -1863,7 +1866,7 @@
      "dbgfnr": 4894,
      "initials": "JFM",
      "title": null,
-     "rating": 1083.91,
+     "rating": 1083.89,
      "K": 0,
      "V": 0,
      "T": 0
@@ -1872,7 +1875,7 @@
      "dbgfnr": 3948,
      "initials": "FC",
      "title": "GM",
-     "rating": 1265.68,
+     "rating": 1265.66,
      "K": 5,
      "V": 2,
      "T": 3
@@ -1881,7 +1884,7 @@
      "dbgfnr": 1985,
      "initials": "KH",
      "title": null,
-     "rating": 1054.93,
+     "rating": 1054.9,
      "K": 1,
      "V": 0,
      "T": 1
@@ -1890,7 +1893,7 @@
      "dbgfnr": 14964,
      "initials": "JM",
      "title": "IM",
-     "rating": 1134.49,
+     "rating": 1134.46,
      "K": 4,
      "V": 1,
      "T": 3
@@ -1899,7 +1902,7 @@
      "dbgfnr": 5650,
      "initials": "TS",
      "title": null,
-     "rating": 1073.66,
+     "rating": 1073.65,
      "K": 4,
      "V": 1,
      "T": 3
@@ -1908,7 +1911,7 @@
      "dbgfnr": 4059,
      "initials": "TT",
      "title": "SGM",
-     "rating": 1292.84,
+     "rating": 1292.81,
      "K": 2,
      "V": 0,
      "T": 2
@@ -1917,7 +1920,7 @@
      "dbgfnr": 3639,
      "initials": "AT",
      "title": "IM",
-     "rating": 1173.13,
+     "rating": 1173.11,
      "K": 6,
      "V": 1,
      "T": 5
@@ -1935,7 +1938,7 @@
       "dbgfnr": 5650,
       "initials": "TS",
       "title": null,
-      "rating": 1073.66,
+      "rating": 1073.65,
       "K": 9,
       "V": 7,
       "T": 2
@@ -1944,7 +1947,7 @@
       "dbgfnr": 3639,
       "initials": "AT",
       "title": "IM",
-      "rating": 1173.13,
+      "rating": 1173.11,
       "K": 19,
       "V": 11,
       "T": 8
@@ -1953,7 +1956,7 @@
       "dbgfnr": 3948,
       "initials": "FC",
       "title": "GM",
-      "rating": 1265.68,
+      "rating": 1265.66,
       "K": 18,
       "V": 10,
       "T": 8
@@ -1971,7 +1974,7 @@
       "dbgfnr": 3650,
       "initials": "RP",
       "title": null,
-      "rating": 1117.42,
+      "rating": 1117.38,
       "K": 0,
       "V": 0,
       "T": 0
@@ -1980,7 +1983,7 @@
       "dbgfnr": 14964,
       "initials": "JM",
       "title": "IM",
-      "rating": 1134.49,
+      "rating": 1134.46,
       "K": 15,
       "V": 7,
       "T": 8
@@ -1989,7 +1992,7 @@
       "dbgfnr": 4059,
       "initials": "TT",
       "title": "SGM",
-      "rating": 1292.84,
+      "rating": 1292.81,
       "K": 1,
       "V": 0,
       "T": 1
@@ -1998,7 +2001,7 @@
       "dbgfnr": 3644,
       "initials": "JL",
       "title": null,
-      "rating": 1183.82,
+      "rating": 1183.79,
       "K": 12,
       "V": 5,
       "T": 7
@@ -2016,7 +2019,7 @@
       "dbgfnr": 1985,
       "initials": "KH",
       "title": null,
-      "rating": 1054.93,
+      "rating": 1054.9,
       "K": 4,
       "V": 1,
       "T": 3
@@ -2025,7 +2028,7 @@
       "dbgfnr": 4894,
       "initials": "JFM",
       "title": null,
-      "rating": 1083.91,
+      "rating": 1083.89,
       "K": 3,
       "V": 0,
       "T": 3
@@ -2041,7 +2044,7 @@
      "dbgfnr": 8093,
      "initials": "CE",
      "title": "GM",
-     "rating": 1227.76,
+     "rating": 1227.72,
      "K": 2,
      "V": 1,
      "T": 1
@@ -2050,7 +2053,7 @@
      "dbgfnr": 17606,
      "initials": "KNN",
      "title": "IM",
-     "rating": 1294.9,
+     "rating": 1294.87,
      "K": 2,
      "V": 1,
      "T": 1
@@ -2059,7 +2062,7 @@
      "dbgfnr": 3987,
      "initials": "MD",
      "title": null,
-     "rating": 1118.32,
+     "rating": 1118.29,
      "K": 0,
      "V": 0,
      "T": 0
@@ -2068,7 +2071,7 @@
      "dbgfnr": 7591,
      "initials": "MW",
      "title": "GM",
-     "rating": 1180.12,
+     "rating": 1180.09,
      "K": 7,
      "V": 3,
      "T": 4
@@ -2077,7 +2080,7 @@
      "dbgfnr": 9695,
      "initials": "TM",
      "title": "SGM",
-     "rating": 1231.83,
+     "rating": 1231.8,
      "K": 5,
      "V": 2,
      "T": 3
@@ -2086,7 +2089,7 @@
      "dbgfnr": 7175,
      "initials": "TNF",
      "title": null,
-     "rating": 1143.54,
+     "rating": 1143.51,
      "K": 5,
      "V": 2,
      "T": 3
@@ -2095,7 +2098,7 @@
      "dbgfnr": 7712,
      "initials": "HL",
      "title": "GM",
-     "rating": 1148.83,
+     "rating": 1148.8,
      "K": 1,
      "V": 0,
      "T": 1
@@ -2104,7 +2107,7 @@
      "dbgfnr": 9331,
      "initials": "KB",
      "title": null,
-     "rating": 1199.77,
+     "rating": 1199.74,
      "K": 1,
      "V": 0,
      "T": 1
@@ -2113,7 +2116,7 @@
      "dbgfnr": 7590,
      "initials": "FN",
      "title": "GM",
-     "rating": 1202.77,
+     "rating": 1202.75,
      "K": 5,
      "V": 1,
      "T": 4
@@ -2131,7 +2134,7 @@
       "dbgfnr": 8093,
       "initials": "CE",
       "title": "GM",
-      "rating": 1227.76,
+      "rating": 1227.72,
       "K": 11,
       "V": 8,
       "T": 3
@@ -2140,7 +2143,7 @@
       "dbgfnr": 7591,
       "initials": "MW",
       "title": "GM",
-      "rating": 1180.12,
+      "rating": 1180.09,
       "K": 18,
       "V": 11,
       "T": 7
@@ -2149,7 +2152,7 @@
       "dbgfnr": 17606,
       "initials": "KNN",
       "title": "IM",
-      "rating": 1294.9,
+      "rating": 1294.87,
       "K": 6,
       "V": 5,
       "T": 1
@@ -2158,7 +2161,7 @@
       "dbgfnr": 9331,
       "initials": "KB",
       "title": null,
-      "rating": 1199.77,
+      "rating": 1199.74,
       "K": 6,
       "V": 4,
       "T": 2
@@ -2167,7 +2170,7 @@
       "dbgfnr": 7590,
       "initials": "FN",
       "title": "GM",
-      "rating": 1202.77,
+      "rating": 1202.75,
       "K": 20,
       "V": 10,
       "T": 10
@@ -2176,7 +2179,7 @@
       "dbgfnr": 3987,
       "initials": "MD",
       "title": null,
-      "rating": 1118.32,
+      "rating": 1118.29,
       "K": 14,
       "V": 7,
       "T": 7
@@ -2185,7 +2188,7 @@
       "dbgfnr": 16929,
       "initials": "PSS",
       "title": null,
-      "rating": 1143.36,
+      "rating": 1143.28,
       "K": 0,
       "V": 0,
       "T": 0
@@ -2194,7 +2197,7 @@
       "dbgfnr": 7175,
       "initials": "TNF",
       "title": null,
-      "rating": 1143.54,
+      "rating": 1143.51,
       "K": 15,
       "V": 7,
       "T": 8
@@ -2203,7 +2206,7 @@
       "dbgfnr": 9695,
       "initials": "TM",
       "title": "SGM",
-      "rating": 1231.83,
+      "rating": 1231.8,
       "K": 8,
       "V": 3,
       "T": 5
@@ -2212,7 +2215,7 @@
       "dbgfnr": 7712,
       "initials": "HL",
       "title": "GM",
-      "rating": 1148.83,
+      "rating": 1148.8,
       "K": 2,
       "V": 0,
       "T": 2
@@ -3774,32 +3777,42 @@
    "date": "2026-11-05T19:00",
    "home": 634,
    "away": 638,
-   "played": false,
+   "played": true,
    "venue": null,
-   "lineup": [
+   "home_ekv": 1,
+   "away_ekv": 3,
+   "games": [
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "TK",
+     "home_dbgfnr": 300,
      "away_player": "TB",
-     "away_dbgfnr": 6472
+     "away_dbgfnr": 6472,
+     "home_score": 17,
+     "away_score": 4
     },
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "JCP",
+     "home_dbgfnr": 6005,
      "away_player": "FB",
-     "away_dbgfnr": 666
+     "away_dbgfnr": 666,
+     "home_score": 10,
+     "away_score": 17
     },
     {
-     "home_player": null,
-     "home_dbgfnr": null,
-     "away_player": "MLL",
-     "away_dbgfnr": 1976
+     "home_player": "SKO",
+     "home_dbgfnr": 1312,
+     "away_player": "TS",
+     "away_dbgfnr": 7112,
+     "home_score": 7,
+     "away_score": 17
     },
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "SB",
+     "home_dbgfnr": 4107,
      "away_player": "TK",
-     "away_dbgfnr": 5555
+     "away_dbgfnr": 5555,
+     "home_score": 10,
+     "away_score": 17
     }
    ]
   },
@@ -3807,32 +3820,42 @@
    "date": "2026-11-05T19:00",
    "home": 642,
    "away": 647,
-   "played": false,
+   "played": true,
    "venue": null,
-   "lineup": [
+   "home_ekv": 2,
+   "away_ekv": 2,
+   "games": [
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "JB",
+     "home_dbgfnr": 3999,
      "away_player": "TB",
-     "away_dbgfnr": 6872
+     "away_dbgfnr": 6872,
+     "home_score": 17,
+     "away_score": 13
     },
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "PT",
+     "home_dbgfnr": 19545,
      "away_player": "LN",
-     "away_dbgfnr": 11251
+     "away_dbgfnr": 11251,
+     "home_score": 7,
+     "away_score": 17
     },
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "JP",
+     "home_dbgfnr": 20209,
      "away_player": "SS",
-     "away_dbgfnr": 14148
+     "away_dbgfnr": 14148,
+     "home_score": 7,
+     "away_score": 17
     },
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "RN",
+     "home_dbgfnr": 10789,
      "away_player": "CN",
-     "away_dbgfnr": 1045
+     "away_dbgfnr": 1045,
+     "home_score": 17,
+     "away_score": 11
     }
    ]
   },
@@ -3840,15 +3863,87 @@
    "date": "2026-11-05T19:00",
    "home": 639,
    "away": 629,
-   "played": false,
-   "venue": null
+   "played": true,
+   "venue": null,
+   "home_ekv": 2,
+   "away_ekv": 2,
+   "games": [
+    {
+     "home_player": "PC",
+     "home_dbgfnr": 1599,
+     "away_player": "BF",
+     "away_dbgfnr": 8578,
+     "home_score": 13,
+     "away_score": 17
+    },
+    {
+     "home_player": "KP",
+     "home_dbgfnr": 127,
+     "away_player": "HKM",
+     "away_dbgfnr": 20773,
+     "home_score": 17,
+     "away_score": 10
+    },
+    {
+     "home_player": "PLF",
+     "home_dbgfnr": 4413,
+     "away_player": "RH",
+     "away_dbgfnr": 14227,
+     "home_score": 14,
+     "away_score": 17
+    },
+    {
+     "home_player": "ES",
+     "home_dbgfnr": 10,
+     "away_player": "RJ",
+     "away_dbgfnr": 10881,
+     "home_score": 17,
+     "away_score": 15
+    }
+   ]
   },
   {
    "date": "2026-11-05T19:00",
    "home": 628,
    "away": 702,
-   "played": false,
-   "venue": null
+   "played": true,
+   "venue": null,
+   "home_ekv": 1,
+   "away_ekv": 3,
+   "games": [
+    {
+     "home_player": "JR",
+     "home_dbgfnr": 9414,
+     "away_player": "CL",
+     "away_dbgfnr": 8016,
+     "home_score": 4,
+     "away_score": 17
+    },
+    {
+     "home_player": "SS",
+     "home_dbgfnr": 6744,
+     "away_player": "HC",
+     "away_dbgfnr": 3620,
+     "home_score": 8,
+     "away_score": 17
+    },
+    {
+     "home_player": "JD",
+     "home_dbgfnr": 2325,
+     "away_player": "SL",
+     "away_dbgfnr": 416,
+     "home_score": 13,
+     "away_score": 17
+    },
+    {
+     "home_player": "TWH",
+     "home_dbgfnr": 2791,
+     "away_player": "TN",
+     "away_dbgfnr": 21030,
+     "home_score": 17,
+     "away_score": 13
+    }
+   ]
   },
   {
    "date": "2026-11-07T12:00",
