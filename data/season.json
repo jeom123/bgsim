@@ -1,13 +1,13 @@
 {
  "player_ratings": {
-  "9": 1273.37,
-  "8578": 1288.76,
-  "10223": 1210.3,
-  "20773": 1146.98,
-  "15822": 1171.02,
-  "4444": 1283.06,
-  "18879": 1306.54,
-  "14227": 1242.4,
+  "4880": 1230.98,
+  "8649": 1078.19,
+  "4840": 1102.71,
+  "4413": 1264.95,
+  "5347": 1196.27,
+  "5797": 1234.35,
+  "300": 1218.73,
+  "4107": 1168.64,
   "3948": 1265.66,
   "4175": 1176.56,
   "5782": 1132.42,
@@ -17,7 +17,7 @@
   "3639": 1173.11,
   "6472": 1185.92
  },
- "scraped_at": "2026-11-06T04:12:28+00:00",
+ "scraped_at": "2026-11-08T04:12:16+00:00",
  "season_id": 37,
  "division_id": 118,
  "source": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?season=37&division=118",
@@ -25,13 +25,13 @@
   {
    "id": 633,
    "name": "Team Casino Munkebjerg",
-   "K": 8,
-   "V": 4,
+   "K": 10,
+   "V": 5,
    "U": 4,
-   "T": 0,
-   "EKV": 23,
-   "EKT": 9,
-   "P": 12,
+   "T": 1,
+   "EKV": 27,
+   "EKT": 13,
+   "P": 14,
    "pm": 7
   },
   {
@@ -85,13 +85,13 @@
   {
    "id": 629,
    "name": "Lødigt I (M)",
-   "K": 6,
-   "V": 1,
+   "K": 8,
+   "V": 2,
    "U": 4,
-   "T": 1,
-   "EKV": 12,
-   "EKT": 12,
-   "P": 6,
+   "T": 2,
+   "EKV": 16,
+   "EKT": 16,
+   "P": 8,
    "pm": 0
   },
   {
@@ -176,10 +176,10 @@
      "dbgfnr": 9,
      "initials": "CMC",
      "title": "SGM",
-     "rating": 1273.37,
-     "K": 8,
-     "V": 6,
-     "T": 2
+     "rating": 1273.82,
+     "K": 10,
+     "V": 7,
+     "T": 3
     },
     {
      "dbgfnr": 10945,
@@ -189,6 +189,33 @@
      "K": 6,
      "V": 4,
      "T": 2
+    },
+    {
+     "dbgfnr": 15822,
+     "initials": "GEJ",
+     "title": null,
+     "rating": 1174.97,
+     "K": 4,
+     "V": 3,
+     "T": 1
+    },
+    {
+     "dbgfnr": 10223,
+     "initials": "HV",
+     "title": null,
+     "rating": 1210.61,
+     "K": 4,
+     "V": 3,
+     "T": 1
+    },
+    {
+     "dbgfnr": 18879,
+     "initials": "LT",
+     "title": "SGM",
+     "rating": 1302.53,
+     "K": 4,
+     "V": 3,
+     "T": 1
     },
     {
      "dbgfnr": 11468,
@@ -204,33 +231,6 @@
      "initials": "DS",
      "title": "GM",
      "rating": 1181.68,
-     "K": 2,
-     "V": 2,
-     "T": 0
-    },
-    {
-     "dbgfnr": 15822,
-     "initials": "GEJ",
-     "title": null,
-     "rating": 1171.02,
-     "K": 2,
-     "V": 2,
-     "T": 0
-    },
-    {
-     "dbgfnr": 10223,
-     "initials": "HV",
-     "title": null,
-     "rating": 1210.3,
-     "K": 2,
-     "V": 2,
-     "T": 0
-    },
-    {
-     "dbgfnr": 18879,
-     "initials": "LT",
-     "title": "SGM",
-     "rating": 1306.54,
      "K": 2,
      "V": 2,
      "T": 0
@@ -284,7 +284,7 @@
       "dbgfnr": 9,
       "initials": "CMC",
       "title": "SGM",
-      "rating": 1273.37,
+      "rating": 1273.82,
       "K": 20,
       "V": 14,
       "T": 6
@@ -293,7 +293,7 @@
       "dbgfnr": 18879,
       "initials": "LT",
       "title": "SGM",
-      "rating": 1306.54,
+      "rating": 1302.53,
       "K": 17,
       "V": 9,
       "T": 8
@@ -302,7 +302,7 @@
       "dbgfnr": 15822,
       "initials": "GEJ",
       "title": null,
-      "rating": 1171.02,
+      "rating": 1174.97,
       "K": 7,
       "V": 4,
       "T": 3
@@ -329,7 +329,7 @@
       "dbgfnr": 10223,
       "initials": "HV",
       "title": null,
-      "rating": 1210.3,
+      "rating": 1210.61,
       "K": 5,
       "V": 2,
       "T": 3
@@ -595,7 +595,7 @@
      "dbgfnr": 9039,
      "initials": "AW",
      "title": "IM",
-     "rating": 1139.56,
+     "rating": 1147.56,
      "K": 1,
      "V": 0,
      "T": 1
@@ -649,7 +649,7 @@
       "dbgfnr": 11,
       "initials": "CS",
       "title": null,
-      "rating": 1121.28,
+      "rating": 1112.51,
       "K": 1,
       "V": 0,
       "T": 1
@@ -973,22 +973,22 @@
    "name": "Lødigt I (M)",
    "players": [
     {
-     "dbgfnr": 8578,
-     "initials": "BF",
-     "title": null,
-     "rating": 1288.76,
-     "K": 5,
-     "V": 4,
-     "T": 1
-    },
-    {
      "dbgfnr": 14227,
      "initials": "RH",
      "title": "GM",
-     "rating": 1242.4,
-     "K": 2,
-     "V": 2,
-     "T": 0
+     "rating": 1241.94,
+     "K": 4,
+     "V": 3,
+     "T": 1
+    },
+    {
+     "dbgfnr": 8578,
+     "initials": "BF",
+     "title": null,
+     "rating": 1269.87,
+     "K": 7,
+     "V": 4,
+     "T": 3
     },
     {
      "dbgfnr": 10881,
@@ -1027,21 +1027,21 @@
      "T": 0
     },
     {
-     "dbgfnr": 20773,
-     "initials": "HKM",
-     "title": "IM",
-     "rating": 1146.98,
-     "K": 4,
-     "V": 1,
-     "T": 3
-    },
-    {
      "dbgfnr": 4444,
      "initials": "MJ",
      "title": "IM",
-     "rating": 1283.06,
-     "K": 5,
-     "V": 1,
+     "rating": 1297.71,
+     "K": 7,
+     "V": 3,
+     "T": 4
+    },
+    {
+     "dbgfnr": 20773,
+     "initials": "HKM",
+     "title": "IM",
+     "rating": 1150.98,
+     "K": 6,
+     "V": 2,
      "T": 4
     }
    ],
@@ -1057,7 +1057,7 @@
       "dbgfnr": 8578,
       "initials": "BF",
       "title": null,
-      "rating": 1288.76,
+      "rating": 1269.87,
       "K": 23,
       "V": 15,
       "T": 8
@@ -1066,7 +1066,7 @@
       "dbgfnr": 4444,
       "initials": "MJ",
       "title": "IM",
-      "rating": 1283.06,
+      "rating": 1297.71,
       "K": 18,
       "V": 12,
       "T": 6
@@ -1093,7 +1093,7 @@
       "dbgfnr": 20773,
       "initials": "HKM",
       "title": "IM",
-      "rating": 1146.98,
+      "rating": 1150.98,
       "K": 18,
       "V": 9,
       "T": 9
@@ -1102,7 +1102,7 @@
       "dbgfnr": 14227,
       "initials": "RH",
       "title": "GM",
-      "rating": 1242.4,
+      "rating": 1241.94,
       "K": 12,
       "V": 6,
       "T": 6
@@ -3949,32 +3949,42 @@
    "date": "2026-11-07T12:00",
    "home": 633,
    "away": 629,
-   "played": false,
+   "played": true,
    "venue": "Vejle, 1. kamp",
-   "lineup": [
+   "home_ekv": 1,
+   "away_ekv": 3,
+   "games": [
     {
      "home_player": "CMC",
      "home_dbgfnr": 9,
      "away_player": "BF",
-     "away_dbgfnr": 8578
+     "away_dbgfnr": 8578,
+     "home_score": 17,
+     "away_score": 9
     },
     {
      "home_player": "HV",
      "home_dbgfnr": 10223,
      "away_player": "HKM",
-     "away_dbgfnr": 20773
+     "away_dbgfnr": 20773,
+     "home_score": 8,
+     "away_score": 17
     },
     {
      "home_player": "GEJ",
      "home_dbgfnr": 15822,
      "away_player": "MJ",
-     "away_dbgfnr": 4444
+     "away_dbgfnr": 4444,
+     "home_score": 9,
+     "away_score": 17
     },
     {
      "home_player": "LT",
      "home_dbgfnr": 18879,
      "away_player": "RH",
-     "away_dbgfnr": 14227
+     "away_dbgfnr": 14227,
+     "home_score": 11,
+     "away_score": 17
     }
    ]
   },
@@ -3982,32 +3992,42 @@
    "date": "2026-11-07T12:00",
    "home": 629,
    "away": 633,
-   "played": false,
+   "played": true,
    "venue": "Vejle, 2. kamp",
-   "lineup": [
+   "home_ekv": 1,
+   "away_ekv": 3,
+   "games": [
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "MJ",
+     "home_dbgfnr": 4444,
      "away_player": "CMC",
-     "away_dbgfnr": 9
+     "away_dbgfnr": 9,
+     "home_score": 17,
+     "away_score": 16
     },
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "RH",
+     "home_dbgfnr": 14227,
      "away_player": "GEJ",
-     "away_dbgfnr": 15822
+     "away_dbgfnr": 15822,
+     "home_score": 9,
+     "away_score": 17
     },
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "BF",
+     "home_dbgfnr": 8578,
      "away_player": "HV",
-     "away_dbgfnr": 10223
+     "away_dbgfnr": 10223,
+     "home_score": 9,
+     "away_score": 17
     },
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "HKM",
+     "home_dbgfnr": 20773,
      "away_player": "LT",
-     "away_dbgfnr": 18879
+     "away_dbgfnr": 18879,
+     "home_score": 10,
+     "away_score": 17
     }
    ]
   },
@@ -4023,7 +4043,33 @@
    "home": 630,
    "away": 639,
    "played": false,
-   "venue": null
+   "venue": null,
+   "lineup": [
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "JM",
+     "away_dbgfnr": 4880
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "MP",
+     "away_dbgfnr": 8649
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "PS",
+     "away_dbgfnr": 4840
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "PLF",
+     "away_dbgfnr": 4413
+    }
+   ]
   },
   {
    "date": "2026-11-12T19:00",
@@ -4037,7 +4083,33 @@
    "home": 647,
    "away": 634,
    "played": false,
-   "venue": null
+   "venue": null,
+   "lineup": [
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "FMD",
+     "away_dbgfnr": 5347
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "FM",
+     "away_dbgfnr": 5797
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "TK",
+     "away_dbgfnr": 300
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "SB",
+     "away_dbgfnr": 4107
+    }
+   ]
   },
   {
    "date": "2026-11-12T19:00",
