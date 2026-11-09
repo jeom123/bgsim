@@ -4,20 +4,25 @@
   "8649": 1078.19,
   "4840": 1102.71,
   "4413": 1264.95,
+  "1045": 1099.11,
   "5347": 1196.27,
+  "6973": 1200.38,
   "5797": 1234.35,
+  "6872": 1230.19,
   "300": 1218.73,
+  "14148": 1163.09,
   "4107": 1168.64,
+  "3639": 1173.11,
   "3948": 1265.66,
-  "4175": 1176.56,
   "5782": 1132.42,
+  "14964": 1134.46,
+  "4175": 1176.56,
   "666": 1239.83,
   "5650": 1073.65,
   "15699": 1154.4,
-  "3639": 1173.11,
   "6472": 1185.92
  },
- "scraped_at": "2026-11-08T04:12:16+00:00",
+ "scraped_at": "2026-11-09T04:12:13+00:00",
  "season_id": 37,
  "division_id": 118,
  "source": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?season=37&division=118",
@@ -701,7 +706,7 @@
      "dbgfnr": 9934,
      "initials": "JP",
      "title": null,
-     "rating": 1155.89,
+     "rating": 1155.87,
      "K": 5,
      "V": 3,
      "T": 2
@@ -728,7 +733,7 @@
      "dbgfnr": 1045,
      "initials": "CN",
      "title": null,
-     "rating": 1099.13,
+     "rating": 1099.11,
      "K": 5,
      "V": 0,
      "T": 5
@@ -755,7 +760,7 @@
       "dbgfnr": 9934,
       "initials": "JP",
       "title": null,
-      "rating": 1155.89,
+      "rating": 1155.87,
       "K": 14,
       "V": 9,
       "T": 5
@@ -764,7 +769,7 @@
       "dbgfnr": 1045,
       "initials": "CN",
       "title": null,
-      "rating": 1099.13,
+      "rating": 1099.11,
       "K": 13,
       "V": 8,
       "T": 5
@@ -4086,26 +4091,26 @@
    "venue": null,
    "lineup": [
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "CN",
+     "home_dbgfnr": 1045,
      "away_player": "FMD",
      "away_dbgfnr": 5347
     },
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "MK",
+     "home_dbgfnr": 6973,
      "away_player": "FM",
      "away_dbgfnr": 5797
     },
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "TB",
+     "home_dbgfnr": 6872,
      "away_player": "TK",
      "away_dbgfnr": 300
     },
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "SS",
+     "home_dbgfnr": 14148,
      "away_player": "SB",
      "away_dbgfnr": 4107
     }
@@ -4116,7 +4121,33 @@
    "home": 631,
    "away": 637,
    "played": false,
-   "venue": null
+   "venue": null,
+   "lineup": [
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "AT",
+     "away_dbgfnr": 3639
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "FC",
+     "away_dbgfnr": 3948
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "GH",
+     "away_dbgfnr": 5782
+    },
+    {
+     "home_player": null,
+     "home_dbgfnr": null,
+     "away_player": "JM",
+     "away_dbgfnr": 14964
+    }
+   ]
   },
   {
    "date": "2026-11-15T13:00",
