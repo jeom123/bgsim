@@ -1,28 +1,15 @@
 {
  "player_ratings": {
-  "4880": 1230.98,
-  "8649": 1078.19,
-  "4840": 1102.71,
-  "4413": 1264.95,
-  "1045": 1099.11,
-  "5347": 1196.27,
-  "6973": 1200.38,
-  "5797": 1234.35,
-  "6872": 1230.19,
-  "300": 1218.73,
-  "14148": 1163.09,
-  "4107": 1168.64,
-  "3639": 1173.11,
   "3948": 1265.66,
+  "4175": 1178.05,
   "5782": 1132.42,
-  "14964": 1134.46,
-  "4175": 1176.56,
-  "666": 1239.83,
+  "666": 1239.39,
   "5650": 1073.65,
   "15699": 1154.4,
+  "3639": 1173.11,
   "6472": 1185.92
  },
- "scraped_at": "2026-11-09T04:12:13+00:00",
+ "scraped_at": "2026-11-13T04:12:19+00:00",
  "season_id": 37,
  "division_id": 118,
  "source": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?season=37&division=118",
@@ -42,38 +29,26 @@
   {
    "id": 639,
    "name": "Roskilde I (O)",
-   "K": 8,
-   "V": 3,
+   "K": 9,
+   "V": 4,
    "U": 3,
    "T": 2,
-   "EKV": 18,
-   "EKT": 14,
-   "P": 9,
-   "pm": 2
+   "EKV": 21,
+   "EKT": 15,
+   "P": 11,
+   "pm": 3
   },
   {
    "id": 634,
    "name": "KBgK I",
-   "K": 6,
-   "V": 3,
+   "K": 7,
+   "V": 4,
    "U": 1,
    "T": 2,
-   "EKV": 14,
-   "EKT": 10,
-   "P": 7,
-   "pm": 2
-  },
-  {
-   "id": 647,
-   "name": "Ringsted I (O)",
-   "K": 8,
-   "V": 2,
-   "U": 5,
-   "T": 1,
    "EKV": 17,
-   "EKT": 15,
+   "EKT": 11,
    "P": 9,
-   "pm": 1
+   "pm": 3
   },
   {
    "id": 638,
@@ -88,88 +63,100 @@
    "pm": 1
   },
   {
-   "id": 629,
-   "name": "Lødigt I (M)",
-   "K": 8,
+   "id": 647,
+   "name": "Ringsted I (O)",
+   "K": 9,
    "V": 2,
-   "U": 4,
+   "U": 5,
    "T": 2,
-   "EKV": 16,
-   "EKT": 16,
-   "P": 8,
+   "EKV": 18,
+   "EKT": 18,
+   "P": 9,
    "pm": 0
-  },
-  {
-   "id": 630,
-   "name": "Nemo I",
-   "K": 4,
-   "V": 1,
-   "U": 2,
-   "T": 1,
-   "EKV": 8,
-   "EKT": 8,
-   "P": 4,
-   "pm": 0
-  },
-  {
-   "id": 702,
-   "name": "Ravnsgaard Metal BK",
-   "K": 6,
-   "V": 2,
-   "U": 2,
-   "T": 2,
-   "EKV": 11,
-   "EKT": 13,
-   "P": 6,
-   "pm": -1
   },
   {
    "id": 642,
    "name": "Langebro (O)",
-   "K": 8,
-   "V": 1,
+   "K": 9,
+   "V": 2,
    "U": 5,
    "T": 2,
-   "EKV": 14,
-   "EKT": 18,
-   "P": 7,
-   "pm": -2
+   "EKV": 17,
+   "EKT": 19,
+   "P": 9,
+   "pm": -1
+  },
+  {
+   "id": 629,
+   "name": "Lødigt I (M)",
+   "K": 9,
+   "V": 2,
+   "U": 4,
+   "T": 3,
+   "EKV": 17,
+   "EKT": 19,
+   "P": 8,
+   "pm": -1
   },
   {
    "id": 628,
    "name": "Røde Stjerne 2.0",
-   "K": 6,
-   "V": 1,
-   "U": 2,
-   "T": 3,
-   "EKV": 10,
-   "EKT": 14,
-   "P": 4,
-   "pm": -2
-  },
-  {
-   "id": 637,
-   "name": "Malmö",
    "K": 7,
    "V": 2,
-   "U": 1,
-   "T": 4,
-   "EKV": 10,
-   "EKT": 18,
-   "P": 5,
-   "pm": -4
+   "U": 2,
+   "T": 3,
+   "EKV": 13,
+   "EKT": 15,
+   "P": 6,
+   "pm": -1
+  },
+  {
+   "id": 630,
+   "name": "Nemo I",
+   "K": 5,
+   "V": 1,
+   "U": 2,
+   "T": 2,
+   "EKV": 9,
+   "EKT": 11,
+   "P": 4,
+   "pm": -1
+  },
+  {
+   "id": 702,
+   "name": "Ravnsgaard Metal BK",
+   "K": 7,
+   "V": 2,
+   "U": 2,
+   "T": 3,
+   "EKV": 12,
+   "EKT": 16,
+   "P": 6,
+   "pm": -2
   },
   {
    "id": 631,
    "name": "Soirée Dansante",
-   "K": 7,
-   "V": 1,
+   "K": 8,
+   "V": 2,
    "U": 2,
    "T": 4,
-   "EKV": 10,
-   "EKT": 18,
-   "P": 4,
-   "pm": -4
+   "EKV": 13,
+   "EKT": 19,
+   "P": 6,
+   "pm": -3
+  },
+  {
+   "id": 637,
+   "name": "Malmö",
+   "K": 8,
+   "V": 2,
+   "U": 1,
+   "T": 5,
+   "EKV": 11,
+   "EKT": 21,
+   "P": 5,
+   "pm": -5
   }
  ],
  "teams": [
@@ -235,7 +222,7 @@
      "dbgfnr": 2869,
      "initials": "DS",
      "title": "GM",
-     "rating": 1181.68,
+     "rating": 1190.16,
      "K": 2,
      "V": 2,
      "T": 0
@@ -370,7 +357,7 @@
       "dbgfnr": 2869,
       "initials": "DS",
       "title": "GM",
-      "rating": 1181.68,
+      "rating": 1190.16,
       "K": 16,
       "V": 5,
       "T": 11
@@ -387,8 +374,17 @@
      "initials": "PLF",
      "title": "IM",
      "rating": 1264.95,
-     "K": 6,
-     "V": 5,
+     "K": 7,
+     "V": 6,
+     "T": 1
+    },
+    {
+     "dbgfnr": 4880,
+     "initials": "JM",
+     "title": null,
+     "rating": 1230.98,
+     "K": 4,
+     "V": 3,
      "T": 1
     },
     {
@@ -396,9 +392,18 @@
      "initials": "MP",
      "title": null,
      "rating": 1078.19,
-     "K": 4,
+     "K": 5,
      "V": 3,
-     "T": 1
+     "T": 2
+    },
+    {
+     "dbgfnr": 4840,
+     "initials": "PS",
+     "title": null,
+     "rating": 1102.71,
+     "K": 5,
+     "V": 3,
+     "T": 2
     },
     {
      "dbgfnr": 38,
@@ -408,24 +413,6 @@
      "K": 3,
      "V": 2,
      "T": 1
-    },
-    {
-     "dbgfnr": 4880,
-     "initials": "JM",
-     "title": null,
-     "rating": 1230.98,
-     "K": 3,
-     "V": 2,
-     "T": 1
-    },
-    {
-     "dbgfnr": 4840,
-     "initials": "PS",
-     "title": null,
-     "rating": 1102.71,
-     "K": 4,
-     "V": 2,
-     "T": 2
     },
     {
      "dbgfnr": 127,
@@ -552,21 +539,21 @@
    "name": "KBgK I",
    "players": [
     {
+     "dbgfnr": 5797,
+     "initials": "FM",
+     "title": "GM",
+     "rating": 1225.84,
+     "K": 6,
+     "V": 5,
+     "T": 1
+    },
+    {
      "dbgfnr": 300,
      "initials": "TK",
      "title": null,
      "rating": 1218.73,
-     "K": 5,
+     "K": 6,
      "V": 5,
-     "T": 0
-    },
-    {
-     "dbgfnr": 5797,
-     "initials": "FM",
-     "title": "GM",
-     "rating": 1234.35,
-     "K": 5,
-     "V": 4,
      "T": 1
     },
     {
@@ -574,24 +561,24 @@
      "initials": "FMD",
      "title": null,
      "rating": 1196.27,
-     "K": 2,
-     "V": 1,
-     "T": 1
-    },
-    {
-     "dbgfnr": 6005,
-     "initials": "JCP",
-     "title": "IM",
-     "rating": 1185.28,
-     "K": 5,
+     "K": 3,
      "V": 2,
-     "T": 3
+     "T": 1
     },
     {
      "dbgfnr": 4107,
      "initials": "SB",
      "title": null,
      "rating": 1168.64,
+     "K": 6,
+     "V": 3,
+     "T": 3
+    },
+    {
+     "dbgfnr": 6005,
+     "initials": "JCP",
+     "title": "IM",
+     "rating": 1185.28,
      "K": 5,
      "V": 2,
      "T": 3
@@ -636,7 +623,7 @@
       "dbgfnr": 5797,
       "initials": "FM",
       "title": "GM",
-      "rating": 1234.35,
+      "rating": 1225.84,
       "K": 22,
       "V": 11,
       "T": 11
@@ -654,7 +641,7 @@
       "dbgfnr": 11,
       "initials": "CS",
       "title": null,
-      "rating": 1112.51,
+      "rating": 1111.15,
       "K": 1,
       "V": 0,
       "T": 1
@@ -681,139 +668,6 @@
    }
   },
   {
-   "id": 647,
-   "name": "Ringsted I (O)",
-   "players": [
-    {
-     "dbgfnr": 6872,
-     "initials": "TB",
-     "title": null,
-     "rating": 1230.19,
-     "K": 5,
-     "V": 4,
-     "T": 1
-    },
-    {
-     "dbgfnr": 11251,
-     "initials": "LN",
-     "title": "GM",
-     "rating": 1292.59,
-     "K": 6,
-     "V": 4,
-     "T": 2
-    },
-    {
-     "dbgfnr": 9934,
-     "initials": "JP",
-     "title": null,
-     "rating": 1155.87,
-     "K": 5,
-     "V": 3,
-     "T": 2
-    },
-    {
-     "dbgfnr": 6973,
-     "initials": "MK",
-     "title": "IM",
-     "rating": 1200.38,
-     "K": 5,
-     "V": 3,
-     "T": 2
-    },
-    {
-     "dbgfnr": 14148,
-     "initials": "SS",
-     "title": "IM",
-     "rating": 1163.09,
-     "K": 6,
-     "V": 3,
-     "T": 3
-    },
-    {
-     "dbgfnr": 1045,
-     "initials": "CN",
-     "title": null,
-     "rating": 1099.11,
-     "K": 5,
-     "V": 0,
-     "T": 5
-    }
-   ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=647",
-   "previous": {
-    "id": 577,
-    "name": "Ringsted (O)",
-    "division": "1. division",
-    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=112&hold=577",
-    "season_label": "2025/2026",
-    "players": [
-     {
-      "dbgfnr": 11251,
-      "initials": "LN",
-      "title": "GM",
-      "rating": 1292.59,
-      "K": 15,
-      "V": 10,
-      "T": 5
-     },
-     {
-      "dbgfnr": 9934,
-      "initials": "JP",
-      "title": null,
-      "rating": 1155.87,
-      "K": 14,
-      "V": 9,
-      "T": 5
-     },
-     {
-      "dbgfnr": 1045,
-      "initials": "CN",
-      "title": null,
-      "rating": 1099.11,
-      "K": 13,
-      "V": 8,
-      "T": 5
-     },
-     {
-      "dbgfnr": 5393,
-      "initials": "BP",
-      "title": null,
-      "rating": 1158.12,
-      "K": 2,
-      "V": 2,
-      "T": 0
-     },
-     {
-      "dbgfnr": 10789,
-      "initials": "RN",
-      "title": "IM",
-      "rating": 1105.0,
-      "K": 16,
-      "V": 8,
-      "T": 8
-     },
-     {
-      "dbgfnr": 14148,
-      "initials": "SS",
-      "title": "IM",
-      "rating": 1163.09,
-      "K": 15,
-      "V": 7,
-      "T": 8
-     },
-     {
-      "dbgfnr": 6973,
-      "initials": "MK",
-      "title": "IM",
-      "rating": 1200.38,
-      "K": 13,
-      "V": 6,
-      "T": 7
-     }
-    ]
-   }
-  },
-  {
    "id": 638,
    "name": "Familien Nemesis I",
    "players": [
@@ -821,7 +675,7 @@
      "dbgfnr": 666,
      "initials": "FB",
      "title": null,
-     "rating": 1239.83,
+     "rating": 1239.39,
      "K": 6,
      "V": 5,
      "T": 1
@@ -875,7 +729,7 @@
      "dbgfnr": 7112,
      "initials": "TS",
      "title": null,
-     "rating": 1226.18,
+     "rating": 1225.8,
      "K": 3,
      "V": 1,
      "T": 2
@@ -884,7 +738,7 @@
      "dbgfnr": 4175,
      "initials": "AB",
      "title": "IM",
-     "rating": 1176.56,
+     "rating": 1178.05,
      "K": 3,
      "V": 0,
      "T": 3
@@ -911,7 +765,7 @@
       "dbgfnr": 7112,
       "initials": "TS",
       "title": null,
-      "rating": 1226.18,
+      "rating": 1225.8,
       "K": 9,
       "V": 6,
       "T": 3
@@ -929,7 +783,7 @@
       "dbgfnr": 666,
       "initials": "FB",
       "title": null,
-      "rating": 1239.83,
+      "rating": 1239.39,
       "K": 18,
       "V": 9,
       "T": 9
@@ -965,10 +819,321 @@
       "dbgfnr": 4175,
       "initials": "AB",
       "title": "IM",
-      "rating": 1176.56,
+      "rating": 1178.05,
       "K": 10,
       "V": 2,
       "T": 8
+     }
+    ]
+   }
+  },
+  {
+   "id": 647,
+   "name": "Ringsted I (O)",
+   "players": [
+    {
+     "dbgfnr": 6872,
+     "initials": "TB",
+     "title": null,
+     "rating": 1230.29,
+     "K": 6,
+     "V": 5,
+     "T": 1
+    },
+    {
+     "dbgfnr": 11251,
+     "initials": "LN",
+     "title": "GM",
+     "rating": 1292.59,
+     "K": 6,
+     "V": 4,
+     "T": 2
+    },
+    {
+     "dbgfnr": 9934,
+     "initials": "JP",
+     "title": null,
+     "rating": 1155.87,
+     "K": 5,
+     "V": 3,
+     "T": 2
+    },
+    {
+     "dbgfnr": 6973,
+     "initials": "MK",
+     "title": "IM",
+     "rating": 1195.11,
+     "K": 6,
+     "V": 3,
+     "T": 3
+    },
+    {
+     "dbgfnr": 14148,
+     "initials": "SS",
+     "title": "IM",
+     "rating": 1163.13,
+     "K": 7,
+     "V": 3,
+     "T": 4
+    },
+    {
+     "dbgfnr": 1045,
+     "initials": "CN",
+     "title": null,
+     "rating": 1099.14,
+     "K": 6,
+     "V": 0,
+     "T": 6
+    }
+   ],
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=647",
+   "previous": {
+    "id": 577,
+    "name": "Ringsted (O)",
+    "division": "1. division",
+    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=112&hold=577",
+    "season_label": "2025/2026",
+    "players": [
+     {
+      "dbgfnr": 11251,
+      "initials": "LN",
+      "title": "GM",
+      "rating": 1292.59,
+      "K": 15,
+      "V": 10,
+      "T": 5
+     },
+     {
+      "dbgfnr": 9934,
+      "initials": "JP",
+      "title": null,
+      "rating": 1155.87,
+      "K": 14,
+      "V": 9,
+      "T": 5
+     },
+     {
+      "dbgfnr": 1045,
+      "initials": "CN",
+      "title": null,
+      "rating": 1099.14,
+      "K": 13,
+      "V": 8,
+      "T": 5
+     },
+     {
+      "dbgfnr": 5393,
+      "initials": "BP",
+      "title": null,
+      "rating": 1158.16,
+      "K": 2,
+      "V": 2,
+      "T": 0
+     },
+     {
+      "dbgfnr": 10789,
+      "initials": "RN",
+      "title": "IM",
+      "rating": 1105.0,
+      "K": 16,
+      "V": 8,
+      "T": 8
+     },
+     {
+      "dbgfnr": 14148,
+      "initials": "SS",
+      "title": "IM",
+      "rating": 1163.13,
+      "K": 15,
+      "V": 7,
+      "T": 8
+     },
+     {
+      "dbgfnr": 6973,
+      "initials": "MK",
+      "title": "IM",
+      "rating": 1195.11,
+      "K": 13,
+      "V": 6,
+      "T": 7
+     }
+    ]
+   }
+  },
+  {
+   "id": 642,
+   "name": "Langebro (O)",
+   "players": [
+    {
+     "dbgfnr": 441,
+     "initials": "RF",
+     "title": null,
+     "rating": 1189.65,
+     "K": 2,
+     "V": 2,
+     "T": 0
+    },
+    {
+     "dbgfnr": 3999,
+     "initials": "JB",
+     "title": null,
+     "rating": 1168.19,
+     "K": 3,
+     "V": 2,
+     "T": 1
+    },
+    {
+     "dbgfnr": 20209,
+     "initials": "JP",
+     "title": null,
+     "rating": 1141.68,
+     "K": 6,
+     "V": 3,
+     "T": 3
+    },
+    {
+     "dbgfnr": 3618,
+     "initials": "JHC",
+     "title": null,
+     "rating": 1081.3,
+     "K": 6,
+     "V": 3,
+     "T": 3
+    },
+    {
+     "dbgfnr": 10789,
+     "initials": "RN",
+     "title": "IM",
+     "rating": 1105.0,
+     "K": 4,
+     "V": 2,
+     "T": 2
+    },
+    {
+     "dbgfnr": 9545,
+     "initials": "KLDT",
+     "title": null,
+     "rating": 1058.98,
+     "K": 2,
+     "V": 1,
+     "T": 1
+    },
+    {
+     "dbgfnr": 13484,
+     "initials": "ABN",
+     "title": null,
+     "rating": 975.53,
+     "K": 0,
+     "V": 0,
+     "T": 0
+    },
+    {
+     "dbgfnr": 19545,
+     "initials": "PT",
+     "title": "IM",
+     "rating": 1241.57,
+     "K": 7,
+     "V": 3,
+     "T": 4
+    },
+    {
+     "dbgfnr": 3772,
+     "initials": "SB",
+     "title": null,
+     "rating": 1134.21,
+     "K": 6,
+     "V": 1,
+     "T": 5
+    }
+   ],
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=642",
+   "previous": {
+    "id": 567,
+    "name": "Langebro I Langebro",
+    "division": "1. division",
+    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=112&hold=567",
+    "season_label": "2025/2026",
+    "players": [
+     {
+      "dbgfnr": 19545,
+      "initials": "PT",
+      "title": "IM",
+      "rating": 1241.57,
+      "K": 18,
+      "V": 13,
+      "T": 5
+     },
+     {
+      "dbgfnr": 3618,
+      "initials": "JHC",
+      "title": null,
+      "rating": 1081.3,
+      "K": 13,
+      "V": 8,
+      "T": 5
+     },
+     {
+      "dbgfnr": 3999,
+      "initials": "JB",
+      "title": null,
+      "rating": 1168.19,
+      "K": 8,
+      "V": 5,
+      "T": 3
+     },
+     {
+      "dbgfnr": 3772,
+      "initials": "SB",
+      "title": null,
+      "rating": 1134.21,
+      "K": 15,
+      "V": 8,
+      "T": 7
+     },
+     {
+      "dbgfnr": 441,
+      "initials": "RF",
+      "title": null,
+      "rating": 1189.65,
+      "K": 11,
+      "V": 6,
+      "T": 5
+     },
+     {
+      "dbgfnr": 20209,
+      "initials": "JP",
+      "title": null,
+      "rating": 1141.68,
+      "K": 16,
+      "V": 8,
+      "T": 8
+     },
+     {
+      "dbgfnr": 13484,
+      "initials": "ABN",
+      "title": null,
+      "rating": 975.53,
+      "K": 4,
+      "V": 2,
+      "T": 2
+     },
+     {
+      "dbgfnr": 9764,
+      "initials": "SH",
+      "title": null,
+      "rating": 1116.36,
+      "K": 0,
+      "V": 0,
+      "T": 0
+     },
+     {
+      "dbgfnr": 9545,
+      "initials": "KLDT",
+      "title": null,
+      "rating": 1058.98,
+      "K": 3,
+      "V": 0,
+      "T": 3
      }
     ]
    }
@@ -978,6 +1143,15 @@
    "name": "Lødigt I (M)",
    "players": [
     {
+     "dbgfnr": 8578,
+     "initials": "BF",
+     "title": null,
+     "rating": 1269.87,
+     "K": 8,
+     "V": 5,
+     "T": 3
+    },
+    {
      "dbgfnr": 14227,
      "initials": "RH",
      "title": "GM",
@@ -985,15 +1159,6 @@
      "K": 4,
      "V": 3,
      "T": 1
-    },
-    {
-     "dbgfnr": 8578,
-     "initials": "BF",
-     "title": null,
-     "rating": 1269.87,
-     "K": 7,
-     "V": 4,
-     "T": 3
     },
     {
      "dbgfnr": 10881,
@@ -1014,15 +1179,6 @@
      "T": 1
     },
     {
-     "dbgfnr": 2111,
-     "initials": "PF",
-     "title": "GM",
-     "rating": 1186.09,
-     "K": 2,
-     "V": 1,
-     "T": 1
-    },
-    {
      "dbgfnr": 2174,
      "initials": "MPA",
      "title": "GM",
@@ -1032,22 +1188,31 @@
      "T": 0
     },
     {
+     "dbgfnr": 2111,
+     "initials": "PF",
+     "title": "GM",
+     "rating": 1186.09,
+     "K": 3,
+     "V": 1,
+     "T": 2
+    },
+    {
      "dbgfnr": 4444,
      "initials": "MJ",
      "title": "IM",
      "rating": 1297.71,
-     "K": 7,
+     "K": 8,
      "V": 3,
-     "T": 4
+     "T": 5
     },
     {
      "dbgfnr": 20773,
      "initials": "HKM",
      "title": "IM",
      "rating": 1150.98,
-     "K": 6,
+     "K": 7,
      "V": 2,
-     "T": 4
+     "T": 5
     }
    ],
    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=629",
@@ -1125,18 +1290,178 @@
    }
   },
   {
+   "id": 628,
+   "name": "Røde Stjerne 2.0",
+   "players": [
+    {
+     "dbgfnr": 2325,
+     "initials": "JD",
+     "title": "GM",
+     "rating": 1254.51,
+     "K": 7,
+     "V": 4,
+     "T": 3
+    },
+    {
+     "dbgfnr": 6791,
+     "initials": "BL",
+     "title": "GM",
+     "rating": 1203.81,
+     "K": 5,
+     "V": 3,
+     "T": 2
+    },
+    {
+     "dbgfnr": 7,
+     "initials": "SPM",
+     "title": "SGM",
+     "rating": 1211.22,
+     "K": 1,
+     "V": 1,
+     "T": 0
+    },
+    {
+     "dbgfnr": 1339,
+     "initials": "LHM",
+     "title": "IM",
+     "rating": 1127.06,
+     "K": 2,
+     "V": 1,
+     "T": 1
+    },
+    {
+     "dbgfnr": 19486,
+     "initials": "TK",
+     "title": "GM",
+     "rating": 1278.48,
+     "K": 0,
+     "V": 0,
+     "T": 0
+    },
+    {
+     "dbgfnr": 9743,
+     "initials": "HHL",
+     "title": null,
+     "rating": 1119.68,
+     "K": 3,
+     "V": 1,
+     "T": 2
+    },
+    {
+     "dbgfnr": 9414,
+     "initials": "JR",
+     "title": "GM",
+     "rating": 1222.22,
+     "K": 3,
+     "V": 1,
+     "T": 2
+    },
+    {
+     "dbgfnr": 2791,
+     "initials": "TWH",
+     "title": "GM",
+     "rating": 1302.39,
+     "K": 3,
+     "V": 1,
+     "T": 2
+    },
+    {
+     "dbgfnr": 6744,
+     "initials": "SS",
+     "title": null,
+     "rating": 1010.7,
+     "K": 4,
+     "V": 1,
+     "T": 3
+    }
+   ],
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=628",
+   "previous": {
+    "id": 553,
+    "name": "Røde Stjerne 2.0",
+    "division": "Elitedivisionen",
+    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=111&hold=553",
+    "season_label": "2025/2026",
+    "players": [
+     {
+      "dbgfnr": 2325,
+      "initials": "JD",
+      "title": "GM",
+      "rating": 1254.51,
+      "K": 24,
+      "V": 17,
+      "T": 7
+     },
+     {
+      "dbgfnr": 2791,
+      "initials": "TWH",
+      "title": "GM",
+      "rating": 1302.39,
+      "K": 21,
+      "V": 15,
+      "T": 6
+     },
+     {
+      "dbgfnr": 6791,
+      "initials": "BL",
+      "title": "GM",
+      "rating": 1203.81,
+      "K": 15,
+      "V": 9,
+      "T": 6
+     },
+     {
+      "dbgfnr": 9414,
+      "initials": "JR",
+      "title": "GM",
+      "rating": 1222.22,
+      "K": 12,
+      "V": 6,
+      "T": 6
+     },
+     {
+      "dbgfnr": 19486,
+      "initials": "TK",
+      "title": "GM",
+      "rating": 1278.48,
+      "K": 5,
+      "V": 2,
+      "T": 3
+     },
+     {
+      "dbgfnr": 6744,
+      "initials": "SS",
+      "title": null,
+      "rating": 1010.7,
+      "K": 7,
+      "V": 2,
+      "T": 5
+     },
+     {
+      "dbgfnr": 1339,
+      "initials": "LHM",
+      "title": "IM",
+      "rating": 1127.06,
+      "K": 6,
+      "V": 1,
+      "T": 5
+     },
+     {
+      "dbgfnr": 9743,
+      "initials": "HHL",
+      "title": null,
+      "rating": 1119.68,
+      "K": 10,
+      "V": 2,
+      "T": 8
+     }
+    ]
+   }
+  },
+  {
    "id": 630,
    "name": "Nemo I",
    "players": [
-    {
-     "dbgfnr": 2150,
-     "initials": "MA",
-     "title": "GM",
-     "rating": 1239.31,
-     "K": 3,
-     "V": 2,
-     "T": 1
-    },
     {
      "dbgfnr": 6887,
      "initials": "OMT",
@@ -1156,13 +1481,13 @@
      "T": 0
     },
     {
-     "dbgfnr": 66,
-     "initials": "JL",
-     "title": null,
-     "rating": 1091.11,
-     "K": 2,
-     "V": 1,
-     "T": 1
+     "dbgfnr": 2150,
+     "initials": "MA",
+     "title": "GM",
+     "rating": 1239.31,
+     "K": 4,
+     "V": 2,
+     "T": 2
     },
     {
      "dbgfnr": 1387,
@@ -1183,6 +1508,15 @@
      "T": 1
     },
     {
+     "dbgfnr": 5343,
+     "initials": "TR",
+     "title": null,
+     "rating": 1234.07,
+     "K": 2,
+     "V": 1,
+     "T": 1
+    },
+    {
      "dbgfnr": 12,
      "initials": "HB",
      "title": "IM",
@@ -1192,19 +1526,19 @@
      "T": 0
     },
     {
+     "dbgfnr": 66,
+     "initials": "JL",
+     "title": null,
+     "rating": 1091.11,
+     "K": 3,
+     "V": 1,
+     "T": 2
+    },
+    {
      "dbgfnr": 2382,
      "initials": "ML",
      "title": "GM",
      "rating": 1216.69,
-     "K": 0,
-     "V": 0,
-     "T": 0
-    },
-    {
-     "dbgfnr": 5343,
-     "initials": "TR",
-     "title": null,
-     "rating": 1234.07,
      "K": 1,
      "V": 0,
      "T": 1
@@ -1347,24 +1681,15 @@
      "initials": "BHL",
      "title": null,
      "rating": 1163.93,
-     "K": 3,
+     "K": 4,
      "V": 3,
-     "T": 0
+     "T": 1
     },
     {
      "dbgfnr": 3620,
      "initials": "HC",
      "title": null,
      "rating": 1019.81,
-     "K": 3,
-     "V": 2,
-     "T": 1
-    },
-    {
-     "dbgfnr": 7408,
-     "initials": "MJ",
-     "title": "IM",
-     "rating": 1143.75,
      "K": 4,
      "V": 2,
      "T": 2
@@ -1388,6 +1713,15 @@
      "T": 0
     },
     {
+     "dbgfnr": 7408,
+     "initials": "MJ",
+     "title": "IM",
+     "rating": 1143.75,
+     "K": 5,
+     "V": 2,
+     "T": 3
+    },
+    {
      "dbgfnr": 8016,
      "initials": "CL",
      "title": "IM",
@@ -1401,8 +1735,8 @@
      "initials": "SL",
      "title": "GM",
      "rating": 1136.95,
-     "K": 6,
-     "V": 1,
+     "K": 7,
+     "V": 2,
      "T": 5
     }
    ],
@@ -1490,558 +1824,6 @@
    }
   },
   {
-   "id": 642,
-   "name": "Langebro (O)",
-   "players": [
-    {
-     "dbgfnr": 441,
-     "initials": "RF",
-     "title": null,
-     "rating": 1189.65,
-     "K": 2,
-     "V": 2,
-     "T": 0
-    },
-    {
-     "dbgfnr": 3999,
-     "initials": "JB",
-     "title": null,
-     "rating": 1168.19,
-     "K": 3,
-     "V": 2,
-     "T": 1
-    },
-    {
-     "dbgfnr": 20209,
-     "initials": "JP",
-     "title": null,
-     "rating": 1141.68,
-     "K": 6,
-     "V": 3,
-     "T": 3
-    },
-    {
-     "dbgfnr": 9545,
-     "initials": "KLDT",
-     "title": null,
-     "rating": 1058.98,
-     "K": 2,
-     "V": 1,
-     "T": 1
-    },
-    {
-     "dbgfnr": 13484,
-     "initials": "ABN",
-     "title": null,
-     "rating": 975.53,
-     "K": 0,
-     "V": 0,
-     "T": 0
-    },
-    {
-     "dbgfnr": 3618,
-     "initials": "JHC",
-     "title": null,
-     "rating": 1081.3,
-     "K": 5,
-     "V": 2,
-     "T": 3
-    },
-    {
-     "dbgfnr": 10789,
-     "initials": "RN",
-     "title": "IM",
-     "rating": 1105.0,
-     "K": 3,
-     "V": 1,
-     "T": 2
-    },
-    {
-     "dbgfnr": 19545,
-     "initials": "PT",
-     "title": "IM",
-     "rating": 1241.57,
-     "K": 6,
-     "V": 2,
-     "T": 4
-    },
-    {
-     "dbgfnr": 3772,
-     "initials": "SB",
-     "title": null,
-     "rating": 1134.21,
-     "K": 5,
-     "V": 1,
-     "T": 4
-    }
-   ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=642",
-   "previous": {
-    "id": 567,
-    "name": "Langebro I Langebro",
-    "division": "1. division",
-    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=112&hold=567",
-    "season_label": "2025/2026",
-    "players": [
-     {
-      "dbgfnr": 19545,
-      "initials": "PT",
-      "title": "IM",
-      "rating": 1241.57,
-      "K": 18,
-      "V": 13,
-      "T": 5
-     },
-     {
-      "dbgfnr": 3618,
-      "initials": "JHC",
-      "title": null,
-      "rating": 1081.3,
-      "K": 13,
-      "V": 8,
-      "T": 5
-     },
-     {
-      "dbgfnr": 3999,
-      "initials": "JB",
-      "title": null,
-      "rating": 1168.19,
-      "K": 8,
-      "V": 5,
-      "T": 3
-     },
-     {
-      "dbgfnr": 3772,
-      "initials": "SB",
-      "title": null,
-      "rating": 1134.21,
-      "K": 15,
-      "V": 8,
-      "T": 7
-     },
-     {
-      "dbgfnr": 441,
-      "initials": "RF",
-      "title": null,
-      "rating": 1189.65,
-      "K": 11,
-      "V": 6,
-      "T": 5
-     },
-     {
-      "dbgfnr": 20209,
-      "initials": "JP",
-      "title": null,
-      "rating": 1141.68,
-      "K": 16,
-      "V": 8,
-      "T": 8
-     },
-     {
-      "dbgfnr": 13484,
-      "initials": "ABN",
-      "title": null,
-      "rating": 975.53,
-      "K": 4,
-      "V": 2,
-      "T": 2
-     },
-     {
-      "dbgfnr": 9764,
-      "initials": "SH",
-      "title": null,
-      "rating": 1116.36,
-      "K": 0,
-      "V": 0,
-      "T": 0
-     },
-     {
-      "dbgfnr": 9545,
-      "initials": "KLDT",
-      "title": null,
-      "rating": 1058.98,
-      "K": 3,
-      "V": 0,
-      "T": 3
-     }
-    ]
-   }
-  },
-  {
-   "id": 628,
-   "name": "Røde Stjerne 2.0",
-   "players": [
-    {
-     "dbgfnr": 2325,
-     "initials": "JD",
-     "title": "GM",
-     "rating": 1254.5,
-     "K": 6,
-     "V": 3,
-     "T": 3
-    },
-    {
-     "dbgfnr": 6791,
-     "initials": "BL",
-     "title": "GM",
-     "rating": 1203.81,
-     "K": 4,
-     "V": 2,
-     "T": 2
-    },
-    {
-     "dbgfnr": 1339,
-     "initials": "LHM",
-     "title": "IM",
-     "rating": 1127.06,
-     "K": 2,
-     "V": 1,
-     "T": 1
-    },
-    {
-     "dbgfnr": 2791,
-     "initials": "TWH",
-     "title": "GM",
-     "rating": 1302.39,
-     "K": 2,
-     "V": 1,
-     "T": 1
-    },
-    {
-     "dbgfnr": 7,
-     "initials": "SPM",
-     "title": "SGM",
-     "rating": 1211.22,
-     "K": 0,
-     "V": 0,
-     "T": 0
-    },
-    {
-     "dbgfnr": 19486,
-     "initials": "TK",
-     "title": "GM",
-     "rating": 1278.48,
-     "K": 0,
-     "V": 0,
-     "T": 0
-    },
-    {
-     "dbgfnr": 9743,
-     "initials": "HHL",
-     "title": null,
-     "rating": 1119.68,
-     "K": 3,
-     "V": 1,
-     "T": 2
-    },
-    {
-     "dbgfnr": 9414,
-     "initials": "JR",
-     "title": "GM",
-     "rating": 1222.22,
-     "K": 3,
-     "V": 1,
-     "T": 2
-    },
-    {
-     "dbgfnr": 6744,
-     "initials": "SS",
-     "title": null,
-     "rating": 1010.7,
-     "K": 4,
-     "V": 1,
-     "T": 3
-    }
-   ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=628",
-   "previous": {
-    "id": 553,
-    "name": "Røde Stjerne 2.0",
-    "division": "Elitedivisionen",
-    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=111&hold=553",
-    "season_label": "2025/2026",
-    "players": [
-     {
-      "dbgfnr": 2325,
-      "initials": "JD",
-      "title": "GM",
-      "rating": 1254.5,
-      "K": 24,
-      "V": 17,
-      "T": 7
-     },
-     {
-      "dbgfnr": 2791,
-      "initials": "TWH",
-      "title": "GM",
-      "rating": 1302.39,
-      "K": 21,
-      "V": 15,
-      "T": 6
-     },
-     {
-      "dbgfnr": 6791,
-      "initials": "BL",
-      "title": "GM",
-      "rating": 1203.81,
-      "K": 15,
-      "V": 9,
-      "T": 6
-     },
-     {
-      "dbgfnr": 9414,
-      "initials": "JR",
-      "title": "GM",
-      "rating": 1222.22,
-      "K": 12,
-      "V": 6,
-      "T": 6
-     },
-     {
-      "dbgfnr": 19486,
-      "initials": "TK",
-      "title": "GM",
-      "rating": 1278.48,
-      "K": 5,
-      "V": 2,
-      "T": 3
-     },
-     {
-      "dbgfnr": 6744,
-      "initials": "SS",
-      "title": null,
-      "rating": 1010.7,
-      "K": 7,
-      "V": 2,
-      "T": 5
-     },
-     {
-      "dbgfnr": 1339,
-      "initials": "LHM",
-      "title": "IM",
-      "rating": 1127.06,
-      "K": 6,
-      "V": 1,
-      "T": 5
-     },
-     {
-      "dbgfnr": 9743,
-      "initials": "HHL",
-      "title": null,
-      "rating": 1119.68,
-      "K": 10,
-      "V": 2,
-      "T": 8
-     }
-    ]
-   }
-  },
-  {
-   "id": 637,
-   "name": "Malmö",
-   "players": [
-    {
-     "dbgfnr": 5782,
-     "initials": "GH",
-     "title": null,
-     "rating": 1132.42,
-     "K": 5,
-     "V": 4,
-     "T": 1
-    },
-    {
-     "dbgfnr": 3644,
-     "initials": "JL",
-     "title": null,
-     "rating": 1183.79,
-     "K": 1,
-     "V": 1,
-     "T": 0
-    },
-    {
-     "dbgfnr": 3650,
-     "initials": "RP",
-     "title": null,
-     "rating": 1117.38,
-     "K": 0,
-     "V": 0,
-     "T": 0
-    },
-    {
-     "dbgfnr": 4894,
-     "initials": "JFM",
-     "title": null,
-     "rating": 1083.89,
-     "K": 0,
-     "V": 0,
-     "T": 0
-    },
-    {
-     "dbgfnr": 3948,
-     "initials": "FC",
-     "title": "GM",
-     "rating": 1265.66,
-     "K": 5,
-     "V": 2,
-     "T": 3
-    },
-    {
-     "dbgfnr": 1985,
-     "initials": "KH",
-     "title": null,
-     "rating": 1054.9,
-     "K": 1,
-     "V": 0,
-     "T": 1
-    },
-    {
-     "dbgfnr": 14964,
-     "initials": "JM",
-     "title": "IM",
-     "rating": 1134.46,
-     "K": 4,
-     "V": 1,
-     "T": 3
-    },
-    {
-     "dbgfnr": 5650,
-     "initials": "TS",
-     "title": null,
-     "rating": 1073.65,
-     "K": 4,
-     "V": 1,
-     "T": 3
-    },
-    {
-     "dbgfnr": 4059,
-     "initials": "TT",
-     "title": "SGM",
-     "rating": 1292.81,
-     "K": 2,
-     "V": 0,
-     "T": 2
-    },
-    {
-     "dbgfnr": 3639,
-     "initials": "AT",
-     "title": "IM",
-     "rating": 1173.11,
-     "K": 6,
-     "V": 1,
-     "T": 5
-    }
-   ],
-   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=637",
-   "previous": {
-    "id": 565,
-    "name": "Malmö (O)",
-    "division": "Elitedivisionen",
-    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=111&hold=565",
-    "season_label": "2025/2026",
-    "players": [
-     {
-      "dbgfnr": 5650,
-      "initials": "TS",
-      "title": null,
-      "rating": 1073.65,
-      "K": 9,
-      "V": 7,
-      "T": 2
-     },
-     {
-      "dbgfnr": 3639,
-      "initials": "AT",
-      "title": "IM",
-      "rating": 1173.11,
-      "K": 19,
-      "V": 11,
-      "T": 8
-     },
-     {
-      "dbgfnr": 3948,
-      "initials": "FC",
-      "title": "GM",
-      "rating": 1265.66,
-      "K": 18,
-      "V": 10,
-      "T": 8
-     },
-     {
-      "dbgfnr": 5834,
-      "initials": "TS",
-      "title": null,
-      "rating": 1011.71,
-      "K": 1,
-      "V": 1,
-      "T": 0
-     },
-     {
-      "dbgfnr": 3650,
-      "initials": "RP",
-      "title": null,
-      "rating": 1117.38,
-      "K": 0,
-      "V": 0,
-      "T": 0
-     },
-     {
-      "dbgfnr": 14964,
-      "initials": "JM",
-      "title": "IM",
-      "rating": 1134.46,
-      "K": 15,
-      "V": 7,
-      "T": 8
-     },
-     {
-      "dbgfnr": 4059,
-      "initials": "TT",
-      "title": "SGM",
-      "rating": 1292.81,
-      "K": 1,
-      "V": 0,
-      "T": 1
-     },
-     {
-      "dbgfnr": 3644,
-      "initials": "JL",
-      "title": null,
-      "rating": 1183.79,
-      "K": 12,
-      "V": 5,
-      "T": 7
-     },
-     {
-      "dbgfnr": 5658,
-      "initials": "MF",
-      "title": null,
-      "rating": 1033.66,
-      "K": 6,
-      "V": 2,
-      "T": 4
-     },
-     {
-      "dbgfnr": 1985,
-      "initials": "KH",
-      "title": null,
-      "rating": 1054.9,
-      "K": 4,
-      "V": 1,
-      "T": 3
-     },
-     {
-      "dbgfnr": 4894,
-      "initials": "JFM",
-      "title": null,
-      "rating": 1083.89,
-      "K": 3,
-      "V": 0,
-      "T": 3
-     }
-    ]
-   }
-  },
-  {
    "id": 631,
    "name": "Soirée Dansante",
    "players": [
@@ -2050,9 +1832,27 @@
      "initials": "CE",
      "title": "GM",
      "rating": 1227.72,
-     "K": 2,
-     "V": 1,
+     "K": 3,
+     "V": 2,
      "T": 1
+    },
+    {
+     "dbgfnr": 9695,
+     "initials": "TM",
+     "title": "SGM",
+     "rating": 1231.8,
+     "K": 6,
+     "V": 3,
+     "T": 3
+    },
+    {
+     "dbgfnr": 7175,
+     "initials": "TNF",
+     "title": null,
+     "rating": 1143.51,
+     "K": 6,
+     "V": 3,
+     "T": 3
     },
     {
      "dbgfnr": 17606,
@@ -2073,33 +1873,6 @@
      "T": 0
     },
     {
-     "dbgfnr": 7591,
-     "initials": "MW",
-     "title": "GM",
-     "rating": 1180.09,
-     "K": 7,
-     "V": 3,
-     "T": 4
-    },
-    {
-     "dbgfnr": 9695,
-     "initials": "TM",
-     "title": "SGM",
-     "rating": 1231.8,
-     "K": 5,
-     "V": 2,
-     "T": 3
-    },
-    {
-     "dbgfnr": 7175,
-     "initials": "TNF",
-     "title": null,
-     "rating": 1143.51,
-     "K": 5,
-     "V": 2,
-     "T": 3
-    },
-    {
      "dbgfnr": 7712,
      "initials": "HL",
      "title": "GM",
@@ -2116,6 +1889,15 @@
      "K": 1,
      "V": 0,
      "T": 1
+    },
+    {
+     "dbgfnr": 7591,
+     "initials": "MW",
+     "title": "GM",
+     "rating": 1180.09,
+     "K": 8,
+     "V": 3,
+     "T": 5
     },
     {
      "dbgfnr": 7590,
@@ -2224,6 +2006,211 @@
       "K": 2,
       "V": 0,
       "T": 2
+     }
+    ]
+   }
+  },
+  {
+   "id": 637,
+   "name": "Malmö",
+   "players": [
+    {
+     "dbgfnr": 5782,
+     "initials": "GH",
+     "title": null,
+     "rating": 1132.42,
+     "K": 6,
+     "V": 4,
+     "T": 2
+    },
+    {
+     "dbgfnr": 3644,
+     "initials": "JL",
+     "title": null,
+     "rating": 1183.79,
+     "K": 1,
+     "V": 1,
+     "T": 0
+    },
+    {
+     "dbgfnr": 3650,
+     "initials": "RP",
+     "title": null,
+     "rating": 1117.38,
+     "K": 0,
+     "V": 0,
+     "T": 0
+    },
+    {
+     "dbgfnr": 4894,
+     "initials": "JFM",
+     "title": null,
+     "rating": 1083.89,
+     "K": 0,
+     "V": 0,
+     "T": 0
+    },
+    {
+     "dbgfnr": 14964,
+     "initials": "JM",
+     "title": "IM",
+     "rating": 1128.09,
+     "K": 5,
+     "V": 2,
+     "T": 3
+    },
+    {
+     "dbgfnr": 1985,
+     "initials": "KH",
+     "title": null,
+     "rating": 1054.9,
+     "K": 1,
+     "V": 0,
+     "T": 1
+    },
+    {
+     "dbgfnr": 3948,
+     "initials": "FC",
+     "title": "GM",
+     "rating": 1265.66,
+     "K": 6,
+     "V": 2,
+     "T": 4
+    },
+    {
+     "dbgfnr": 5650,
+     "initials": "TS",
+     "title": null,
+     "rating": 1073.65,
+     "K": 4,
+     "V": 1,
+     "T": 3
+    },
+    {
+     "dbgfnr": 4059,
+     "initials": "TT",
+     "title": "SGM",
+     "rating": 1292.81,
+     "K": 2,
+     "V": 0,
+     "T": 2
+    },
+    {
+     "dbgfnr": 3639,
+     "initials": "AT",
+     "title": "IM",
+     "rating": 1173.11,
+     "K": 7,
+     "V": 1,
+     "T": 6
+    }
+   ],
+   "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=37&division=118&hold=637",
+   "previous": {
+    "id": 565,
+    "name": "Malmö (O)",
+    "division": "Elitedivisionen",
+    "url": "https://www.backgammon.dk/KT%2bSenesteS%C3%A6son?view=HoldVisning&season=36&division=111&hold=565",
+    "season_label": "2025/2026",
+    "players": [
+     {
+      "dbgfnr": 5650,
+      "initials": "TS",
+      "title": null,
+      "rating": 1073.65,
+      "K": 9,
+      "V": 7,
+      "T": 2
+     },
+     {
+      "dbgfnr": 3639,
+      "initials": "AT",
+      "title": "IM",
+      "rating": 1173.11,
+      "K": 19,
+      "V": 11,
+      "T": 8
+     },
+     {
+      "dbgfnr": 3948,
+      "initials": "FC",
+      "title": "GM",
+      "rating": 1265.66,
+      "K": 18,
+      "V": 10,
+      "T": 8
+     },
+     {
+      "dbgfnr": 5834,
+      "initials": "TS",
+      "title": null,
+      "rating": 1011.71,
+      "K": 1,
+      "V": 1,
+      "T": 0
+     },
+     {
+      "dbgfnr": 3650,
+      "initials": "RP",
+      "title": null,
+      "rating": 1117.38,
+      "K": 0,
+      "V": 0,
+      "T": 0
+     },
+     {
+      "dbgfnr": 14964,
+      "initials": "JM",
+      "title": "IM",
+      "rating": 1128.09,
+      "K": 15,
+      "V": 7,
+      "T": 8
+     },
+     {
+      "dbgfnr": 4059,
+      "initials": "TT",
+      "title": "SGM",
+      "rating": 1292.81,
+      "K": 1,
+      "V": 0,
+      "T": 1
+     },
+     {
+      "dbgfnr": 3644,
+      "initials": "JL",
+      "title": null,
+      "rating": 1183.79,
+      "K": 12,
+      "V": 5,
+      "T": 7
+     },
+     {
+      "dbgfnr": 5658,
+      "initials": "MF",
+      "title": null,
+      "rating": 1033.66,
+      "K": 6,
+      "V": 2,
+      "T": 4
+     },
+     {
+      "dbgfnr": 1985,
+      "initials": "KH",
+      "title": null,
+      "rating": 1054.9,
+      "K": 4,
+      "V": 1,
+      "T": 3
+     },
+     {
+      "dbgfnr": 4894,
+      "initials": "JFM",
+      "title": null,
+      "rating": 1083.89,
+      "K": 3,
+      "V": 0,
+      "T": 3
      }
     ]
    }
@@ -4040,39 +4027,85 @@
    "date": "2026-11-12T19:00",
    "home": 629,
    "away": 628,
-   "played": false,
-   "venue": null
+   "played": true,
+   "venue": null,
+   "home_ekv": 1,
+   "away_ekv": 3,
+   "games": [
+    {
+     "home_player": "PF",
+     "home_dbgfnr": 2111,
+     "away_player": "SPM",
+     "away_dbgfnr": 7,
+     "home_score": 9,
+     "away_score": 17
+    },
+    {
+     "home_player": "HKM",
+     "home_dbgfnr": 20773,
+     "away_player": "BL",
+     "away_dbgfnr": 6791,
+     "home_score": 6,
+     "away_score": 17
+    },
+    {
+     "home_player": "BF",
+     "home_dbgfnr": 8578,
+     "away_player": "TWH",
+     "away_dbgfnr": 2791,
+     "home_score": 17,
+     "away_score": 9
+    },
+    {
+     "home_player": "MJ",
+     "home_dbgfnr": 4444,
+     "away_player": "JD",
+     "away_dbgfnr": 2325,
+     "home_score": 0,
+     "away_score": 17
+    }
+   ]
   },
   {
    "date": "2026-11-12T19:00",
    "home": 630,
    "away": 639,
-   "played": false,
+   "played": true,
    "venue": null,
-   "lineup": [
+   "home_ekv": 1,
+   "away_ekv": 3,
+   "games": [
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "MA",
+     "home_dbgfnr": 2150,
      "away_player": "JM",
-     "away_dbgfnr": 4880
+     "away_dbgfnr": 4880,
+     "home_score": 12,
+     "away_score": 17
     },
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "TR",
+     "home_dbgfnr": 5343,
      "away_player": "MP",
-     "away_dbgfnr": 8649
+     "away_dbgfnr": 8649,
+     "home_score": 17,
+     "away_score": 9
     },
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "JL",
+     "home_dbgfnr": 66,
      "away_player": "PS",
-     "away_dbgfnr": 4840
+     "away_dbgfnr": 4840,
+     "home_score": 13,
+     "away_score": 17
     },
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "ML",
+     "home_dbgfnr": 2382,
      "away_player": "PLF",
-     "away_dbgfnr": 4413
+     "away_dbgfnr": 4413,
+     "home_score": 8,
+     "away_score": 17
     }
    ]
   },
@@ -4080,39 +4113,85 @@
    "date": "2026-11-12T19:00",
    "home": 702,
    "away": 642,
-   "played": false,
-   "venue": null
+   "played": true,
+   "venue": null,
+   "home_ekv": 1,
+   "away_ekv": 3,
+   "games": [
+    {
+     "home_player": "MJ",
+     "home_dbgfnr": 7408,
+     "away_player": "PT",
+     "away_dbgfnr": 19545,
+     "home_score": 16,
+     "away_score": 17
+    },
+    {
+     "home_player": "HC",
+     "home_dbgfnr": 3620,
+     "away_player": "RN",
+     "away_dbgfnr": 10789,
+     "home_score": 13,
+     "away_score": 17
+    },
+    {
+     "home_player": "BHL",
+     "home_dbgfnr": 8243,
+     "away_player": "JHC",
+     "away_dbgfnr": 3618,
+     "home_score": 10,
+     "away_score": 17
+    },
+    {
+     "home_player": "SL",
+     "home_dbgfnr": 416,
+     "away_player": "SB",
+     "away_dbgfnr": 3772,
+     "home_score": 17,
+     "away_score": 15
+    }
+   ]
   },
   {
    "date": "2026-11-12T19:00",
    "home": 647,
    "away": 634,
-   "played": false,
+   "played": true,
    "venue": null,
-   "lineup": [
+   "home_ekv": 1,
+   "away_ekv": 3,
+   "games": [
     {
      "home_player": "CN",
      "home_dbgfnr": 1045,
      "away_player": "FMD",
-     "away_dbgfnr": 5347
+     "away_dbgfnr": 5347,
+     "home_score": 12,
+     "away_score": 17
     },
     {
      "home_player": "MK",
      "home_dbgfnr": 6973,
      "away_player": "FM",
-     "away_dbgfnr": 5797
+     "away_dbgfnr": 5797,
+     "home_score": 9,
+     "away_score": 17
     },
     {
      "home_player": "TB",
      "home_dbgfnr": 6872,
      "away_player": "TK",
-     "away_dbgfnr": 300
+     "away_dbgfnr": 300,
+     "home_score": 17,
+     "away_score": 15
     },
     {
      "home_player": "SS",
      "home_dbgfnr": 14148,
      "away_player": "SB",
-     "away_dbgfnr": 4107
+     "away_dbgfnr": 4107,
+     "home_score": 10,
+     "away_score": 17
     }
    ]
   },
@@ -4120,32 +4199,42 @@
    "date": "2026-11-12T19:00",
    "home": 631,
    "away": 637,
-   "played": false,
+   "played": true,
    "venue": null,
-   "lineup": [
+   "home_ekv": 3,
+   "away_ekv": 1,
+   "games": [
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "TM",
+     "home_dbgfnr": 9695,
      "away_player": "AT",
-     "away_dbgfnr": 3639
+     "away_dbgfnr": 3639,
+     "home_score": 17,
+     "away_score": 13
     },
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "TNF",
+     "home_dbgfnr": 7175,
      "away_player": "FC",
-     "away_dbgfnr": 3948
+     "away_dbgfnr": 3948,
+     "home_score": 17,
+     "away_score": 6
     },
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "CE",
+     "home_dbgfnr": 8093,
      "away_player": "GH",
-     "away_dbgfnr": 5782
+     "away_dbgfnr": 5782,
+     "home_score": 17,
+     "away_score": 15
     },
     {
-     "home_player": null,
-     "home_dbgfnr": null,
+     "home_player": "MW",
+     "home_dbgfnr": 7591,
      "away_player": "JM",
-     "away_dbgfnr": 14964
+     "away_dbgfnr": 14964,
+     "home_score": 14,
+     "away_score": 17
     }
    ]
   },
